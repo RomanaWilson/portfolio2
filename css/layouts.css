@@ -1,1 +1,58 @@
-sdsd
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+/* Header */
+
+.top-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    border-bottom: .1px solid black;
+
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 10px 0 10px;
+}
+
+.logo {
+    max-width: 1.5rem;
+    padding-top: 10px; 
+}
+
+.wide-logo {
+    width: 9.8rem;
+    padding-top: 10px; 
+}
+
+.text-link {
+    padding-top: 10px; 
+}
+
+/* Main Section */
+
+main {
+    padding-top: 6rem;
+}
+
+/* Mobile Footer */
+
+
+
+/* Section layout */
+
+.grid {
+    display: grid;
+    grid-auto-columns: -5.333333333% repeat(3, 1fr) -5.333333333%;
+    grid-column-gap: 2.666666666%;
+}
