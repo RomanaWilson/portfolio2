@@ -96,9 +96,66 @@ html {
 
 .body-2 {
   font-family: neuzeit-grotesk, sans-serif;
-  font-weight: 700;
+  font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 1.92rem;
   letter-spacing: .05em;
+}
+
+.thin-caption {
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 100;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.92rem;
+  letter-spacing: .05em;
+  list-style: none;
+}
+
+.serif-small {
+  font-family: didoni-urw, serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1.6rem;
+  line-height: 1.92rem;
+  letter-spacing: .1em;
+  text-transform: lowercase;
+}
+.menu-style {
+  font-family: neuzeit-grotesk, sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  line-height: 2.4rem;
+  letter-spacing: .1em;
+  list-style: none;
+}
+.linkedin {
+  background-image: url("icons/linkedin.svg");
+}
+
+.circle-button {
+  background: rgb(192, 226, 202, .5);
+  border: none;
+  height: 90px;
+  width: 90px;
+  border-radius: 50%;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  cursor: pointer;
+  padding-bottom: 5px;
+
+}
+
+.animated-button {
+
+  background: url("../images/ellipse.svg") no-repeat;
+  border: none;
+  
+  height: 69px;
+  width: 69px;
+  /* text-decoration: none; */
+  cursor: pointer;
 }

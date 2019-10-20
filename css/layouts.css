@@ -83,6 +83,7 @@ main {
 
 /* !! ---------- VERTICAL LAYOUT ---------- !! */
 
+/* Home Page */
 .home-hero {
     grid-template-rows: [heading] 
                         auto
@@ -97,6 +98,10 @@ main {
 .home-project {
 
 }
+
+/* Bio Page */
+
+    /* Romi ToDo */
 
 /* STANDARD VERTICAL OBJECTS */
 
