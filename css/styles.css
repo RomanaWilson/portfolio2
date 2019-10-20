@@ -150,11 +150,11 @@ html {
 
 .animated-button {
 
-  background: url("../images/ellipse.svg") no-repeat;
+  background: url("../images/button.svg") no-repeat;
   border: none;
-  
+  text-align: left;
   height: 69px;
-  width: 69px;
+  width: 217px;
   /* text-decoration: none; */
   cursor: pointer;
 }

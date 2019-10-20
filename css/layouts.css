@@ -27,16 +27,16 @@ body {
 
 .logo {
     max-width: 1.5rem;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
 .wide-logo {
     width: 9.8rem;
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
 .text-link {
-    padding-top: 10px; 
+    padding-top: 10px;
 }
 
 /* Main Section */
@@ -55,16 +55,16 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: [margin-left-start] 
-                            5.333333333% 
-                            [margin-left-end] 
+    grid-template-columns: [margin-left-start]
+                            5.333333333%
+                            [margin-left-end]
                             1fr
-                            [center-left]  
+                            [center-left]
                             1fr
                             [center-right]
                             1fr
-                            [margin-right-start] 
-                            5.333333333% 
+                            [margin-right-start]
+                            5.333333333%
                             [margin-right-end];
     grid-column-gap: 2.666666666%;
 }
@@ -85,10 +85,10 @@ main {
 
 /* Home Page */
 .home-hero {
-    grid-template-rows: [heading] 
+    grid-template-rows: [heading]
                         auto
                         2rem
-                        [paragraph-1] 
+                        [paragraph-1]
                         auto
                         1rem
                         [container-1]
@@ -100,6 +100,7 @@ main {
 }
 
 /* Bio Page */
+
 
     /* Romi ToDo */
 
