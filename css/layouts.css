@@ -21,7 +21,7 @@ body {
 .top-nav {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    /* align-items: center; */
     padding: 0 10px 0 10px;
 }
 
@@ -49,10 +49,98 @@ main {
 
 
 
-/* Section layout */
+/* !! ---------- HORIZONTAL LAYOUT ---------- !! */
+
+/* Grid */
 
 .grid {
     display: grid;
-    grid-auto-columns: -5.333333333% repeat(3, 1fr) -5.333333333%;
+    grid-template-columns: [margin-left-start] 
+                            5.333333333% 
+                            [margin-left-end] 
+                            1fr
+                            [center-left]  
+                            1fr
+                            [center-right]
+                            1fr
+                            [margin-right-start] 
+                            5.333333333% 
+                            [margin-right-end];
     grid-column-gap: 2.666666666%;
 }
+
+.stndard-width {
+    grid-column: margin-left-end / margin-right-start;
+}
+
+.full-width {
+    grid-column: margin-left-start / margin-right-end;
+}
+
+.right-side-centered {
+
+}
+
+/* !! ---------- VERTICAL LAYOUT ---------- !! */
+
+.home-hero {
+    grid-template-rows: [heading] 
+                        auto
+                        2rem
+                        [paragraph-1] 
+                        auto
+                        1rem
+                        [container]
+                        auto;
+}
+
+.home-project {
+
+}
+
+/* STANDARD VERTICAL OBJECTS */
+
+.heading {
+    grid-row: heading;
+}
+
+.sub-heading-1 {
+    grid-row: sub-heading-1;
+}
+.paragrph-1 {
+    grid-row: paragraph-1;
+}
+
+.square-container {
+    position: relative;
+    width: calc(100vw - 16%);
+    height: calc(100vw - 16%);
+    grid-row: container;
+}
+
+
+/* ABSOLUTE POSITIONED OBJECTS */
+
+/* Hero */
+
+.lily {
+    position: absolute;
+    left: 0%;
+    right: 24.83%;
+    top: 15.91%;
+    bottom: 0%;
+}
+
+.ellipse {
+    position: absolute;
+    left: 33.968253968%;
+    top: 5.396825396%;
+    right: 4.444444444%;
+    bottom: 33.968253968%;
+
+    background: #C0E2CA;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+/*  */

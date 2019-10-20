@@ -4,6 +4,8 @@
   <head>
     <meta charset="utf-8">
     <title>Romi Wilson portfolio</title>
+    
+    <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layouts.css">
 
@@ -11,14 +13,16 @@
     <link rel="stylesheet" href="https://use.typekit.net/dpp5etq.css">
     
   </head>
+
   <body>
-  <header class="top-header">
-    <nav class="top-nav">
-        <img src="icons/logo.svg" alt="logo" class="logo">
-        <a href="#"><img src="icons/romiwilson.svg" alt="logo" class="wide-logo"></a>
-        <a href="#">work</a>
-    </nav>
-  </header>
+    <header class="top-header">
+      <nav class="top-nav">
+          <img src="icons/logo.svg" alt="logo" class="logo">
+          <a href="#"><img src="icons/romiwilson.svg" alt="logo" class="wide-logo"></a>
+          <a href="#">work</a>
+      </nav>
+    </header>
+
   <!--mobile hidden-->
   <!-- <aside class="">
     <nav>
@@ -30,82 +34,85 @@
     </nav>
   </aside> -->
 
-
     <main>
 <!-- HERO-->
-      <section>
-        <h1 class="main-mobile">romi wilson</h1>
-        <p class="body-1">Hi! I am a product designer located in Brooklyn! I create a delightful user experience by merging strategy with an excellent design.</p>
-        <img src="/images/hero1x.png" alt="hero image">
-        <img src="/images/ellipse.svg" alt="">
+      <section class="grid">
+        <h1 class="main-mobile full-width heading">romi wilson</h1>
+        <p class="body-1 full-width paragraph-1">Hi! I am a product designer located in Brooklyn! I create a delightful user experience by merging strategy with an excellent design.</p>
+        <div class="standard-width-container full-width square-container">  
+          <div class="ellipse"></div>
+          <img class="lily" src="images/hero1x.png" alt="hero image">
+          <!-- <img class="ellipse" src="images/ellipse.svg" alt="">  -->
+        </div>  
       </section>
+
 <!-- LATEST WORK-->
-        <section>
-          <h2 class="serif-mobile">latest work</h2>
-  <!-- PROJECT #1-->
-          <section>
-            <h3 class="geometric-title">CO LAB</h3>
-            <p>Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
-            <img src="/images/colabphone.svg" alt="image of phone">
-            <img src="/images/colablaptop.svg" alt="image of computer">
-            <h4 class="small-title">ROLE</h4>
-            <ul>
-              <li>research</li>
-              <li>ux design</li>
-              <li>Prototyping</li>
-              <li>ui design</li>
-            </ul>
-            <button type="button" name="button">see work</button>
-          </section>
-  <!-- PROJECT #2-->
-          <section>
-            <h3 class="geometric-title">FLO</h3>
-            <p>Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
-            <img src="/images/tablet.svg" alt="image of phone">
-            <img src="/images/desktop.svg" alt="image of computer">
-            <h4 class="small-title">ROLE</h4>
-            <ul>
-              <li>research</li>
-              <li>ux design</li>
-              <li>Prototyping</li>
-              <li>ui design</li>
-            </ul>
-            <button type="button" name="button">see work</button>
-          </section>
-  <!-- PROJECT #3-->
-          <section>
-            <h3 class="geometric-title">PEAS IN HEART</h3>
-            <p>Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
-            <img src="/images/phone.svg" alt="image of phone">
-            <img src="/images/laptop.svg" alt="image of computer">
-            <h4 class="small-title">ROLE</h4>
-            <ul>
-              <li>research</li>
-              <li>ux design</li>
-              <li>Prototyping</li>
-              <li>ui design</li>
-            </ul>
-            <button type="button" name="button">see work</button>
-          </section>
+      <section class="grid">
+        <h2 class="serif-mobile full-width">latest work</h2>
+<!-- PROJECT #1-->
+        <section class="grid">
+          <h3 class="geometric-title full-width">CO LAB</h3>
+          <p class="full-width">Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
+          <img class="full-width" src="images/colabphone.svg" alt="image of phone">
+          <img class="full-width" src="images/colablaptop.svg" alt="image of computer">
+          <h4 class="small-title full-width">ROLE</h4>
+          <ul class="full-width">
+            <li>research</li>
+            <li>ux design</li>
+            <li>Prototyping</li>
+            <li>ui design</li>
+          </ul>
+          <button type="button" name="button">see work</button>
+        </section>
+<!-- PROJECT #2-->
+        <section class="grid">
+          <h3 class="geometric-title full-width">FLO</h3>
+          <p class="full-width">Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
+          <img class="full-width" src="images/tablet.svg" alt="image of phone">
+          <img class="full-width" src="images/desktop.svg" alt="image of computer">
+          <h4 class="small-title full-width">ROLE</h4>
+          <ul class="full-width">
+            <li>research</li>
+            <li>ux design</li>
+            <li>Prototyping</li>
+            <li>ui design</li>
+          </ul>
+          <button type="button" name="button" class="full-width">see work</button>
+        </section>
+<!-- PROJECT #3-->
+        <section class="grid">
+          <h3 class="geometric-title full-width">PEAS IN HEART</h3>
+          <p class="full-width">Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
+          <img class="full-width" src="images/phone.svg" alt="image of phone">
+          <img class="full-width" src="images/laptop.svg" alt="image of computer">
+          <h4 class="small-title full-width">ROLE</h4>
+          <ul class="full-width">
+            <li>research</li>
+            <li>ux design</li>
+            <li>Prototyping</li>
+            <li>ui design</li>
+          </ul>
+          <button type="button" name="button" class="full-width">see work</button>
+        </section>
       </section>
 <!-- OUTLOOK -->
-      <section>
-        <h2 class="serif-mobile">I am looking for ...</h2>
-        <p>I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
-        <button type="button" name="button">meet romi</button>
+      <section class="grid">
+        <h2 class="serif-mobile full-width">I am looking for ...</h2>
+        <p class="full-width">I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
+        <button type="button" name="button" class="full-width">meet romi</button>
       </section>
 <!-- CONTACT -->
-      <section>
-        <h2 class="serif-mobile">contact</h2>
-        <figure>
-          <img src="/icons/envelope.svg" alt="envelope">
+      <section class="grid">
+        <h2 class="serif-mobile full-width">contact</h2>
+        <figure class="full-width">
+          <img src="icons/envelope.svg" alt="envelope">
           <figcaption>romi.m.wilson@gmail.com</figcaption>
         </figure>
-        <figure>
-          <img src="/icons/download.svg" alt="PDF">
+        <figure class="full-width">
+          <img src="icons/download.svg" alt="PDF">
           <figcaption>resume</figcaption>
         </figure>
-        <figure>
+        <figure class="full-width">
         <i>linkedin</i>
         </figure>
       </section>
@@ -118,15 +125,15 @@
     <!--mobile footer-->
     <footer class="">
       <h2 class="serif-mobile">contact</h2>
-      <figure>
+      <figure class="full-width">
         <img src="icons/envelope.svg" alt="envelope">
         <figcaption>romi.m.wilson@gmail.com</figcaption>
       </figure>
-      <figure>
+      <figure class="full-width">
         <img src="icons/download.svg" alt="PDF">
         <figcaption>resume</figcaption>
       </figure>
-      <figure>
+      <figure class="full-width">
       <i>linkedin</i>
       </figure>
     </footer>
