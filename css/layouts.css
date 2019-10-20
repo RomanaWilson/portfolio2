@@ -91,7 +91,7 @@ main {
                         [paragraph-1] 
                         auto
                         1rem
-                        [container]
+                        [container-1]
                         auto;
 }
 
@@ -112,19 +112,43 @@ main {
 .sub-heading-1 {
     grid-row: sub-heading-1;
 }
-.paragrph-1 {
+
+.sub-heading-2 {
+    grid-row: sub-heading-2;
+}
+
+.sub-heading-3 {
+    grid-row: sub-heading-3;
+}
+
+.paragraph-1 {
     grid-row: paragraph-1;
 }
+
+.paragraph-2 {
+    grid-row: paragraph-2;
+}
+
+.container-1 {
+    grid-row: container-1;
+}
+
+.container-2 {
+    grid-row: container-2;
+}
+
+.list-1 {
+    grid-row: list-1;
+}
+
+
+/* ABSOLUTE POSITIONED OBJECTS */
 
 .square-container {
     position: relative;
     width: calc(100vw - 16%);
     height: calc(100vw - 16%);
-    grid-row: container;
 }
-
-
-/* ABSOLUTE POSITIONED OBJECTS */
 
 /* Hero */
 
