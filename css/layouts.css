@@ -14,8 +14,7 @@ body {
     position: fixed;
     top: 0;
     height: 4rem;
-    border-bottom: .1px solid black;
-
+    border-bottom: 1px solid rgb(125, 125, 125, .6);
 }
 
 .top-nav {
@@ -46,10 +45,28 @@ main {
 }
 
 /* Mobile Footer */
-
+    
+    /* TODO */
 
 
 /* !! ---------- HORIZONTAL LAYOUT ---------- !! */
+
+/* Lines */
+
+.vert-line {
+    border-left: 1px solid rgb(125, 125, 125, .3);
+    height: 100%;
+}
+
+.line1 {
+    position: fixed;
+    left: 8%;
+}
+
+.line2 {
+    position: fixed;
+    right: 36.8%;
+}
 
 /* Grid */
 
@@ -57,39 +74,20 @@ main {
     display: grid;
 }
 
-/* ********************************************* */
-
 /* Master Grid */
 
 .master-grid {
 
-    grid-template-columns: 
-    5.333333333%
-    [line1]
-    1fr
-    [line2]
-    36.8%
+    grid-template-columns: 1fr;
 
 }
-
-/* Master Grid Objects */
-
-.line1 {
-    grid-column-start: line1;
-}
-
-.line2 {
-    grid-column-start: line2;
-}
-
-/* ********************************************* */
 
 /* Sub Grid */
 
 .sub-grid {
     
     /* Positioning in Master */
-    grid-column: margin-left-start / margin-right-end;
+    grid-column: 1 / -1;
 
     /* Sub-Grid Definition */
     grid-template-columns: [margin-left-start]
@@ -107,7 +105,7 @@ main {
 
 }
 
-/* Subgrid Horizontal Objects */
+/* Subgrid Horizontal Positioning */
 
 .standard-width {
     grid-column: margin-left-end / margin-right-start;
@@ -121,20 +119,21 @@ main {
 
 }
 
-/* !! ---------- VERTICAL LAYOUT ---------- !! */
+
+
+/* !! ----------- VERTICAL LAYOUT ----------- !! */
+
+/* Master */
 
 .master-grid {
     grid-auto-rows: auto;
     grid-row-gap: 50px;
 }
 
-.sub-grid {
-    /* Variable */  
-}
-
-/* ********************************************* */
+/*  SUB-GRID VERTICAL LAYOUTS */
 
 /* Home Page */
+
 .home-hero {
     grid-template-rows: [heading]
                         auto
@@ -143,7 +142,7 @@ main {
                         auto
                         1rem
                         [container-1]
-                        auto;
+                        84vw;
 }
 
 .home-project-board {
@@ -158,14 +157,15 @@ main {
                         [paragraph-1]
                         auto
                         2rem
-                        [container-1]
+                        [container-2]
                         auto
                         [sub-heading-1]
                         auto
-                        [list-1]
-                        auto
+                        [project-roles-start]
+                        5.2rem
                         [button]
-                        auto;
+                        auto
+                        [project-roles-end];
 }
 
 .home-outlook {
@@ -209,6 +209,8 @@ main {
                         3rem; /*lastone must be always 3rem*/
 }
 
+/* Work Page */
+
 .work {
   grid-template-rows: [heading]
                       auto
@@ -225,6 +227,8 @@ main {
 
 }
 
+/* Global Footer */
+
 .footer-mobile {
     grid-template-rows: [heading]
                         auto
@@ -239,7 +243,10 @@ main {
                         auto
                         3rem; /*lastone must be always 3rem*/
 }
-/* STANDARD VERTICAL OBJECTS */
+
+/* VERTICAL POSITIONING */
+
+/* Standard Layouts */
 
 .heading {
     grid-row: heading;
@@ -285,25 +292,59 @@ main {
     grid-row: button;
 }
 
+/* Special Positioning */
 
-
-
-/* ABSOLUTE POSITIONED OBJECTS */
-
-.square-container {
-    position: relative;
-    width: calc(100vw - 16%);
-    height: calc(100vw - 16%);
+.project-roles {
+    grid-row-start: project-roles-start;
 }
 
-/* Hero */
+.see-work-button {
+    justify-self: end;
+    margin-right: calc(36.8% - 45px);
+}
+
+.phone {
+    width: 28vw;
+    justify-self: center;
+}
+
+.laptop {
+    width: 80vw;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.desktop {
+    width: 80vw;
+    justify-self: center;
+}
+
+.work-circle {
+    height: 11.8rem;
+    width: 11.8rem;
+}
+
+
+/* CONTAINERS & ABSOLUTE POSITIONED OBJECTS */
+
+/* Containers */
+
+.rel-container {
+    position: relative;
+}
+
+
+/* Hero Absolute-Pos Objects*/
 
 .lily {
     position: absolute;
-    left: 0%;
-    right: 24.83%;
-    top: 15.91%;
-    bottom: 0%;
+    left: 2.222222222%;
+    right: 27.619047619%;
+    top: 18.73015873%;
+    bottom: 10.793650793%;
+
+    background: url(../images/hero1x.png) no-repeat;
+    background-size: contain;
 }
 
 .ellipse {
@@ -318,4 +359,4 @@ main {
     border-radius: 50%;
 }
 
-/*  */
+

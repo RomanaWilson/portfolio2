@@ -158,3 +158,23 @@ html {
   /* text-decoration: none; */
   cursor: pointer;
 }
+
+/* Shapes */
+
+.circle {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #4f4f4f;
+  border-radius: 50%;
+  align-items: center;
+  padding-bottom: 5px;
+
+}
+
+/* Backgrounds */
+
+.opaque {
+  background-color: white;
+  z-index: 900;
+}
