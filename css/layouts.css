@@ -140,9 +140,63 @@ main {
 
 /* Bio Page */
 
+.bio {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [sub-heading-1]
+                        auto
+                        2rem
+                        [sub-heading-2]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        5rem
+                        [container-1]
+                        auto
+                        5rem
+                        [sub-heading-3]
+                        auto
+                        2rem
+                        [paragraph-2]
+                        auto
+                        5rem
+                        [container-2]
+                        auto
+                        3rem; /*lastone must be always 3rem*/
+}
 
-    /* Romi ToDo */
+.work {
+  grid-template-rows: [heading]
+                      auto
+                      2rem
+                      [container-1]
+                      auto
+                      5rem
+                      [container-2]
+                      auto
+                      5rem
+                      [container-3]
+                      auto
+                      3rem; /*lastone must be always 3rem*/
 
+}
+
+.footer-mobile {
+    grid-template-rows: [heading]
+                        auto
+                        3rem
+                        [container-1]
+                        auto
+                        3rem
+                        [container-2]
+                        auto
+                        3rem
+                        [container-3]
+                        auto
+                        3rem; /*lastone must be always 3rem*/
+}
 /* STANDARD VERTICAL OBJECTS */
 
 .heading {
@@ -177,6 +231,10 @@ main {
     grid-row: container-2;
 }
 
+.container-3 {
+    grid-row: container-3;
+}
+
 .list-1 {
     grid-row: list-1;
 }
@@ -184,6 +242,8 @@ main {
 .button {
     grid-row: button;
 }
+
+
 
 
 /* ABSOLUTE POSITIONED OBJECTS */
