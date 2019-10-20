@@ -55,19 +55,59 @@ main {
 
 .grid {
     display: grid;
-    grid-template-columns: [margin-left-start]
-                            5.333333333%
-                            [margin-left-end]
-                            1fr
-                            [center-left]
-                            1fr
-                            [center-right]
-                            1fr
-                            [margin-right-start]
-                            5.333333333%
-                            [margin-right-end];
-    grid-column-gap: 2.666666666%;
 }
+
+/* ********************************************* */
+
+/* Master Grid */
+
+.master-grid {
+
+    grid-template-columns: 
+    5.333333333%
+    [line1]
+    1fr
+    [line2]
+    36.8%
+
+}
+
+/* Master Grid Objects */
+
+.line1 {
+    grid-column-start: line1;
+}
+
+.line2 {
+    grid-column-start: line2;
+}
+
+/* ********************************************* */
+
+/* Sub Grid */
+
+.sub-grid {
+    
+    /* Positioning in Master */
+    grid-column: margin-left-start / margin-right-end;
+
+    /* Sub-Grid Definition */
+    grid-template-columns: [margin-left-start]
+    5.333333333%
+    [margin-left-end]
+    1fr
+    [center-left]
+    1fr
+    [center-right]
+    1fr
+    [margin-right-start]
+    5.333333333%
+    [margin-right-end];
+    grid-column-gap: 2.666666666%;
+
+}
+
+/* Subgrid Horizontal Objects */
 
 .standard-width {
     grid-column: margin-left-end / margin-right-start;
@@ -89,8 +129,10 @@ main {
 }
 
 .sub-grid {
-    grid-column: margin-left-start / margin-right-end;
+    /* Variable */  
 }
+
+/* ********************************************* */
 
 /* Home Page */
 .home-hero {
