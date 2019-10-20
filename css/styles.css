@@ -150,13 +150,12 @@ html{
 }
 
 .animated-button {
-  display: flex;
-  align-items: center;
-  background-image: url("images/ellipse.svg");
+
+  background: url("../images/ellipse.svg") no-repeat;
   border: none;
+  
   height: 69px;
   width: 69px;
-  text-decoration: none;
-  display: inline-block;
+  /* text-decoration: none; */
   cursor: pointer;
 }
