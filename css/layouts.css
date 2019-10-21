@@ -85,7 +85,7 @@ main {
 /* Sub Grid */
 
 .sub-grid {
-    
+
     /* Positioning in Master */
     grid-column: 1 / -1;
 
@@ -212,18 +212,18 @@ main {
 /* Work Page */
 
 .work {
-  grid-template-rows: [heading]
-                      auto
-                      2rem
-                      [container-1]
-                      auto
-                      5rem
-                      [container-2]
-                      auto
-                      5rem
-                      [container-3]
-                      auto
-                      3rem; /*lastone must be always 3rem*/
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [container-1]
+                        auto
+                        5rem
+                        [container-2]
+                        auto
+                        5rem
+                        [container-3]
+                        auto
+                        3rem; /*lastone must be always 3rem*/
 
 }
 
@@ -248,6 +248,193 @@ main {
 
 /* Standard Layouts */
 
+/* PROJECT PAGES */
+
+.colab-hero {
+    grid-template-rows: [heading]
+                        auto
+                        3rem
+                        [paragraph-1]
+                        auto
+                        10rem
+                        [container-1]
+                        auto
+                        10rem
+                        [container-2]
+                        auto
+                        5rem
+                        [button]
+                        auto;
+}
+
+.colab-overview {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        5rem
+                        [container-1]
+                        auto
+                        5rem
+                        [container-2]
+                        auto
+                        5rem
+                        [container-3]
+                        auto;
+}
+
+/* Resaerch Grids */
+
+.colab-research {
+    grid-template-rows: [heading]
+                        auto
+                        1rem
+                        [survey]
+                        auto
+                        [competitive-anal]
+                        auto
+                        [user-persona]
+                        auto
+                        [frustrations]
+                        auto
+                        [goals]
+                        auto
+                        [key-insights]
+                        auto;
+}
+
+  .survey {
+      grid-row: survey;
+      grid-template-rows: [sub-heading-1] /*survey*/
+                          auto
+                          1rem
+                          [container-1]
+                          auto
+                          5rem
+                          [container-2]
+                          auto
+                          5rem;
+  }
+  .competitive-anal {
+      grid-row: competitive-anal;
+      grid-template-rows:[sub-heading-2] /*competitive anal*/
+                          auto
+                          2rem
+                          [paragraph-1]
+                          auto
+                          5rem;
+    }
+    .user-persona {
+        grid-row: user-persona;
+        grid-template-rows:[sub-heading-3] /*user persona*/
+                          auto
+                          5rem
+                          [container-3]
+                          auto
+                          3rem
+                          [paragraph-2]
+                          auto
+                          3rem
+                          [sub-heading-4] /*frustrations*/
+                          auto
+                          1rem
+                          [list-1]
+                          auto
+                          2rem
+                          [sub-heading-5] /*goals*/
+                          auto
+                          1rem
+                          [list-2]
+                          auto
+                          7.5rem;
+                      }
+
+    .key-insights {
+        grid-row: key-insights;
+        grid-template-rows:[sub-heading-6] /*key insights*/
+                          auto
+                          1rem
+                          [list-3]
+                          auto;
+    }
+
+/* info-architecture */
+
+.info-architecture {
+    grid-template-rows:[heading]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        3rem
+                        [user-stories]
+                        auto
+                        [user-flows]
+                        auto;
+}
+    .user-stories {
+        grid-row: user-stories;
+        grid-template-rows: [sub-heading-1]
+                            auto
+                            1rem
+                            [paragraph-2]
+                            auto
+                            2rem
+                            [container-1]
+                            auto
+                            2rem
+                            [button]
+                            auto
+                            5rem;
+      }
+
+      .user-flows {
+          grid-row: user-flows;
+          grid-template-rows: [sub-heading-2]
+                              auto
+                              1rem
+                              [paragraph-3]
+                              auto
+                              3rem
+                              [container-2]
+                              auto
+                              5rem
+                              [container-3]
+                              auto
+                              5rem
+                              [button-2]
+                              auto;
+        }
+
+    .prototype {
+        grid-template-rows:[heading]
+                            auto
+                            2rem
+                            [sub-heading-1]
+                            auto
+                            3rem
+                            [container-1]
+                            auto
+                            5rem
+                            [sub-heading-2]
+                            auto
+                            3rem
+                            [container-2]
+                            auto;
+        }
+
+
+
+
+
+
+
+
+
+
+/* STANDARD VERTICAL OBJECTS */
+
 .heading {
     grid-row: heading;
 }
@@ -262,6 +449,18 @@ main {
 
 .sub-heading-3 {
     grid-row: sub-heading-3;
+}
+
+.sub-heading-4 {
+    grid-row: sub-heading-4;
+}
+
+.sub-heading-5 {
+    grid-row: sub-heading-5;
+}
+
+.sub-heading-6 {
+    grid-row: sub-heading-6;
 }
 
 .paragraph-1 {
@@ -288,7 +487,19 @@ main {
     grid-row: list-1;
 }
 
+.list-2 {
+    grid-row: list-2;
+}
+
+.list-3 {
+    grid-row: list-3;
+}
+
 .button {
+    grid-row: button;
+}
+
+.button-2 {
     grid-row: button;
 }
 
@@ -323,6 +534,7 @@ main {
     height: 11.8rem;
     width: 11.8rem;
 }
+
 
 
 /* CONTAINERS & ABSOLUTE POSITIONED OBJECTS */
