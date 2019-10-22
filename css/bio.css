@@ -1,0 +1,30 @@
+/*  SUB-GRID VERTICAL LAYOUTS */
+
+/* Bio Page */
+
+.bio {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [sub-heading-1]
+                        auto
+                        2rem
+                        [sub-heading-2]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        5rem
+                        [container-1]
+                        auto
+                        5rem
+                        [sub-heading-3]
+                        auto
+                        2rem
+                        [paragraph-2]
+                        auto
+                        5rem
+                        [container-2]
+                        auto
+                        3rem; /*lastone must be always 3rem*/
+}
