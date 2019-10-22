@@ -119,15 +119,13 @@ main {
 
 }
 
-
-
 /* !! ----------- VERTICAL LAYOUT ----------- !! */
 
 /* Master */
 
 .master-grid {
     grid-auto-rows: auto;
-    grid-row-gap: 50px;
+    grid-row-gap: 5rem;
 }
 
 /*  SUB-GRID VERTICAL LAYOUTS */
@@ -143,11 +141,22 @@ main {
                         1rem
                         [container-1]
                         84vw;
+
+                        margin-bottom: calc(-5rem - 21.066666666vw);
 }
+
 
 .home-project-board {
     grid-auto-rows: auto;
     grid-row-gap: 50px;
+}
+
+.work-circle {
+    height: 11.8rem;
+    width: 11.8rem;
+    justify-self: end;
+    margin-bottom: calc(-5rem - 3vw);
+    margin-right: calc(36.8% - 5.9rem);
 }
 
 .home-project {
@@ -425,14 +434,6 @@ main {
         }
 
 
-
-
-
-
-
-
-
-
 /* STANDARD VERTICAL OBJECTS */
 
 .heading {
@@ -495,7 +496,7 @@ main {
     grid-row: list-3;
 }
 
-.button {
+.button-1 {
     grid-row: button;
 }
 
@@ -509,9 +510,14 @@ main {
     grid-row-start: project-roles-start;
 }
 
-.see-work-button {
+.see-work-button-outer {
     justify-self: end;
     margin-right: calc(36.8% - 45px);
+}
+
+.csee-work-button-inner {
+    height: 90px;
+    width: 90px;
 }
 
 .phone {
@@ -530,10 +536,7 @@ main {
     justify-self: center;
 }
 
-.work-circle {
-    height: 11.8rem;
-    width: 11.8rem;
-}
+
 
 
 
