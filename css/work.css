@@ -1,0 +1,20 @@
+/*  SUB-GRID VERTICAL LAYOUTS */
+
+
+/* Work Page */
+
+.work {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [container-1]
+                        auto
+                        5rem
+                        [container-2]
+                        auto
+                        5rem
+                        [container-3]
+                        auto
+                        3rem; /*lastone must be always 3rem*/
+
+}

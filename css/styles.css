@@ -130,26 +130,20 @@ html {
   letter-spacing: .1em;
   list-style: none;
 }
+
 .linkedin {
   background-image: url("icons/linkedin.svg");
 }
 
-.circle-button {
-  background: rgb(192, 226, 202, .5);
-  border: none;
-  height: 90px;
-  width: 90px;
-  border-radius: 50%;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  cursor: pointer;
-  padding-bottom: 5px;
+/* buttons */
 
+button {
+  text-decoration: none;
+  cursor: pointer;
+  padding-bottom: .5rem;
 }
 
 .animated-button {
-
   background: url("../images/button.svg") no-repeat;
   border: none;
   text-align: left;
@@ -165,11 +159,13 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: 1px solid #4f4f4f;
+  text-align: center;
   border-radius: 50%;
-  align-items: center;
-  padding-bottom: 5px;
+  border: 1px solid rgb(125,125,125,.8);
+}
 
+.circle-text {
+  padding-bottom: .5rem;
 }
 
 /* Backgrounds */
@@ -177,4 +173,13 @@ html {
 .opaque {
   background-color: white;
   z-index: 900;
+}
+
+.almost-opaque {
+  background-color: white;
+  z-index: 901;
+}
+
+.cosmic-latte {
+  background: rgb(192, 226, 202, .5);
 }
