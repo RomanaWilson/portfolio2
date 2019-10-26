@@ -53,7 +53,7 @@ a {
   font-size: 2.5rem;
   line-height: 3rem;
   letter-spacing: .1em;
-  
+
 }
 
 .thin-title {
@@ -149,9 +149,12 @@ a {
 .cosmic-latte {
   background: rgb(192, 226, 202, .5);
 }
+<<<<<<< HEAD
 
 /* Borders */
 
 .thin-grey-border {
   border: 1px solid rgb(125,125,125,.6);
 }
+=======
+>>>>>>> c2ed7e14f5252c6990d6739927d24462d4f407fb
