@@ -28,3 +28,7 @@
                         auto
                         3rem; /*lastone must be always 3rem*/
 }
+
+.cir-photo {
+    margin-right: calc(36.8% - 5.9rem);
+}

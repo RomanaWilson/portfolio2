@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/index.css">
 
     <!--fonts-->
     <link rel="stylesheet" href="https://use.typekit.net/dpp5etq.css">
@@ -23,11 +24,11 @@
     <div class="vert-line line1"></div>
     <div class="vert-line line2"></div>
 
-    <header class="top-header opaque">
+    <header class="top-header almost-opaque gray-border ">
       <nav class="top-nav">
           <img src="icons/logoblack.svg" alt="logo" class="logo">
           <a href="#"><img src="icons/romiwilson.svg" alt="logo" class="wide-logo"></a>
-          <a class="menu-style" href="#">work</a>
+          <a class="menu-style text-link" href="#">work</a>
       </nav>
     </header>
   <!--mobile hidden-->
@@ -72,9 +73,10 @@
             <li>Prototyping</li>
             <li>ui design</li>
           </ul>
-          <div class="full-width see-work-button-outer button-1 opaque">
-              <button class="serif-small see-work-button-inner cosmic-latte"  type="button" name="button">see work</button>
-          </div>        </section>
+          <div class="see-work-button-outer full-width button-1 opaque">
+              <a class="serif-small see-work-button-inner">see work</a>
+          </div>          
+        </section>
 <!-- PROJECT #2-->
       <section class="grid sub-grid home-project">
           <h3 class="geometric-title standard-width heading">FLO</h3>
@@ -88,9 +90,10 @@
             <li>Prototyping</li>
             <li>ui design</li>
           </ul>
-          <div class="full-width see-work-button-outer button-1 opaque">
-              <button class="serif-small see-work-button-inner cosmic-latte"  type="button" name="button">see work</button>
-          </div>        </section>
+          <div class="see-work-button-outer full-width button-1 opaque">
+              <a class="serif-small see-work-button-inner">see work</a>
+          </div>        
+        </section>
 
 <!-- PROJECT #3-->
         <section class="grid sub-grid home-project">
@@ -105,9 +108,9 @@
             <li>Prototyping</li>
             <li>ui design</li>
           </ul>
-          <div class="full-width ssee-work-button-outer button-1 opaque">
-              <button class="serif-small circle-button cosmic-latte "  type="button" name="button">see work</button>
-          </div>
+          <div class="see-work-button-outer full-width button-1 opaque">
+              <a class="serif-small see-work-button-inner">see work</a>
+          </div>  
         </section>
       </section>
 
@@ -115,46 +118,39 @@
     <section class="grid sub-grid home-outlook">
       <h2 class="serif-mobile standard-width heading">I am looking for ...</h2>
       <p class="body-2 standard-width paragraph-1">I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
-      <button class="serif-small animated-button standard-width button" type="button-1" name="button">meet romi →</button>
+      <a class="serif-small animated-button standard-width button-1">meet romi →</a>
     </section>
-<!--mobile hidden-->
-<!-- CONTACT -->
-      <!-- <section>
-        <h2 class="serif-mobile">contact</h2>
-        <figure>
-          <img src="icons/envelope.svg" alt="envelope">
-          <figcaption>romi.m.wilson@gmail.com</figcaption>
-        </figure>
-        <figure>
-          <img src="icons/download.svg" alt="PDF">
-          <figcaption class="serif-small">resume</figcaption>
-        </figure>
-        <figure>
-        <i class="fab fa-linkedin-in"></i>
-        </figure>
-      </section>
-    </main> -->
-
-    <!--mobile hidden-->
-    <!-- <footer class="">
-      <p>© designed by Romi. Coded by Romi&Beef</p>
-    </footer> -->
 
     <!--mobile footer-->
-    <!-- <footer class="grid">
-      <h2 class="menu-style">contact</h2>
-      <figure>
-        <img src="icons/envelope.svg" alt="envelope">
-        <figcaption class="body-2">romi.m.wilson@gmail.com</figcaption>
-      </figure>
-      <figure class="full-width">
-        <img src="icons/download.svg" alt="PDF">
-        <figcaption>resume</figcaption>
-      </figure>
-      <figure>
-      <i class="fab fa-linkedin-in"></i>
-      </figure>
-    </footer> -->
+    <footer id="bottommenu" class="grid sub-grid footer-mobile almost-opaque">
+      <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
+          <img src="images/rectangle.svg" alt="rectangle">
+          <h2 class="menu-style">contact</h2>
+      </div>
+      <a class=" body-2 standard-width container-1"><i class="linkedin"></i>connect</a>
+      <a class="body-2 standard-width container-2"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
+      <a class="serif-small standard-width container-3"><i class="resume"></i>resume</a>
+    </footer>
 
   </body>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+    
+    bottommenu_content_height = "34rem";
+    
+    $(function() {
+
+      // bottom menu animation
+      $('#bottommenu_toggle').click(
+        function(){
+          if ($('#bottommenu').get(0).style.marginBottom == bottommenu_content_height) {
+            $('#bottommenu').stop().animate({'marginBottom':'0px'}, 300);
+          } else {
+            $('#bottommenu').stop().animate({'marginBottom':bottommenu_content_height}, 500);
+          }
+        }
+      );
+    });
+  </script>
 </html>

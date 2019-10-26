@@ -18,7 +18,7 @@
 
 .home-project-board {
     grid-auto-rows: auto;
-    grid-row-gap: 50px;
+    grid-row-gap: 75px;
 }
 
 .work-circle {
@@ -56,7 +56,9 @@
                         3rem
                         [button]
                         auto
-                        3rem;
+                        3rem
+                        [footer]
+                        4.5rem;
 }
 
 /* Special Positioning */
@@ -73,6 +75,11 @@
 .see-work-button-inner {
     height: 90px;
     width: 90px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(192, 226, 202, .5);
 }
 
 .phone {
