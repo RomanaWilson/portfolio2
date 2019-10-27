@@ -131,7 +131,7 @@ body {
 .right-side-centered {
 
 }
-  
+
 /* Subgrid Vetical Positioning Objects*/
 
 .heading {
@@ -214,6 +214,10 @@ body {
     grid-row: photo-start / photo-end;
 }
 
+.background {
+    grid-row: background-start / background-end;
+}
+
 /* Containers */
 
 .rel-container {
@@ -270,11 +274,11 @@ body {
                         [container-3]
                         6.4rem
                         3rem; /*last one must be always 3rem*/
-                        
+
                         position: fixed;
                         bottom: -34rem;
                         width: 100%;
-                        
+
                         justify-items: center;
                         text-align: center;
 }
@@ -316,7 +320,3 @@ body {
     margin-left: calc(50% - 1.9rem);
     background: url("../icons/download.svg") no-repeat;
   }
-
-
-
-
