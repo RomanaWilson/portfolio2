@@ -40,9 +40,9 @@ body {
 
 /* Main Section */
 
-/* main {
+main {
     padding-top: 6rem;
-} */
+}
 
 /* Mobile Footer */
 
@@ -114,6 +114,7 @@ body {
     [margin-right-start]
     5.333333333%
     [margin-right-end];
+
     grid-column-gap: 2.666666666%;
 
 }
@@ -130,6 +131,10 @@ body {
 
 .right-side-centered {
 
+}
+
+.justify-center {
+    justify-self: center;
 }
 
 /* Subgrid Vetical Positioning Objects*/
@@ -210,8 +215,8 @@ body {
     grid-row: background-start / background-end;
 }
 
-.photo {
-    grid-row: photo-start / photo-end;
+.photo-1 {
+    grid-row: photo-1-start / photo-1-end;
 }
 
 .background {
@@ -225,15 +230,15 @@ body {
 }
 
 .summary-box {
-    padding: 2rem 3.4rem; 
+    padding: 2rem 3.4rem 0 3.4rem; 
 }
 
-.summary-box div {
-    margin-bottom: 20px;
+.summary-box p {
+    margin-bottom: 2rem;
 }
 
-.summary-box h3, .summary-box p {
-    display: inline;
+.summary-box h3, .summary-box h4 {
+    margin-bottom: 1rem;
 }
 
 /* Shapes */

@@ -1,3 +1,10 @@
+main {
+    padding-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
 .animated-button {
     margin-left: 36.8%;
 }
@@ -20,22 +27,24 @@
                         [paragraph-1]
                         auto
                         10rem
-                        [photo-start]
-                        140px
+                        [photo-1-start]
+                        70px
                         [background-end]
                         auto
-                        [photo-end]
+                        [photo-1-end]
                         10rem
                         [container-1]
                         auto
                         5rem
                         [button-1]
                         auto;
+
+    /* height: 2.973333333333333vw; */
 }
 
 .hero-back {
     background: url(../images/shape3.svg) no-repeat;
-    background-size: 100% 100%;
+    background-size: cover;
 }
 
 .colab-overview {
@@ -57,14 +66,17 @@
 
 .mac1 {
     width: 87.4666666666667%;
+    padding-left: 5.3333333333333%
 }
 
 .mac2 {
-    
+    width: 92.8%;
+    padding-left: 2.4%;
 }
 
 .mac3 {
-
+    width: 82.6666666666667%;
+    padding-left: 7.4666666666667%;
 }
 
 .colab-overview figcaption {
@@ -97,13 +109,15 @@
           grid-template-rows: [sub-heading-1] /*survey*/
                               auto
                               1rem
-                              [container-1]
+                              [photo-1-start]
                               auto
+                              [photo-1-end]
                               5rem
                               [container-2]
                               auto
                               5rem;
       }
+
       .competitive-anal {
           grid-row: competitive-anal;
           grid-template-rows:[sub-heading-2] /*competitive anal*/
