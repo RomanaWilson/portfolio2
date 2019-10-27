@@ -1,0 +1,327 @@
+html {
+    width: 100%;
+}
+
+body {
+    width: 100%;
+    margin: 0;
+}
+
+/* Header */
+
+.top-header {
+    width: 100%;
+    position: fixed;
+    top: 0;
+    height: 4rem;
+    border-bottom: 1px solid rgb(125, 125, 125, .6);
+}
+
+.top-nav {
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    padding: 0 10px 0 10px;
+}
+
+.logo {
+    max-width: 1.5rem;
+    padding-top: 10px;
+}
+
+.wide-logo {
+    width: 9.8rem;
+    padding-top: 10px;
+}
+
+.text-link {
+    padding-top: 8px;
+}
+
+/* Main Section */
+
+main {
+    padding-top: 6rem;
+}
+
+/* Mobile Footer */
+
+    /* TODO */
+
+
+/* !! ---------- MAIN LAYOUT ---------- !! */
+
+/* Lines */
+
+.vert-line {
+    border-left: 1px solid rgb(125, 125, 125, .3);
+    height: 100%;
+}
+
+.line1 {
+    position: fixed;
+    left: calc(8% - 1px);
+}
+
+.line2 {
+    position: fixed;
+    right: 36.8%;
+}
+
+.linep1 {
+    position: fixed;
+    left: calc(36.8% - 1px);
+}
+
+.linep2 {
+    position: fixed;
+    right: 8%;
+}
+
+/* Grid */
+
+.grid {
+    display: grid;
+}
+
+/* Master Grid */
+
+.master-grid {
+
+    grid-template-columns: 1fr;
+
+    grid-auto-rows: auto;
+    grid-row-gap: 15rem;
+
+}
+
+/* Sub Grid */
+
+.sub-grid {
+
+    /* Positioning in Master */
+    grid-column: 1 / -1;
+
+    /* Sub-Grid Definition */
+    grid-template-columns: [margin-left-start]
+    5.333333333%
+    [margin-left-end]
+    1fr
+    [center-left]
+    1fr
+    [center-right]
+    1fr
+    [margin-right-start]
+    5.333333333%
+    [margin-right-end];
+
+    grid-column-gap: 2.666666666%;
+
+}
+
+/* Subgrid Horizontal Positioning */
+
+.standard-width {
+    grid-column: margin-left-end / margin-right-start;
+}
+
+.full-width {
+    grid-column: margin-left-start / margin-right-end;
+}
+
+.right-side-centered {
+
+}
+
+.justify-center {
+    justify-self: center;
+}
+
+/* Subgrid Vetical Positioning Objects*/
+
+.heading {
+    grid-row: heading;
+}
+
+.sub-heading-1 {
+    grid-row: sub-heading-1;
+}
+
+.sub-heading-2 {
+    grid-row: sub-heading-2;
+}
+
+.sub-heading-3 {
+    grid-row: sub-heading-3;
+}
+
+.sub-heading-4 {
+    grid-row: sub-heading-4;
+}
+
+.sub-heading-5 {
+    grid-row: sub-heading-5;
+}
+
+.sub-heading-6 {
+    grid-row: sub-heading-6;
+}
+
+.paragraph-1 {
+    grid-row: paragraph-1;
+}
+
+.paragraph-2 {
+    grid-row: paragraph-2;
+}
+
+.paragraph-3 {
+    grid-row: paragraph-3;
+}
+
+.container-1 {
+    grid-row: container-1;
+}
+
+.container-2 {
+    grid-row: container-2;
+}
+
+.container-3 {
+    grid-row: container-3;
+}
+
+.list-1 {
+    grid-row: list-1;
+}
+
+.list-2 {
+    grid-row: list-2;
+}
+
+.list-3 {
+    grid-row: list-3;
+}
+
+.button-1 {
+    grid-row: button-1;
+}
+
+.button-2 {
+    grid-row: button-2;
+}
+
+.background {
+    grid-row: background-start / background-end;
+}
+
+.photo-1 {
+    grid-row: photo-1-start / photo-1-end;
+}
+
+.background {
+    grid-row: background-start / background-end;
+}
+
+/* Containers */
+
+.rel-container {
+    position: relative;
+}
+
+.summary-box {
+    padding: 2rem 3.4rem 0 3.4rem; 
+}
+
+.summary-box p {
+    margin-bottom: 2rem;
+}
+
+.summary-box h3, .summary-box h4 {
+    margin-bottom: 1rem;
+}
+
+/* Shapes */
+
+.circle {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgb(125,125,125,.6);
+    background: white;
+}
+
+.circle-text {
+    padding-bottom: .5rem;
+}
+
+.animated-button {
+    background: url("../images/button.svg") no-repeat;
+    display: flex;
+    align-items: center;
+    height: 69px;
+    width: 217px;
+}
+
+/* ---- GLOBAL FOOTER ---- */
+
+.footer-mobile {
+    grid-template-rows: [heading]
+                        4.5rem
+                        3rem
+                        [container-1]
+                        6.1rem
+                        3rem
+                        [container-2]
+                        9.5rem
+                        3rem
+                        [container-3]
+                        6.4rem
+                        3rem; /*last one must be always 3rem*/
+
+                        position: fixed;
+                        bottom: -34rem;
+                        width: 100%;
+
+                        justify-items: center;
+                        text-align: center;
+}
+
+.contact-bar {
+    position: relative;
+    align-items: center;
+    justify-items: center;
+    text-align: center;
+    border-top: 1px solid rgb(125,125,125,.6);
+    border-bottom: 1px solid rgb(125,125,125,.6);
+    width: 100%;
+}
+
+.footer-mobile i {
+    position: relative;
+    display: block;
+    margin-bottom: 10px;
+    background-size: contain;
+}
+
+.linkedin {
+    width: 3.2rem;
+    height: 3.2rem;
+    margin-left: calc(50% - 1.6rem);
+    background: url("../icons/linkedin.svg") no-repeat;
+  }
+
+  .envelope {
+    width: 6.553rem;
+    height: 6.649rem;
+    margin-left: calc(50% - 3.2765rem);
+    background: url("../icons/envelope.svg") no-repeat;
+  }
+
+  .resume {
+    width: 3.8rem;
+    height: 3.5rem;
+    margin-left: calc(50% - 1.9rem);
+    background: url("../icons/download.svg") no-repeat;
+  }

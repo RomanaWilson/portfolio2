@@ -6,116 +6,154 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>Romi Wilson portfolio</title>
-  </head>
-  <body>
-  <header>
-    <img src="/icons/logo.svg" alt="logo">
-    <a href="#"><img src="/icons/romiwilson.svg" alt="logo"></a>
-    <a href="#">work</a>
-  </header>
 
-    <main>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/index.css">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/dpp5etq.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+
+  </head>
+
+<!--class order: class="STYLE  HORIZONTAL  VERTICAL"-->
+
+  <body>
+
+    <!--Lines-->
+    <div class="vert-line line1"></div>
+    <div class="vert-line line2"></div>
+
+    <header class="top-header almost-opaque gray-border ">
+      <nav class="top-nav">
+          <img src="icons/logoblack.svg" alt="logo" class="logo">
+          <a href="#"><img src="icons/romiwilson.svg" alt="logo" class="wide-logo"></a>
+          <a class="menu-style text-link" href="#">work</a>
+      </nav>
+    </header>
+  <!--mobile hidden-->
+  <!-- <aside class="">
+      <nav>
+        <ul>
+          <li><a href = "#">bio</a></li>
+          <li><a href = "#">work</a></li>
+          <li><a href = "#">contact</a></li>
+        </ul>
+      </nav>
+    </aside> -->
+
+    <main class="grid master-grid">
+
 <!-- HERO-->
-      <section>
-        <h1>romi wilson</h1>
-        <p>Hi! I am a product designer located in Brooklyn! I create a delightful user experience by merging strategy with an excellent design.</p>
-        <img src="/images/hero1x.png" alt="hero image">
-        <img src="/images/ellipse.svg" alt="">
+      <section class="grid sub-grid home-hero">
+        <h1 class="main-mobile standard-width heading">romi wilson</h1>
+        <p class="body-1 standard-width paragraph-1">Hi! I am a <strong>product designer</strong> located in <strong>Brooklyn</strong>! I create a delightful user experience by merging strategy with an excellent design.</p>
+        <div class="standard-width container-1 rel-container">
+          <div class="ellipse"></div>
+          <div class="lily"></div>
+        </div>
       </section>
+
 <!-- LATEST WORK-->
-        <section>
-          <h2>latest work</h2>
-  <!-- PROJECT #1-->
-          <section>
-            <h3>CO LAB</h3>
-            <p>Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
-            <img src="/images/colabphone.svg" alt="image of phone">
-            <img src="/images/colablaptop.svg" alt="image of computer">
-            <h4>ROLE</h4>
-            <ul>
+      <section class="grid sub-grid home-project-board">
+        <div class="full-width work-circle circle opaque">
+            <h2 class="serif-mobile">work</h2>
+        </div>
+<!-- PROJECT CO LAB-->
+        <section class="grid sub-grid home-project">
+          <h3 class="geometric-title standard-width heading">CO LAB</h3>
+          <p class="body-2 standard-width paragraph-1">Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
+            <!-- <img class="standard-width container-1 rel-container cellphone" src="images/colabphone.svg" alt="image of phone"> -->
+            <img class="standard-width container-2 rel-container laptop" src="images/colablaptop.svg" alt="image of computer">
+          </div>
+          <h4 class="small-title standard-width sub-heading-1">ROLE</h4>
+          <ul class="thin-caption standard-width project-roles">
+            <li>research</li>
+            <li>UX design</li>
+            <li>Prototyping</li>
+            <li>UI design</li>
+          </ul>
+          <div class="see-work-button-outer full-width button-1 opaque">
+              <a class="serif-small see-work-button-inner">see work</a>
+          </div>
+        </section>
+
+<!-- PROJECT PEAS-->
+        <section class="grid sub-grid home-project">
+          <h3 class="geometric-title standard-width heading">PEAS IN HEART</h3>
+          <p class="body-2 standard-width paragraph-1">Peas in Heart is a design studio capturing Czech culture in illustration and helping firms and institutions produce hi-quality presents.</p>
+          <img class="standard-width container-2 rel-container laptop" src="images/peaslaptop.svg" alt="image of computer">
+          <!-- <img class="standard-width container-2 rel-container phone" src="images/phone.svg" alt="image of phone"> -->
+          <h4 class="small-title standard-width sub-heading-1">ROLE</h4>
+          <ul class="thin-caption standard-width project-roles">
+            <li>research</li>
+            <li>UX design</li>
+            <li>Prototyping</li>
+            <li>UI design</li>
+          </ul>
+          <div class="see-work-button-outer full-width button-1 opaque">
+              <a class="serif-small see-work-button-inner">see work</a>
+          </div>
+        </section>
+
+  <!-- PROJECT FLO-->
+        <section class="grid sub-grid home-project">
+            <h3 class="geometric-title standard-width heading">FLÕ</h3>
+            <p class="body-2 standard-width paragraph-1">FLÕ  is a OPS desktop application designed to create effective work flow for loans and mortgages. Case study comming soon.</p>
+            <!-- <img src="images/tablet.svg" alt="image of phone"> -->
+            <img class="standard-width container-2 rel-container desktop" src="images/desktop.svg" alt="image of computer">
+            <h4 class="small-title standard-width sub-heading-1">ROLE</h4>
+            <ul class="thin-caption standard-width project-roles">
               <li>research</li>
-              <li>ux design</li>
+              <li>UX design</li>
               <li>Prototyping</li>
-              <li>ui design</li>
+              <li>UI design</li>
             </ul>
-            <a href='#'>see work</a>
-          </section>
-  <!-- PROJECT #2-->
-          <section>
-            <h3>FLO</h3>
-            <p>Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
-            <img src="/images/tablet.svg" alt="image of phone">
-            <img src="/images/desktop.svg" alt="image of computer">
-            <h4>ROLE</h4>
-            <ul>
-              <li>research</li>
-              <li>ux design</li>
-              <li>Prototyping</li>
-              <li>ui design</li>
-            </ul>
-            <a href='#'>see work</a>
-          </section>
-  <!-- PROJECT #3-->
-          <section>
-            <h3>PEAS IN HEART</h3>
-            <p>Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
-            <img src="/images/phone.svg" alt="image of phone">
-            <img src="/images/laptop.svg" alt="image of computer">
-            <h4>ROLE</h4>
-            <ul>
-              <li>research</li>
-              <li>ux design</li>
-              <li>Prototyping</li>
-              <li>ui design</li>
-            </ul>
-            <a href='#'>see work</a>
+            <div class="see-work-button-outer full-width button-1 opaque">
+                <a class="serif-small see-work-button-inner">see work</a>
+            </div>
           </section>
       </section>
+
 <!-- OUTLOOK -->
-      <section>
-        <h2>I am looking for ...</h2>
-        <p>I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
-        <a href='#'>meet romi</a>
-      </section>
-<!-- CONTACT -->
-      <section>
-        <h2>contact</h2>
-        <figure>
-          <img src="/icons/envelope.svg" alt="envelope">
-          <figcaption>romi.m.wilson@gmail.com</figcaption>
-        </figure>
-        <figure>
-          <img src="/icons/download.svg" alt="PDF">
-          <figcaption>resume</figcaption>
-        </figure>
-        <figure>
-        <i>linkedin</i>
-        </figure>
+      <section class="grid sub-grid home-outlook">
+        <h2 class="serif-mobile standard-width heading">I am looking for ...</h2>
+        <p class="body-2 standard-width paragraph-1">I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
+        <a class="serif-small animated-button standard-width button-1">meet romi →</a>
       </section>
     </main>
-
-
     <!--mobile footer-->
-    <footer class="">
-      <h2>contact</h2>
-      <a href="#">
-        <figure>
-          <img src="icons/envelope.svg" alt="envelope">
-          <figcaption>romi.m.wilson@gmail.com</figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="icons/download.svg" alt="PDF">
-          <figcaption>resume</figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <i>linkedin</i>
-        </figure>
-     </a>
+    <footer id="bottommenu" class="grid sub-grid footer-mobile almost-opaque">
+      <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
+          <img src="images/rectangle.svg" alt="rectangle">
+          <h2 class="menu-style">contact</h2>
+      </div>
+      <a class=" body-2 standard-width container-1"><i class="linkedin"></i>connect</a>
+      <a class="body-2 standard-width container-2"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
+      <a class="serif-small standard-width container-3"><i class="resume"></i>resume</a>
     </footer>
 
   </body>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    bottommenu_content_height = "34rem";
+
+    $(function() {
+
+      // bottom menu animation
+      $('#bottommenu_toggle').click(
+        function(){
+          if ($('#bottommenu').get(0).style.marginBottom == bottommenu_content_height) {
+            $('#bottommenu').stop().animate({'marginBottom':'0px'}, 300);
+          } else {
+            $('#bottommenu').stop().animate({'marginBottom':bottommenu_content_height}, 500);
+          }
+        }
+      );
+    });
+  </script>
 </html>

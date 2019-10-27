@@ -1,0 +1,124 @@
+/*  SUB-GRID VERTICAL LAYOUTS */
+
+/* Home Page */
+
+.home-hero {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        1rem
+                        [container-1]
+                        84vw;
+
+                        margin-bottom: calc(-5rem - 21.066666666vw);
+}
+
+
+.home-project-board {
+    grid-auto-rows: auto;
+    grid-row-gap: 75px;
+}
+
+.work-circle {
+    height: 11.8rem;
+    width: 11.8rem;
+    justify-self: end;
+    margin-bottom: calc(-5rem - 3vw);
+    margin-right: calc(36.8% - 5.9rem);
+}
+
+.home-project {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        2rem
+                        [container-2]
+                        auto
+                        [sub-heading-1]
+                        auto
+                        [project-roles-start]
+                        5.2rem
+                        [button]
+                        auto
+                        [project-roles-end];
+}
+
+.home-outlook {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        3rem
+                        [button]
+                        auto
+                        3rem
+                        [footer]
+                        4.5rem;
+}
+
+/* Special Positioning */
+
+.project-roles {
+    grid-row-start: project-roles-start;
+}
+
+.see-work-button-outer {
+    justify-self: end;
+    margin-right: calc(36.8% - 45px);
+}
+
+.see-work-button-inner {
+    height: 90px;
+    width: 90px;
+    display: flex;  
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgb(192, 226, 202, .5);
+}
+
+.phone {
+    width: 28vw;
+    justify-self: center;
+}
+
+.laptop {
+    width: 80vw;
+    justify-self: center;
+    margin-bottom: 2rem;
+}
+
+.desktop {
+    width: 80vw;
+    justify-self: center;
+}
+
+/* Hero Absolute-Pos Objects*/
+
+.lily {
+    position: absolute;
+    left: 2.222222222%;
+    right: 27.619047619%;
+    top: 18.73015873%;
+    bottom: 10.793650793%;
+
+    background: url(../images/hero1x.png) no-repeat;
+    background-size: contain;
+}
+
+.ellipse {
+    position: absolute;
+    left: 33.968253968%;
+    top: 5.396825396%;
+    right: 4.444444444%;
+    bottom: 33.968253968%;
+
+    background: #C0E2CA;
+    opacity: 0.5;
+    border-radius: 50%;
+}

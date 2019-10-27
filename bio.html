@@ -6,49 +6,85 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
     <title>bio</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/bio.css">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/dpp5etq.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <header>
-      <img src="/icons/logo.svg" alt="logo">
-      <a href="#"><img src="/icons/romiwilson.svg" alt="logo"></a>
-      <a href="#">work</a>
-    </header>
-    <main>
-      <article class="">
-        <h1>romi wilson</h1>
-        <h2>The Czech Republic and my studio</h2>
-        <p>I am a creative designer who has touched a lot of mediums during my career. I studied applied arts with a focus in fashion design, photography, and concept. It was in this time of study I trained my aesthetics under the tutelage of  some of the greatest designers in the Czech Republic while attending the Academy of Art Architecture and Design in Prague. Along with my major I was always passionate about typography and loved working on digital projects. After finishing school, it was natural for me to continue my design path. After observing a gap in the market, I co-founded an illustration studio in the Czech Republic. We focus on institutions and help them to bring their unique stories to light and represent themselves with pride. We also run a small e-commerce site and sell products in about 30 stores in the country. </p>
-        <h2>In New York from fashion to UX</h2>
-        <p>After settling down in New York I started my career in fashion working for Oscar de la Renta and Ann Taylor, as well as working on the side for a fashion start up in Brooklyn. Inconspicuously my career was taking different direction. I was no longer designing clothes but pushing pixels on e-commerce websites. It was a soft transition with a great learning curve. I am improving my process and coding skills everyday.
-        </p>
-        <p>
+
+      <div class="vert-line line1"></div>
+      <div class="vert-line line2"></div>
+
+      <header class="top-header almost-opaque gray-border ">
+        <nav class="top-nav">
+            <img src="icons/logoblack.svg" alt="logo" class="logo">
+            <a href="#"><img src="icons/romiwilson.svg" alt="logo" class="wide-logo"></a>
+            <a class="menu-style text-link" href="#">work</a>
+        </nav>
+      </header>
+
+    <main class="grid master-grid">
+      <article class=" grid sub-grid bio">
+        <h1 class="main-mobile standard-width heading">romi wilson</h1>
+        <h2 class="circle cir-bio opaque serif-mobile full-width sub-heading-1">bio</h2>
+        <h3 class="geometric-title standard-width sub-heading-2">The Czech Republic and my studio</h3>
+        <p class="body-2 standard-width paragraph-1">I am a creative designer who has touched a lot of mediums during my career. I studied applied arts with a focus in fashion design, photography, and concept. It was in this time of study I trained my aesthetics under the tutelage of  some of the greatest designers in the Czech Republic while attending the Academy of Art Architecture and Design in Prague. Along with my major I was always passionate about typography and loved working on digital projects. After finishing school, it was natural for me to continue my design path. After observing a gap in the market, I co-founded an illustration studio in the Czech Republic. We focus on institutions and help them to bring their unique stories to light and represent themselves with pride. We also run a small e-commerce site and sell products in about 30 stores in the country. </p>
+        <div class="circle cir-photo opaque full-width container-1">
+          <img class="profile"src="images/profile.png" alt="profile photography">
+        </div>
+        <h3 class="geometric-title standard-width sub-heading-3">In New York from fashion to UX</h3>
+        <p class="body-2 standard-width paragraph-2">After settling down in New York I started my career in fashion working for Oscar de la Renta and Ann Taylor, as well as working on the side for a fashion start up in Brooklyn. Inconspicuously my career was taking different direction. I was no longer designing clothes but pushing pixels on e-commerce websites. It was a soft transition with a great learning curve. I am improving my process and coding skills every day.
+        <br>
         I have a passion for simplicity and minimalism - Not only in aesthetics but also in life. I love great views and that’s why I work from the awesome Wework building at Flushing, Brooklyn.
         If you are local stop by and let’s have a coffee together!
         </p>
-        <img src="images/profile.png" alt="profile photography">
-        <img src="images/wework2x.png" alt="wework photography">
+
+          <div class="circle cir-cir opaque full-width container-2">
+
+          </div>
+
+          <div class="circle cir-wework opaque full-width container-2">
+            <img class="wework"src="images/wework2x.png" alt="wework photography">
+
+          </div>
+
       </article>
     </main>
+
     <!--mobile footer-->
-    <footer class="">
-      <h2>contact</h2>
-      <a href="#">
-        <figure>
-          <img src="icons/envelope.svg" alt="envelope">
-          <figcaption>romi.m.wilson@gmail.com</figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <img src="icons/download.svg" alt="PDF">
-          <figcaption>resume</figcaption>
-        </figure>
-      </a>
-      <a href="#">
-        <figure>
-          <i>linkedin</i>
-        </figure>
-     </a>
+    <footer id="bottommenu" class="grid sub-grid footer-mobile almost-opaque">
+      <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
+          <img src="images/rectangle.svg" alt="rectangle">
+          <h2 class="menu-style">contact</h2>
+      </div>
+      <a class=" body-2 standard-width container-1"><i class="linkedin"></i>connect</a>
+      <a class="body-2 standard-width container-2"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
+      <a class="serif-small standard-width container-3"><i class="resume"></i>resume</a>
     </footer>
   </body>
+
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+  <script type="text/javascript">
+
+    bottommenu_content_height = "34rem";
+
+    $(function() {
+
+      // bottom menu animation
+      $('#bottommenu_toggle').click(
+        function(){
+          if ($('#bottommenu').get(0).style.marginBottom == bottommenu_content_height) {
+            $('#bottommenu').stop().animate({'marginBottom':'0px'}, 300);
+          } else {
+            $('#bottommenu').stop().animate({'marginBottom':bottommenu_content_height}, 500);
+          }
+        }
+      );
+    });
+  </script>
 </html>
