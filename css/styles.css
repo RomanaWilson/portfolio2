@@ -6,6 +6,10 @@ a {
   text-decoration: none;
   color: black;
 }
+
+strong {
+  font-weight: bold;
+}
 .main-title {
   font-family: didoni-urw, serif;
   font-weight: 400;
@@ -43,7 +47,7 @@ a {
   font-size: 3.5rem;
   line-height: 4.2rem;
   letter-spacing: .1em;
-  text-transform: lowercase;
+
 }
 
 .geometric-title {
@@ -138,6 +142,10 @@ a {
 
 .opaque {
   background-color: white;
+  z-index: 900;
+}
+
+.index {
   z-index: 900;
 }
 

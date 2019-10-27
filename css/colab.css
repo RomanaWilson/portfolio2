@@ -1,7 +1,7 @@
 /*  SUB-GRID VERTICAL LAYOUTS */
 
 .colab-hero {
-    grid-template-rows: [heading]
+    grid-template-rows: [heading background-start]
                         auto
                         3rem
                         [paragraph-1]
@@ -10,11 +10,17 @@
                         [container-1]
                         auto
                         10rem
-                        [container-2]
+                        [container-2 background-end]
                         auto
                         5rem
-                        [button]
+                        [button-1]
                         auto;
+}
+
+.hero-back {
+    background: url(../images/shape3.svg) no-repeat;
+    background-size: contain;
+
 }
 
 .colab-overview {
@@ -134,7 +140,7 @@
                               [container-1]
                               auto
                               2rem
-                              [button]
+                              [button-1]
                               auto
                               5rem;
       }
@@ -284,7 +290,7 @@
                         [container-1]
                         auto
                         5rem
-                        [button]
+                        [button-1]
                         auto;
     }
 
