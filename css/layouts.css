@@ -40,9 +40,9 @@ body {
 
 /* Main Section */
 
-main {
+/* main {
     padding-top: 6rem;
-}
+} */
 
 /* Mobile Footer */
 
@@ -70,7 +70,7 @@ main {
 
 .linep1 {
     position: fixed;
-    left: 36.8%;
+    left: calc(36.8% - 1px);
 }
 
 .linep2 {
@@ -199,17 +199,37 @@ main {
 }
 
 .button-1 {
-    grid-row: button;
+    grid-row: button-1;
 }
 
 .button-2 {
-    grid-row: button;
+    grid-row: button-2;
+}
+
+.background {
+    grid-row: background-start / background-end;
+}
+
+.photo {
+    grid-row: photo-start / photo-end;
 }
 
 /* Containers */
 
 .rel-container {
     position: relative;
+}
+
+.summary-box {
+    padding: 2rem 3.4rem; 
+}
+
+.summary-box div {
+    margin-bottom: 20px;
+}
+
+.summary-box h3, .summary-box p {
+    display: inline;
 }
 
 /* Shapes */

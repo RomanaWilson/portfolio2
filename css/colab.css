@@ -1,20 +1,41 @@
+.animated-button {
+    margin-left: 36.8%;
+}
+
+.section-num {
+    height: 5rem;
+    width: 5rem;
+    justify-self: end;
+    margin-right: calc(8% - 2.5rem);
+}
+
 /*  SUB-GRID VERTICAL LAYOUTS */
 
 .colab-hero {
-    grid-template-rows: [heading]
+    grid-template-rows: [background-start]
+                        6rem
+                        [heading]
                         auto
                         3rem
                         [paragraph-1]
                         auto
                         10rem
+                        [photo-start]
+                        140px
+                        [background-end]
+                        auto
+                        [photo-end]
+                        10rem
                         [container-1]
                         auto
-                        10rem
-                        [container-2]
-                        auto
                         5rem
-                        [button]
+                        [button-1]
                         auto;
+}
+
+.hero-back {
+    background: url(../images/shape3.svg) no-repeat;
+    background-size: 100% 100%;
 }
 
 .colab-overview {
@@ -32,6 +53,23 @@
                         5rem
                         [container-3]
                         auto;
+}
+
+.mac1 {
+    width: 87.4666666666667%;
+}
+
+.mac2 {
+    
+}
+
+.mac3 {
+
+}
+
+.colab-overview figcaption {
+    text-align: center;
+    margin-top: 2rem;
 }
 
 /* Resaerch Grids */
@@ -134,7 +172,7 @@
                               [container-1]
                               auto
                               2rem
-                              [button]
+                              [button-1]
                               auto
                               5rem;
       }
@@ -153,7 +191,7 @@
                               [container-3]
                               auto
                               5rem
-                              [button-2]
+                              [button-1]
                               auto;
         }
 
@@ -284,7 +322,7 @@
                         [container-1]
                         auto
                         5rem
-                        [button]
+                        [button-1]
                         auto;
     }
 
