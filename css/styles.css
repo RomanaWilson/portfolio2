@@ -123,6 +123,10 @@ strong {
   list-style: none;
 }
 
+.gray {
+  color: #828282;
+}
+
 .serif-small {
   font-family: didoni-urw, serif;
   font-weight: 400;
@@ -140,6 +144,11 @@ strong {
   line-height: 2.4rem;
   letter-spacing: .1em;
   list-style: none;
+}
+ /*center the gray caption undex pictures*/
+.caption-center {
+  text-align: center;
+  padding-top: 20px;
 }
 
 /* Backgrounds */
