@@ -16,6 +16,10 @@ img {
     margin-right: calc(8% - 2.5rem);
 }
 
+.right-wide {
+    margin-left: 1.1rem;
+}
+
 /*  SUB-GRID VERTICAL LAYOUTS */
 
 .colab-hero {
@@ -25,10 +29,10 @@ img {
                         auto
                         3rem
                         [paragraph-1]
-                        auto
+                        calc(120vw - 24.4rem - 22.6666666666667vw)
                         10rem
                         [photo-1-start]
-                        70px
+                        22.6666666666667vw
                         [background-end]
                         auto
                         [photo-1-end]
@@ -38,8 +42,6 @@ img {
                         5rem
                         [button-1]
                         auto;
-
-    /* height: 2.973333333333333vw; */
 }
 
 .hero-back {
@@ -104,62 +106,101 @@ img {
                         auto;
 }
 
-      .survey {
-          grid-row: survey;
-          grid-template-rows: [sub-heading-1] /*survey*/
-                              auto
-                              1rem
-                              [photo-1-start]
-                              auto
-                              [photo-1-end]
-                              5rem
-                              [container-2]
-                              auto
-                              5rem;
-      }
+    .survey {
+        grid-row: survey;
+        grid-template-rows: [sub-heading-1] /*survey*/
+                            auto
+                            1rem
+                            [photo-1-start]
+                            auto
+                            [photo-1-end]
+                            5rem
+                            [container-2]
+                            auto
+                            5rem;
+    }
 
-      .competitive-anal {
-          grid-row: competitive-anal;
-          grid-template-rows:[sub-heading-2] /*competitive anal*/
-                              auto
-                              2rem
-                              [paragraph-1]
-                              auto
-                              5rem;
-        }
-        .user-persona {
-            grid-row: user-persona;
-            grid-template-rows:[sub-heading-3] /*user persona*/
-                              auto
-                              5rem
-                              [container-3]
-                              auto
-                              3rem
-                              [paragraph-2]
-                              auto
-                              3rem
-                              [sub-heading-4] /*frustrations*/
-                              auto
-                              1rem
-                              [list-1]
-                              auto
-                              2rem
-                              [sub-heading-5] /*goals*/
-                              auto
-                              1rem
-                              [list-2]
-                              auto
-                              7.5rem;
-                          }
+    .competitive-anal {
+        grid-row: competitive-anal;
+        grid-template-rows:[sub-heading-2] /*competitive anal*/
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            5rem;
+    }
 
-        .key-insights {
-            grid-row: key-insights;
-            grid-template-rows:[sub-heading-6] /*key insights*/
-                              auto
-                              1rem
-                              [list-3]
-                              auto;
-        }
+    .user-persona {
+        grid-row: user-persona;
+        grid-template-rows:[sub-heading-1] /*user persona*/
+                            auto
+                            5rem
+                            [sub-heading-2 photo-1-start]
+                            auto
+                            [paragraph-1]
+                            1fr
+                            [photo-1-end]
+                            3rem
+                            [paragraph-2]
+                            auto
+                            3rem
+                            [sub-heading-3] /*frustrations*/
+                            auto
+                            1rem
+                            [list-1]
+                            auto
+                            2rem
+                            [sub-heading-4] /*goals*/
+                            auto
+                            1rem
+                            [list-2]
+                            auto
+                            7.5rem;        
+    }
+
+    .user-persona .sub-heading-2 {
+        text-align: right;
+        margin-bottom: 1rem;
+    }
+
+    .user-persona .paragraph-1 {
+        text-align: right;
+    }
+
+    .user-persona .photo-1 {
+        margin-left: 3rem;
+        height: 17.8rem;
+        width: 17.8rem;
+        margin-top: 2.5rem;
+    }
+
+    .user-persona .photo-1 img {
+        height: 16.3rem;
+        width: 16.3rem;
+    }
+
+    /* .user-persona ul {
+        list-style-type: disc;
+        list-style-position: inside;
+    } */
+    
+    .key-insights {
+        grid-row: key-insights;
+        grid-template-rows: 
+                            [sub-heading-6 photo-1-start] /*key insights*/
+                            auto
+                            1rem
+                            [list-3]
+                            auto
+                            [photo-1-end];
+    }
+
+    .key-insights .photo-1 {
+        background: url(../images/shape2.svg) no-repeat;
+        background-size: contain
+    }
+
+
 
 /* info-architecture */
 

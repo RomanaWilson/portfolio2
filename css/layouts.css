@@ -129,8 +129,12 @@ main {
     grid-column: margin-left-start / margin-right-end;
 }
 
-.right-side-centered {
+.left {
+    grid-column: margin-left-end / center-left;
+}
 
+.right-wide {
+    grid-column: center-left / margin-right-start;
 }
 
 .justify-center {
