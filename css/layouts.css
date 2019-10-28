@@ -184,6 +184,10 @@ main {
     grid-row: paragraph-3;
 }
 
+.paragraph-4 {
+    grid-row: paragraph-4;
+}
+
 .container-1 {
     grid-row: container-1;
 }

@@ -159,7 +159,7 @@ main > section > h2 {
                             1rem
                             [list-2]
                             auto
-                            7.5rem;        
+                            7.5rem;
     }
 
     .user-persona .sub-heading-2 {
@@ -187,10 +187,10 @@ main > section > h2 {
         list-style-type: disc;
         list-style-position: inside;
     } */
-    
+
     .key-insights {
         grid-row: key-insights;
-        grid-template-rows: 
+        grid-template-rows:
                             [sub-heading-6 photo-1-start] /*key insights*/
                             auto
                             1rem
@@ -247,6 +247,9 @@ main > section > h2 {
                               [container-2]
                               auto
                               5rem
+                              [paragraph-4]
+                              auto
+                              3rem
                               [container-3]
                               auto
                               5rem
