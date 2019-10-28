@@ -32,6 +32,7 @@ body {
 .wide-logo {
     width: 9.8rem;
     padding-top: 10px;
+    padding-left: 3.1rem;
 }
 
 .text-link {
@@ -234,7 +235,7 @@ main {
 }
 
 .summary-box {
-    padding: 2rem 3.4rem 0 3.4rem; 
+    padding: 2rem 3.4rem 0 3.4rem;
 }
 
 .summary-box p {
@@ -262,11 +263,14 @@ main {
 
 .animated-button {
     background: url("../images/button.svg") no-repeat;
+    background-position-x: -2rem;
     display: flex;
     align-items: center;
     height: 69px;
-    width: 217px;
+    width: 36.8%;
+    padding-left: 1rem;
 }
+
 
 /* ---- GLOBAL FOOTER ---- */
 

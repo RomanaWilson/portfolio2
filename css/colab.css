@@ -20,6 +20,10 @@ img {
     margin-left: 1.1rem;
 }
 
+main > section > h2 {
+  padding-left: 1rem;
+}
+
 /*  SUB-GRID VERTICAL LAYOUTS */
 
 .colab-hero {
@@ -266,6 +270,10 @@ img {
                         [container-2]
                         auto;
     }
+
+.prototype .container-2 {
+  max-width: 100%;
+}
 
 .testing-1 {
     grid-template-rows: [heading]
