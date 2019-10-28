@@ -35,9 +35,10 @@
                         2rem
                         [paragraph-1]
                         auto
-                        2rem
+                        3rem
                         [container-2]
                         auto
+                        3rem
                         [sub-heading-1]
                         auto
                         [project-roles-start]
@@ -45,6 +46,7 @@
                         [button]
                         auto
                         [project-roles-end];
+
 }
 
 .home-outlook {
@@ -54,11 +56,16 @@
                         [paragraph-1]
                         auto
                         3rem
-                        [button]
+                        [button-1]
                         auto
                         3rem
                         [footer]
                         4.5rem;
+}
+
+.home-outlook .button-1 {
+    margin-left: 63.2%;
+
 }
 
 /* Special Positioning */
@@ -75,11 +82,13 @@
 .see-work-button-inner {
     height: 90px;
     width: 90px;
-    display: flex;  
+    display: flex;
     justify-content: center;
     align-items: center;
+    text-align: center;
     border-radius: 50%;
     background: rgb(192, 226, 202, .5);
+
 }
 
 .phone {
