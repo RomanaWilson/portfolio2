@@ -188,7 +188,7 @@ main > section > h2 {
         grid-template-rows:
                             [photo-1-start]  /*key insights*/
                             4.5rem
-                            [sub-heading-6] 
+                            [sub-heading-6]
                             auto
                             1rem
                             [list-3]
@@ -472,9 +472,13 @@ grid-template-rows: [sub-heading-2]
                        3rem
                        [container-3]
                        auto
-                       10rem
+                       7rem
                        ;
   }
+
+    .other-work .container-1, .other-work .container-2 {
+      padding: 0 13%;
+    }
 
   .other-work i {
     background: url("../icons/goup.svg") no-repeat;
