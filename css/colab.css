@@ -186,23 +186,22 @@ main > section > h2 {
     .key-insights {
         grid-row: key-insights;
         grid-template-rows:
-                            [photo-1-start]  /*key insights*/
-                            4.5rem
+                            [background-start]  /*key insights*/
+                            1fr
                             [sub-heading-6] 
                             auto
                             1rem
                             [list-3]
                             auto
-                            2.8rem
-                            [photo-1-end];
+                            1fr
+                            [background-end]
     }
 
-    .key-insights .photo-1 {
+    .key-insights .background {
         background: url(../images/shape1.svg) no-repeat;
-        background-size: contain;
+        background-size: cover;
         overflow: hidden;
-
-        min-width: 375px;
+        min-height: 50vw;
     }
 
 
@@ -446,10 +445,10 @@ grid-template-rows: [sub-heading-2]
  }
 
  .conclusion .background-start {
-    background: url("../images/shape4.svg") no-repeat;
+    background: url("../images/shape6.svg") no-repeat;
     background-size: contain;
     align-self: start;
-    height: 177.0666666666667vw;
+    min-height: 177.0666666666667vw;
  }
 
  .self-reflection {
