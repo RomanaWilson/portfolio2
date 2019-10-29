@@ -349,3 +349,33 @@ main {
     margin-left: calc(50% - 1.9rem);
     background: url("../icons/download.svg") no-repeat;
   }
+
+/* Media Queries */
+
+/* Hide Mobile */
+@media screen and (max-width: 500px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+/* Hide Mobile and Tablet */
+@media screen and (max-width: 1000px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* Hide Tablet and Desktop */
+@media screen and (min-width: 500px) {
+    .mobile-only {
+        display: none;
+    }
+} 
+
+/* Hide Desktop */
+@media screen and (min-width: 1000px) {
+    .desktop-hidden {
+        display: none;
+    }
+} 
