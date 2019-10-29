@@ -471,9 +471,13 @@ grid-template-rows: [sub-heading-2]
                        3rem
                        [container-3]
                        auto
-                       10rem
+                       7rem
                        ;
   }
+
+    .other-work .container-1, .other-work .container-2 {
+      padding: 0 13%;
+    }
 
   .other-work i {
     background: url("../icons/goup.svg") no-repeat;
