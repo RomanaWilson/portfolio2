@@ -153,6 +153,7 @@ main > section > h2 {
 
 }
 
+<<<<<<< HEAD
 .user-persona {
     grid-row: user-persona;
     grid-template-rows:[sub-heading-1] /*user persona*/
@@ -180,6 +181,21 @@ main > section > h2 {
                         auto
                         7.5rem;
 }
+=======
+    .key-insights {
+        grid-row: key-insights;
+        grid-template-rows:
+                            [background-start]  /*key insights*/
+                            1fr
+                            [sub-heading-6]
+                            auto
+                            1rem
+                            [list-3]
+                            auto
+                            1fr
+                            [background-end]
+    }
+>>>>>>> 56a2379722a3ff05ef3d2469c50d157d368e1298
 
 .user-persona .sub-heading-2 {
     text-align: right;
@@ -564,5 +580,9 @@ grid-template-rows: [sub-heading-2]
     justify-self: end;
     margin-right: calc(36.8% - 5.9rem);
   }
+
+.white-type {
+  color: white;
+}
 
   /* ROMI TO DO */
