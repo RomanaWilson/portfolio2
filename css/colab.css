@@ -333,8 +333,12 @@ main > section > h2 {
                               [paragraph-1]
                               auto
                               5rem;
-
       }
+
+        .typography .container-1 {
+          padding: 0 21.3%;
+        }
+
       .color-palette {
           grid-row: color-palette;
           grid-template-rows: [heading] /*color palette*/
@@ -350,6 +354,10 @@ main > section > h2 {
                               auto
                               5rem;
       }
+
+        .color-palette .container-1 {
+          padding: 0 16%;
+        }
 
       .illustrations {
           grid-row: llustrations;
