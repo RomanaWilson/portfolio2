@@ -58,6 +58,7 @@ main {
 .vert-line {
     border-left: 1px solid rgb(125, 125, 125, .3);
     height: 100%;
+
 }
 
 .line1 {
@@ -265,6 +266,17 @@ main {
     border: 1px solid rgb(125,125,125,.6);
     background: white;
 }
+
+.circle-purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgb(125,125,125,.6);
+    background: #EFDBEA;
+
+}
+
 
 .circle-text {
     padding-bottom: .5rem;
