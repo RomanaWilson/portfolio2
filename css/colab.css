@@ -70,24 +70,19 @@ main > section > h2 {
                         auto;
 }
 
-.mac1 {
+.colab-overview .container-1 img {
     width: 87.4666666666667%;
     padding-left: 5.3333333333333%
 }
 
-.mac2 {
+.colab-overview .container-2 img {
     width: 92.8%;
     padding-left: 2.4%;
 }
 
-.mac3 {
-    width: 82.6666666666667%;
+.colab-overview .container-3 img {
+    width: 88%;
     padding-left: 7.4666666666667%;
-}
-
-.colab-overview figcaption {
-    text-align: center;
-    margin-top: 2rem;
 }
 
 /* Resaerch Grids */
@@ -191,17 +186,23 @@ main > section > h2 {
     .key-insights {
         grid-row: key-insights;
         grid-template-rows:
-                            [sub-heading-6 photo-1-start] /*key insights*/
+                            [photo-1-start]  /*key insights*/
+                            4.5rem
+                            [sub-heading-6] 
                             auto
                             1rem
                             [list-3]
                             auto
+                            2.8rem
                             [photo-1-end];
     }
 
     .key-insights .photo-1 {
-        background: url(../images/shape2.svg) no-repeat;
-        background-size: contain
+        background: url(../images/shape1.svg) no-repeat;
+        background-size: contain;
+        overflow: hidden;
+
+        min-width: 375px;
     }
 
 
@@ -220,42 +221,46 @@ main > section > h2 {
                         [user-flows]
                         auto;
 }
-      .user-stories {
-          grid-row: user-stories;
-          grid-template-rows: [sub-heading-1]
-                              auto
-                              1rem
-                              [paragraph-2]
-                              auto
-                              2rem
-                              [container-1]
-                              auto
-                              2rem
-                              [button-1]
-                              auto
-                              5rem;
-      }
+.user-stories {
+    grid-row: user-stories;
+    grid-template-rows: [sub-heading-1]
+                        auto
+                        1rem
+                        [paragraph-2]
+                        auto
+                        2rem
+                        [container-1]
+                        auto
+                        2rem
+                        [button-1]
+                        auto
+                        5rem;
+}
 
-      .user-flows {
-          grid-row: user-flows;
-          grid-template-rows: [sub-heading-2]
-                              auto
-                              1rem
-                              [paragraph-3]
-                              auto
-                              3rem
-                              [container-2]
-                              auto
-                              5rem
-                              [paragraph-4]
-                              auto
-                              3rem
-                              [container-3]
-                              auto
-                              5rem
-                              [button-1]
-                              auto;
-        }
+.user-flows {
+grid-row: user-flows;
+grid-template-rows: [sub-heading-2]
+                    auto
+                    1rem
+                    [paragraph-3]
+                    auto
+                    3rem
+                    [container-2]
+                    auto
+                    5rem
+                    [paragraph-4]
+                    auto
+                    3rem
+                    [container-3]
+                    auto
+                    5rem
+                    [button-1]
+                    auto;
+}
+
+.user-flows .container-3 {
+    padding: 0px 28% ;
+}
 
 .prototype {
     grid-template-rows:[heading]
@@ -275,7 +280,7 @@ main > section > h2 {
     }
 
 .prototype .container-2 {
-  max-width: 100%;
+    max-width: 100%;
 }
 
 .testing-1 {
@@ -302,7 +307,7 @@ main > section > h2 {
                         1rem
                         [paragraph-3]
                         auto;
-    }
+}
 
 
 .visual-design {
@@ -318,65 +323,65 @@ main > section > h2 {
                         auto
                         [illustrations]
                         auto;
-  }
-      .typography {
-          grid-row: typography;
-          grid-template-rows: [heading] /*typography*/
-                              auto
-                              5rem
-                              [container-1]
-                              auto
-                              5rem
-                              [sub-heading-1]
-                              auto
-                              1rem
-                              [paragraph-1]
-                              auto
-                              5rem;
+}
+.typography {
+    grid-row: typography;
+    grid-template-rows: [heading] /*typography*/
+                        auto
+                        5rem
+                        [container-1]
+                        auto
+                        5rem
+                        [sub-heading-1]
+                        auto
+                        1rem
+                        [paragraph-1]
+                        auto
+                        5rem;
 
-      }
-      .color-palette {
-          grid-row: color-palette;
-          grid-template-rows: [heading] /*color palette*/
-                              auto
-                              5rem
-                              [container-1]
-                              auto
-                              5rem
-                              [sub-heading-1]
-                              auto
-                              1rem
-                              [paragraph-1]
-                              auto
-                              5rem;
-      }
+}
+.color-palette {
+    grid-row: color-palette;
+    grid-template-rows: [heading] /*color palette*/
+                        auto
+                        5rem
+                        [container-1]
+                        auto
+                        5rem
+                        [sub-heading-1]
+                        auto
+                        1rem
+                        [paragraph-1]
+                        auto
+                        5rem;
+}
 
-      .illustrations {
-          grid-row: llustrations;
-          grid-template-rows: [heading] /*illustrations*/
-                              auto
-                              5rem
-                              [container-1]
-                              auto
-                              5rem
-                              [sub-heading-1]
-                              auto
-                              1rem
-                              [paragraph-1]
-                              auto
-                              5rem
-                              [container-2]
-                              auto
-                              5rem
-                              [sub-heading-2]
-                              auto
-                              1rem
-                              [paragraph-2]
-                              auto
-                              5rem
-                              [container-3]
-                              auto;
-        }
+.illustrations {
+    grid-row: llustrations;
+    grid-template-rows: [heading] /*illustrations*/
+                        auto
+                        5rem
+                        [container-1]
+                        auto
+                        5rem
+                        [sub-heading-1]
+                        auto
+                        1rem
+                        [paragraph-1]
+                        auto
+                        5rem
+                        [container-2]
+                        auto
+                        5rem
+                        [sub-heading-2]
+                        auto
+                        1rem
+                        [paragraph-2]
+                        auto
+                        5rem
+                        [container-3]
+                        auto;
+}
 
 .hi-fidelity {
     grid-template-rows: [heading]
@@ -390,7 +395,11 @@ main > section > h2 {
                         5rem
                         [button-1]
                         auto;
-    }
+}
+
+.hi-fidelity .container-1 {
+    padding: 0px 25.3968253968254%;
+}
 
 .testing-2 {
     grid-template-rows: [heading]
@@ -418,12 +427,21 @@ main > section > h2 {
                         auto;
     }
 
- .conclusion {
-   grid-template-rows: [heading]
-                       auto
-                       2rem
-                       [paragraph-1]
-                       auto;
+.conclusion {
+   grid-template-rows:  [background-start]
+                        2rem
+                        [heading]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto;
+ }
+
+ .conclusion .background-start {
+    background: url("../images/shape4.svg") no-repeat;
+    background-size: contain;
+    align-self: start;
+    height: 177.0666666666667vw;
  }
 
  .self-reflection {
@@ -445,7 +463,14 @@ main > section > h2 {
                        auto
                        3rem
                        [container-3]
-                       auto;
+                       auto
+                       10rem
+                       ;
+  }
+
+  .other-work i {
+    background: url("../icons/goup.svg") no-repeat;
+
   }
 
 /* Special Positioning */

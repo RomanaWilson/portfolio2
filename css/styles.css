@@ -145,10 +145,11 @@ strong {
   letter-spacing: .1em;
   list-style: none;
 }
+
  /*center the gray caption undex pictures*/
 .caption-center {
   text-align: center;
-  padding-top: 20px;
+  padding-top: 2rem;
 }
 
 /* Backgrounds */

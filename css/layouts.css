@@ -220,16 +220,16 @@ main {
     grid-row: button-2;
 }
 
-.background {
-    grid-row: background-start / background-end;
-}
-
 .photo-1 {
     grid-row: photo-1-start / photo-1-end;
 }
 
 .background {
     grid-row: background-start / background-end;
+}
+
+.background-start {
+    grid-row: background-start;
 }
 
 /* Containers */
@@ -248,6 +248,10 @@ main {
 
 .summary-box h3, .summary-box h4 {
     margin-bottom: 1rem;
+}
+
+.summary-box li:nth-last-child(1) {
+    margin-bottom: 2rem;
 }
 
 /* Shapes */
@@ -275,6 +279,14 @@ main {
     padding-left: 1rem;
 }
 
+/* Right Aligned Icon */
+
+.right-icon {
+    width: 20px;
+    height: 33.2px;
+    justify-self: end;
+    margin-right: -10px;
+}
 
 /* ---- GLOBAL FOOTER ---- */
 
