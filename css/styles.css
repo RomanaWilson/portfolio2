@@ -146,7 +146,8 @@ strong {
   list-style: none;
 }
 
- /*center the gray caption undex pictures*/
+ /* center the gray caption undex pictures */
+
 .caption-center {
   text-align: center;
   padding-top: 2rem;
@@ -172,8 +173,13 @@ strong {
   background: rgb(192, 226, 202, .5);
 }
 
-/* Borders */
-
+/* Border */
 .thin-grey-border {
   border: 1px solid rgb(125,125,125,.6);
+}
+
+/* Type Colors */
+
+.white-type {
+  color: white;
 }

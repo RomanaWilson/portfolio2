@@ -31,9 +31,13 @@ body {
 
 
 .wide-logo {
-    width: 9.8rem;
     padding-top: 10px;
     padding-left: 3.1rem;
+}
+
+.wide-logo img {
+    width: 9.8rem;
+    height: 1.7rem;
 }
 
 .text-link {
