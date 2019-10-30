@@ -26,34 +26,95 @@ main > section > h2 {
 
 /*  SUB-GRID VERTICAL LAYOUTS */
 
-.colab-hero {
-    grid-template-rows: [background-start]
-                        6rem
-                        [heading]
-                        auto
-                        3rem
-                        [paragraph-1]
-                        calc(120vw - 24.4rem - 22.6666666666667vw)
-                        10rem
-                        [photo-1-start]
-                        22.6666666666667vw
-                        [background-end]
-                        auto
-                        [photo-1-end]
-                        10rem
-                        [container-1]
-                        auto
-                        5rem
-                        [button-1]
-                        auto;
+/* Hero - Mobile */
+
+@media screen and (max-width:600px) {
+
+    .colab-hero {
+        grid-template-rows: [background-start]
+                            6rem
+                            [heading]
+                            auto
+                            3rem
+                            [paragraph-1]
+                            minmax(14.2rem, calc(120vw - 24.4rem - 22.6666666666667vw))
+                            10rem
+                            [photo-1-start]
+                            22.6666666666667vw
+                            [background-end]
+                            auto
+                            [photo-1-end]
+                            10rem
+                            [container-1]
+                            auto
+                            5rem
+                            [button-1]
+                            auto;
+    }
+
+    .colab-hero .background {
+        background: url(../images/shape3.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .colab-hero .paragraph-1 {
+        align-self: center;
+    } 
 }
 
+/* Hero - Tablet and Desktop */
 
+@media screen and (min-width:601px) {
 
-.hero-back {
-    background: url(../images/shape3.svg) no-repeat;
-    background-size: cover;
+    .colab-hero {
+        grid-template-rows: 8.122rem
+                            [background-start]
+                            7.878rem
+                            [heading]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            15.975rem
+                            [background-end]
+                            5rem
+                            [container-1]
+                            auto
+                            5rem
+                            [button-1]
+                            auto;
+    }
+
+    .colab-hero .background {
+        background: url(../images/colabhero.svg) no-repeat;
+        background-size: contain;
+        justify-self: center;
+        width: 55rem;
+    }
+
+    .colab-hero .paragraph-1 {
+        width: 40.7rem;
+        justify-self: center;
+        margin-left: 14.2rem;
+    }
+
+    .colab-hero h1 {
+        width: 40.7rem;
+        justify-self: center;
+        margin-left: 14.2rem;
+    }
+
+    .colab-hero .summary-box {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .colab-hero .summary-box div {
+        max-width: 11.4rem;
+    }
 }
+
 
 .colab-overview {
     grid-template-rows: [heading]
@@ -505,9 +566,3 @@ grid-template-rows: [sub-heading-2]
     justify-self: end;
     margin-right: calc(36.8% - 5.9rem);
   }
-
-.white-type {
-  color: white;
-}
-
-  /* ROMI TO DO */
