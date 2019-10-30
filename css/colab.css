@@ -20,9 +20,6 @@ img {
     margin-left: 1.1rem;
 }
 
-main > section > h2 {
-  padding-left: 1rem;
-}
 
 /*  SUB-GRID VERTICAL LAYOUTS */
 
@@ -59,7 +56,48 @@ main > section > h2 {
 
     .colab-hero .paragraph-1 {
         align-self: center;
-    } 
+    }
+
+    main > section > h2 {
+      padding-left: 1rem;
+    }
+
+    .colab-overview {
+        grid-template-rows: [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [container-1]
+                            auto
+                            5rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-3]
+                            auto;
+    }
+    .colab-overview .container-1 img {
+      width: 87.4666666666667%;
+      padding-left: 5.333333333%;
+    }
+
+    .colab-overview .container-2 img {
+        width: 92.8%;
+        padding-left: 2.4%;
+    }
+
+    .colab-overview .container-3 img {
+        width: 88%;
+        padding-left: 7.4666666666667%;
+    }
+
+    .survey .photo-1 {
+      border: none;
+      padding: 0;
+    }
+
 }
 
 /* Hero - Tablet and Desktop */
@@ -67,7 +105,7 @@ main > section > h2 {
 @media screen and (min-width:601px) {
 
     .colab-hero {
-        grid-template-rows: 8.122rem
+        grid-template-rows: 8rem
                             [background-start]
                             7.878rem
                             [heading]
@@ -108,6 +146,7 @@ main > section > h2 {
         border: none;
         display: flex;
         justify-content: space-between;
+        padding: 0;
     }
 
     .colab-hero .summary-box div {
@@ -133,27 +172,20 @@ main > section > h2 {
                         auto;
 }
 
-.colab-overview .container-1 img {
-    width: 87.4666666666667%;
-    padding-left: 5.3333333333333%
+
+.colab-overview .container-1 ul {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
 }
 
-.colab-overview .container-2 img {
-    width: 92.8%;
-    padding-left: 2.4%;
-}
-
-.colab-overview .container-3 img {
-    width: 88%;
-    padding-left: 7.4666666666667%;
-}
 
 /* Resaerch Grids */
 
 .colab-research {
     grid-template-rows: [heading]
                         auto
-                        1rem
+                        2rem
                         [survey]
                         auto
                         [competitive-anal]
@@ -173,6 +205,9 @@ main > section > h2 {
     grid-template-rows: [sub-heading-1] /*survey*/
                         auto
                         1rem
+                        [paragraph-1]
+                        auto
+                        5rem
                         [photo-1-start]
                         auto
                         [photo-1-end]
@@ -181,6 +216,14 @@ main > section > h2 {
                         auto
                         5rem;
 }
+
+.survey .photo-1 {
+  padding: 20px 30px;
+
+}
+
+
+
 
 .competitive-anal {
     grid-row: competitive-anal;
@@ -236,7 +279,7 @@ main > section > h2 {
     width: 17.8rem;
     margin-top: 2.5rem;
 }
-    
+
 .user-persona .photo-1 img {
     height: 16.3rem;
     width: 16.3rem;
@@ -247,7 +290,7 @@ main > section > h2 {
     grid-template-rows:
                         [background-start]  /*key insights*/
                         1fr
-                        [sub-heading-6] 
+                        [sub-heading-6]
                         auto
                         1rem
                         [list-3]
@@ -529,7 +572,7 @@ grid-template-rows: [sub-heading-2]
 }
 
 
- 
+
 
 .other-work {
     grid-template-rows: [heading]
