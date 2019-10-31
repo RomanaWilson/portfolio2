@@ -76,15 +76,31 @@ main {
     right: 36.8%;
 }
 
-.linep1 {
-    position: fixed;
-    left: calc(36.8% - 1px);
+@media screen and (max-width: 600px) {
+    .linep1 {
+        position: fixed;
+        left: calc(36.8% - 1px);
+    }
+
+    .linep2 {
+        position: fixed;
+        right: 8%;
+    }
 }
 
-.linep2 {
-    position: fixed;
-    right: 8%;
+@media screen and (min-width: 601px) {
+    .linep1 {
+        position: fixed;
+        left: 14.6282973621103%;
+    }
+    
+    .linep2 {
+        position: fixed;
+        right: 51.1990407673861%;
+    }
 }
+
+
 
 /* Grid */
 
