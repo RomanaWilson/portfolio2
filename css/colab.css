@@ -465,8 +465,22 @@ grid-template-rows: [sub-heading-2]
                     auto;
 }
 
-.user-flows .container-3 {
-    padding: 0px 28% ;
+
+@media screen and (max-width:600px){
+    .user-flows .container-3 {
+      padding: 0px 28% ;
+    }
+}
+
+@media screen and (min-width:601px) {
+    .user-flows .container-2 {
+      padding: 30px;
+      background-color: white;
+    }
+    .user-flows .container-3 {
+      padding: 30px;
+      background-color: white;
+    }
 }
 
 .prototype {
