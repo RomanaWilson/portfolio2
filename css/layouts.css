@@ -218,12 +218,12 @@ main {
 }
 
 .dent-left {
-    grid-column: dent-start / dent-end
+    grid-column: dent-start / dent-end;
 }
 
 
 .aside-detail {
-  grid-column: aside-start /aside-end
+  grid-column: aside-start / aside-end;
 }
 
 /* .paragraph-layout {
@@ -316,6 +316,10 @@ main {
 
 .photo-1 {
     grid-row: photo-1-start / photo-1-end;
+}
+
+.photo-2 {
+    grid-row: photo-2-start / photo-2-end;
 }
 
 .background {
