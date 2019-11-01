@@ -388,12 +388,27 @@ img {
                         [background-end]
 }
 
-.key-insights .background {
-    background: url(../images/shape1.svg) no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    min-height: 50vw;
+@media screen and (max-width:600px){
+  .key-insights .background {
+      background: url(../images/shape1.svg) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      min-height: 50vw;
+  }
+
+
 }
+@media screen and (min-width:601px){
+  .key-insights .background {
+      background: url(../images/shape1.svg) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      min-height: 50vw;
+  }
+
+}
+
+
 
 
 
@@ -600,10 +615,13 @@ grid-template-rows: [sub-heading-2]
 }
 
 @media screen and (min-width:601px) {
+      .typography-image-1 {
+        padding-right: 69.8%;
+      }
       .typography .container-1 {
-        margin-left: 11.03%;
         margin-bottom: 3rem;
       }
+
 }
 
 
@@ -632,39 +650,100 @@ grid-template-rows: [sub-heading-2]
 }
 
 @media screen and (min-width:601px) {
+    .palette-img1 {
+      padding-right: 50%;
+    }
     .color-palette .container-1 {
-      margin-left: 11.03%;
       margin-bottom: 3rem;
     }
 }
 
+@media screen and (max-width: 600px) {
 
-.illustrations {
-    grid-row: llustrations;
-    grid-template-rows: [heading] /*illustrations*/
-                        auto
-                        5rem
-                        [container-1]
-                        auto
-                        5rem
-                        [sub-heading-1]
-                        auto
-                        1rem
-                        [paragraph-1]
-                        auto
-                        5rem
-                        [container-2]
-                        auto
-                        5rem
-                        [sub-heading-2]
-                        auto
-                        1rem
-                        [paragraph-2]
-                        auto
-                        5rem
-                        [container-3]
-                        auto;
+    .illustrations {
+        grid-row: llustrations;
+        grid-template-rows: [heading] /*illustrations*/
+                            auto
+                            5rem
+                            [photo-1-start]
+                            auto
+                            [photo-1-end]
+                            5rem
+                            [sub-heading-1]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [photo-2-start]
+                            auto
+                            [photo-2-end]
+                            5rem
+                            [sub-heading-2]
+                            auto
+                            1rem
+                            [paragraph-2]
+                            auto
+                            5rem
+                            [container-3]
+                            auto;
+    }
+    .illustrations .photo-1 {
+        padding: 0 8%;
+    }
+
+    .illustrations .photo-2 {
+        padding: 0 8%;
+    }
+
 }
+
+@media screen and (min-width: 601px) {
+
+    .illustrations {
+        grid-row: llustrations;
+        grid-template-rows: [heading] /*illustrations*/
+                            auto
+                            5rem
+                            [photo-1-start]
+                            2rem
+                            [sub-heading-1]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [sub-heading-2]
+                            auto
+                            1rem
+                            [paragraph-2]
+                            auto
+                            1fr
+                            [photo-2-start]
+                            10rem
+                            [photo-1-end]
+                            5rem
+                            [container-3]
+                            auto
+                            [photo-2-end]
+                            5rem
+                            ;
+    }
+
+    .illustrations .photo-1 {
+        padding-right: 61.7052023121387%;
+    }
+
+    .illustrations .photo-2 {
+        padding-left: 61.7052023121387%;
+    }
+
+    .illustrations .container-3 {
+        max-width: 49.0909090909091%;
+        margin-top: 5rem;
+    }
+}
+
 
 
 .hi-fidelity {
@@ -797,21 +876,14 @@ grid-template-rows: [sub-heading-2]
 .other-work .container-1 {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 13%;
-
-
+  justify-content: space-around;
+  padding: 0 8%;
 }
- .other-work figure:nth-child(1){
+
+ .other-work .container-1 figure{
    width: 223px;
-   height: 214.08px;
    padding-bottom: 5rem;
  }
- .other-work figure:nth-child(2){
-   width: 223px;
-   height: 163.28px;
-
- }
- .other-work figure
 
 
 
