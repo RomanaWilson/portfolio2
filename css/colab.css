@@ -235,6 +235,7 @@ img {
 @media screen and (min-width:601px) {
     .survey .photo-1 {
         padding: 20px 30px;
+        background-color: white;
     }
     .survey .container-2 {
         margin-left: 8.5%;
@@ -454,7 +455,7 @@ grid-template-rows: [sub-heading-2]
                     3rem
                     [container-2]
                     auto
-                    5rem
+                    8rem
                     [paragraph-4]
                     auto
                     3rem
@@ -493,15 +494,36 @@ grid-template-rows: [sub-heading-2]
                         [container-1]
                         auto
                         5rem
+                        [container-2]
+                        auto
+                        5rem
                         [sub-heading-2]
                         auto
                         3rem
-                        [container-2]
+                        [container-3]
+                        auto
+                        4rem
+                        [button-1]
                         auto;
     }
 
-.prototype .container-2 {
+.prototype .container-1 {
     max-width: 100%;
+    border: double gray;
+}
+
+.prototype .container-3 {
+    max-width: 100%;
+    border: double gray;
+}
+
+.previous {
+  background: url("../icons/arrowleft.svg") no-repeat;
+}
+
+.next {
+  background: url("../icons/arrowright.svg") no-repeat;
+
 }
 
 .testing-1 {
@@ -528,6 +550,15 @@ grid-template-rows: [sub-heading-2]
                         1rem
                         [paragraph-3]
                         auto;
+}
+
+@media screen and (min-width:601px) {
+      .testing-1 .container-1 {
+        border: double gray;
+      }
+      .testing-1 .container-2 {
+        border: double gray;
+      }
 }
 
 .visual-design {
@@ -561,10 +592,22 @@ grid-template-rows: [sub-heading-2]
                         5rem;
 }
 
+@media screen and (max-width:600px) {
+      .typography .container-1 {
+          padding: 0 21.3%;
+  }
 
-.typography .container-1 {
-    padding: 0 21.3%;
 }
+
+@media screen and (min-width:601px) {
+      .typography .container-1 {
+        margin-left: 11.03%;
+        margin-bottom: 3rem;
+      }
+}
+
+
+
 
 .color-palette {
     grid-row: color-palette;
@@ -582,10 +625,19 @@ grid-template-rows: [sub-heading-2]
                         5rem;
 }
 
-
-.color-palette .container-1 {
-    padding: 0 16%;
+@media screen and (max-width:600px){
+    .color-palette .container-1 {
+        padding: 0 16%;
+  }
 }
+
+@media screen and (min-width:601px) {
+    .color-palette .container-1 {
+      margin-left: 11.03%;
+      margin-bottom: 3rem;
+    }
+}
+
 
 .illustrations {
     grid-row: llustrations;
@@ -630,9 +682,37 @@ grid-template-rows: [sub-heading-2]
 }
 
 
-.hi-fidelity .container-1 {
-    padding: 0px 25.3968253968254%;
+
+
+
+@media screen and (max-width:600px){
+      .hi-fidelity .container-1 {
+          padding: 0px 27.2%;
+      }
+      .link-mobile {
+        margin-left: 36.8%;
+      }
 }
+
+@media screen and (min-width:601px) {
+      .mobile-mock {
+        padding-left: 8.5131894484412%;
+        padding-right: 75.220623501199%;
+
+
+      }
+      .desktop-mock {
+        padding-left: 34.1726618705036%;
+        padding-right: 4.7453703703704%;
+      }
+      .link-mobile {
+        margin-left: 14.628%;
+      }
+      .link-desktop {
+        margin-left: 48.8%;
+      }
+}
+
 
 .testing-2 {
     grid-template-rows: [heading]
@@ -658,6 +738,15 @@ grid-template-rows: [sub-heading-2]
                         1rem
                         [paragraph-3]
                         auto;
+}
+
+@media screen and (min-width:601px) {
+      .testing-2 .container-1 {
+        border: double gray;
+      }
+      .testing-2 .container-2 {
+        border: double gray;
+      }
 }
 
 
@@ -699,22 +788,32 @@ grid-template-rows: [sub-heading-2]
                         5rem
                         [container-1]
                         auto
-                        5rem
-                        [container-2]
-                        auto
                         3rem
                         [container-3]
                         auto
-                        7rem
-                        ;
+                        7rem;
 }
 
+.other-work .container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  padding: 0 13%;
 
 
-
-.other-work .container-1, .other-work .container-2 {
-    padding: 0 13%;
 }
+ .other-work figure:nth-child(1){
+   width: 223px;
+   height: 214.08px;
+   padding-bottom: 5rem;
+ }
+ .other-work figure:nth-child(2){
+   width: 223px;
+   height: 163.28px;
+
+ }
+ .other-work figure
+
+
 
 .other-work i {
     background: url("../icons/goup.svg") no-repeat;
@@ -727,4 +826,11 @@ grid-template-rows: [sub-heading-2]
     height: 5rem;
     justify-self: end;
     margin-right: calc(36.8% - 5.9rem);
+  }
+
+  @media screen and (max-width:600px){
+
+  }
+  @media screen and (min-width:601px){
+
   }
