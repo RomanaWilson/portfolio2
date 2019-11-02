@@ -3,30 +3,58 @@
 
 /* Work Page */
 
-.work {
-    grid-template-rows: [heading]
-                        auto
-                        2rem
-                        [container-1]
-                        auto
-                        5rem
-                        [container-2]
-                        auto
-                        5rem
-                        [container-3]
-                        auto
-                        7rem; /*3rem + 4 contact*/
+
+
+
+@media screen and (max-width:600px){
+  .work {
+      grid-template-rows: [heading]
+                          auto
+                          3rem
+                          [container-1]
+                          auto
+                          7rem; /*3rem + 4 contact*/
+  }
+
+  .work .container-1 figure {
+    padding-bottom: 5rem;
+  }
+
+  .laptop {
+    padding-left: 14.4%;
+    padding-right: 14.4%;
+
+  }
+
+  .desktop {
+    padding-left: 8.13%;
+    padding-right: 8.13%;
+  }
 
 }
+@media screen and (min-width:601px){
+  .work {
+      grid-template-rows: [heading]
+                          auto
+                          7.5rem
+                          [container-1]
+                          auto
+                          7rem; /*3rem + 4 contact*/
+  }
 
+  .work .container-1 figure {
+    padding-bottom: 7.5rem;
+  }
 
-.laptop {
-  padding-left: 6.4%;
-  padding-right: 6.4%;
+  .left {
+    padding-left: 8.5131894484412%;
+    padding-right: 27.5779376498801%;
 
-}
+  }
 
-.desktop {
-  padding-left: 2.13%;
-  padding-right: 2.13%;
+  .right {
+    padding-left: 34.1726618705036%;
+    padding-right: 17.8657074340528%;
+  }
+
 }

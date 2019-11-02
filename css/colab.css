@@ -20,6 +20,20 @@ img {
     margin-left: 1.1rem;
 }
 
+@media screen and (max-width:600px){
+      .aside-detail {
+          margin-left: 1.1rem;
+      }
+
+}
+@media screen and (min-width:601px){
+      .aside-detail {
+          margin: 0;
+      }
+
+}
+
+
 
 /*  SUB-GRID VERTICAL LAYOUTS */
 
@@ -61,46 +75,12 @@ img {
     main > section > h2 {
       padding-left: 1rem;
     }
-
-    .colab-overview {
-        grid-template-rows: [heading]
-                            auto
-                            2rem
-                            [paragraph-1]
-                            auto
-                            5rem
-                            [container-1]
-                            auto
-                            5rem
-                            [container-2]
-                            auto
-                            5rem
-                            [container-3]
-                            auto;
-    }
-    .colab-overview .container-1 img {
-      width: 87.4666666666667%;
-      padding-left: 5.333333333%;
-    }
-
-    .colab-overview .container-2 img {
-        width: 92.8%;
-        padding-left: 2.4%;
-    }
-
-    .colab-overview .container-3 img {
-        width: 88%;
-        padding-left: 7.4666666666667%;
-    }
-
-    .survey .photo-1 {
-      border: none;
-      padding: 0;
-    }
-
 }
 
+
 /* Hero - Tablet and Desktop */
+
+
 
 @media screen and (min-width:601px) {
 
@@ -117,9 +97,6 @@ img {
                             [background-end]
                             5rem
                             [container-1]
-                            auto
-                            5rem
-                            [button-1]
                             auto;
     }
 
@@ -154,30 +131,61 @@ img {
     }
 }
 
+/* Overview - mobile */
 
-.colab-overview {
-    grid-template-rows: [heading]
-                        auto
-                        2rem
-                        [paragraph-1]
-                        auto
-                        5rem
-                        [container-1]
-                        auto
-                        5rem
-                        [container-2]
-                        auto
-                        5rem
-                        [container-3]
-                        auto;
+@media screen and (max-width:600px) {
+    .colab-overview {
+        grid-template-rows: [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [container-1]
+                            auto
+                            5rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-3]
+                            auto;
+    }
+
+    .colab-overview .container-1 img {
+        width: 87.4666666666667%;
+        padding-left: 5.333333333%;
+      }
+
+      .colab-overview .container-2 img {
+          width: 92.8%;
+          padding-left: 2.4%;
+      }
+
+      .colab-overview .container-3 img {
+          width: 88%;
+          padding-left: 7.4666666666667%;
+      }
 }
 
+@media screen and (min-width:601px) {
+    .colab-overview {
+        grid-template-rows: [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [container-1]
+                            auto;
+    }
 
-.colab-overview .container-1 ul {
-    display: flex;
-    justify-content: space-around;
-    padding-bottom: 2rem;
+    .colab-overview .container-1 ul {
+        display: flex;
+        justify-content: space-around;
+        padding-bottom: 2rem;
+    }
 }
+
 
 
 /* Resaerch Grids */
@@ -217,61 +225,142 @@ img {
                         5rem;
 }
 
-.survey .photo-1 {
-  padding: 20px 30px;
+@media screen and (max-width:600px) {
+    .survey .photo-1 {
+        border: none;
+        padding: 0;
+    }
+}
+
+@media screen and (min-width:601px) {
+    .survey .photo-1 {
+        padding: 20px 30px;
+        background-color: white;
+    }
+    .survey .container-2 {
+        margin-left: 8.5%;
+    }
+}
+
+@media screen and (max-width:600px){
+  .competitive-anal {
+      grid-row: competitive-anal;
+      grid-template-rows:[sub-heading-2] /*competitive anal*/
+                          auto
+                          2rem
+                          [paragraph-1]
+                          auto
+                          5rem;
+  }
+}
+
+@media screen and (min-width:601px){
+  .competitive-anal {
+      grid-row: competitive-anal;
+      grid-template-rows:[sub-heading-2] /*competitive anal*/
+                          auto
+                          2rem
+                          [paragraph-1]
+                          auto
+                          5rem
+                          [container-1]
+                          auto
+                          5rem;
+  }
+  .competitive-anal .container-1 {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+  }
+  .competitive-anal img {
+
+    padding: 0 1rem 2rem 1rem;
+  }
+}
+
+
+@media screen and (max-width:600px) {
+
+  .user-persona {
+      grid-row: user-persona;
+      grid-template-rows:[sub-heading-1] /*user persona*/
+                          auto
+                          5rem
+                          [sub-heading-2 photo-1-start]
+                          auto
+                          [paragraph-1]
+                          1fr
+                          [photo-1-end]
+                          3rem
+                          [paragraph-2]
+                          auto
+                          3rem
+                          [sub-heading-3] /*frustrations*/
+                          auto
+                          1rem
+                          [list-1]
+                          auto
+                          2rem
+                          [sub-heading-4] /*goals*/
+                          auto
+                          1rem
+                          [list-2]
+                          auto
+                          7.5rem;
+  }
+
+
+      .user-persona .sub-heading-2{
+        text-align: right;
+        margin-bottom: 1rem;
+      }
+      .user-persona .paragraph-1 {
+          text-align: right;
+      }
+
+}
+
+@media screen and (min-width:601px) {
+
+  .user-persona {
+      grid-row: user-persona;
+      grid-template-rows:[sub-heading-1] /*user persona*/
+                          auto
+                          5rem
+                          [sub-heading-2 photo-1-start]
+                          auto
+                          [paragraph-1]
+                          1fr
+                          [photo-1-end]
+                          3rem
+                          [paragraph-2]
+                          auto
+                          3rem
+                          [sub-heading-3] /*frustrations*/
+                          auto
+                          1rem
+                          [list-1]
+                          auto
+                          2rem
+                          [sub-heading-4] /*goals*/
+                          auto
+                          1rem
+                          [list-2]
+                          auto
+                          7.5rem;
+  }
+
+      .user-persona .sub-heading-2{
+        text-align: left;
+      }
+      .user-persona .paragraph-1 {
+          text-align: left;
+      }
+
 
 }
 
 
-
-
-.competitive-anal {
-    grid-row: competitive-anal;
-    grid-template-rows:[sub-heading-2] /*competitive anal*/
-                        auto
-                        2rem
-                        [paragraph-1]
-                        auto
-                        5rem;
-}
-
-
-.user-persona {
-    grid-row: user-persona;
-    grid-template-rows:[sub-heading-1] /*user persona*/
-                        auto
-                        5rem
-                        [sub-heading-2 photo-1-start]
-                        auto
-                        [paragraph-1]
-                        1fr
-                        [photo-1-end]
-                        3rem
-                        [paragraph-2]
-                        auto
-                        3rem
-                        [sub-heading-3] /*frustrations*/
-                        auto
-                        1rem
-                        [list-1]
-                        auto
-                        2rem
-                        [sub-heading-4] /*goals*/
-                        auto
-                        1rem
-                        [list-2]
-                        auto
-                        7.5rem;
-}
-
-.user-persona .sub-heading-2 {
-    text-align: right;
-    margin-bottom: 1rem;
-}
-
-.user-persona .paragraph-1 {
-    text-align: right;
-}
 
 .user-persona .photo-1 {
     margin-left: 3rem;
@@ -299,12 +388,27 @@ img {
                         [background-end]
 }
 
-.key-insights .background {
-    background: url(../images/shape1.svg) no-repeat;
-    background-size: cover;
-    overflow: hidden;
-    min-height: 50vw;
+@media screen and (max-width:600px){
+  .key-insights .background {
+      background: url(../images/shape1.svg) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      min-height: 50vw;
+  }
+
+
 }
+@media screen and (min-width:601px){
+  .key-insights .background {
+      background: url(../images/shape1.svg) no-repeat;
+      background-size: cover;
+      overflow: hidden;
+      min-height: 50vw;
+  }
+
+}
+
+
 
 
 
@@ -327,17 +431,34 @@ img {
     grid-row: user-stories;
     grid-template-rows: [sub-heading-1]
                         auto
-                        1rem
+                        5rem
                         [paragraph-2]
                         auto
                         2rem
                         [container-1]
                         auto
-                        2rem
+                        5rem
                         [button-1]
                         auto
                         5rem;
 }
+@media screen and (max-width:600px){
+
+      .button-1 {
+        margin-left: 36.8%;
+      }
+}
+
+@media screen and (min-width:601px){
+      .user-stories .container-1 {
+       margin-left: 40.29%;
+      }
+      .button-1 {
+        margin-left: 48.8%;
+  }
+}
+
+
 
 .user-flows {
 grid-row: user-flows;
@@ -349,7 +470,7 @@ grid-template-rows: [sub-heading-2]
                     3rem
                     [container-2]
                     auto
-                    5rem
+                    8rem
                     [paragraph-4]
                     auto
                     3rem
@@ -360,8 +481,22 @@ grid-template-rows: [sub-heading-2]
                     auto;
 }
 
-.user-flows .container-3 {
-    padding: 0px 28% ;
+
+@media screen and (max-width:600px){
+    .user-flows .container-3 {
+      padding: 0px 28% ;
+    }
+}
+
+@media screen and (min-width:601px) {
+    .user-flows .container-2 {
+      padding: 30px;
+      background-color: white;
+    }
+    .user-flows .container-3 {
+      padding: 30px;
+      background-color: white;
+    }
 }
 
 .prototype {
@@ -374,15 +509,36 @@ grid-template-rows: [sub-heading-2]
                         [container-1]
                         auto
                         5rem
+                        [container-2]
+                        auto
+                        5rem
                         [sub-heading-2]
                         auto
                         3rem
-                        [container-2]
+                        [container-3]
+                        auto
+                        4rem
+                        [button-1]
                         auto;
     }
 
-.prototype .container-2 {
+.prototype .container-1 {
     max-width: 100%;
+    border: double gray;
+}
+
+.prototype .container-3 {
+    max-width: 100%;
+    border: double gray;
+}
+
+.previous {
+  background: url("../icons/arrowleft.svg") no-repeat;
+}
+
+.next {
+  background: url("../icons/arrowright.svg") no-repeat;
+
 }
 
 .testing-1 {
@@ -409,6 +565,15 @@ grid-template-rows: [sub-heading-2]
                         1rem
                         [paragraph-3]
                         auto;
+}
+
+@media screen and (min-width:601px) {
+      .testing-1 .container-1 {
+        border: double gray;
+      }
+      .testing-1 .container-2 {
+        border: double gray;
+      }
 }
 
 .visual-design {
@@ -442,10 +607,25 @@ grid-template-rows: [sub-heading-2]
                         5rem;
 }
 
+@media screen and (max-width:600px) {
+      .typography .container-1 {
+          padding: 0 21.3%;
+  }
 
-.typography .container-1 {
-    padding: 0 21.3%;
 }
+
+@media screen and (min-width:601px) {
+      .typography-image-1 {
+        padding-right: 69.8%;
+      }
+      .typography .container-1 {
+        margin-bottom: 3rem;
+      }
+
+}
+
+
+
 
 .color-palette {
     grid-row: color-palette;
@@ -463,37 +643,107 @@ grid-template-rows: [sub-heading-2]
                         5rem;
 }
 
-
-.color-palette .container-1 {
-    padding: 0 16%;
+@media screen and (max-width:600px){
+    .color-palette .container-1 {
+        padding: 0 16%;
+  }
 }
 
-.illustrations {
-    grid-row: llustrations;
-    grid-template-rows: [heading] /*illustrations*/
-                        auto
-                        5rem
-                        [container-1]
-                        auto
-                        5rem
-                        [sub-heading-1]
-                        auto
-                        1rem
-                        [paragraph-1]
-                        auto
-                        5rem
-                        [container-2]
-                        auto
-                        5rem
-                        [sub-heading-2]
-                        auto
-                        1rem
-                        [paragraph-2]
-                        auto
-                        5rem
-                        [container-3]
-                        auto;
+@media screen and (min-width:601px) {
+    .palette-img1 {
+      padding-right: 50%;
+    }
+    .color-palette .container-1 {
+      margin-bottom: 3rem;
+    }
 }
+
+@media screen and (max-width: 600px) {
+
+    .illustrations {
+        grid-row: llustrations;
+        grid-template-rows: [heading] /*illustrations*/
+                            auto
+                            5rem
+                            [photo-1-start]
+                            auto
+                            [photo-1-end]
+                            5rem
+                            [sub-heading-1]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [photo-2-start]
+                            auto
+                            [photo-2-end]
+                            5rem
+                            [sub-heading-2]
+                            auto
+                            1rem
+                            [paragraph-2]
+                            auto
+                            5rem
+                            [container-3]
+                            auto;
+    }
+    .illustrations .photo-1 {
+        padding: 0 8%;
+    }
+
+    .illustrations .photo-2 {
+        padding: 0 8%;
+    }
+
+}
+
+@media screen and (min-width: 601px) {
+
+    .illustrations {
+        grid-row: llustrations;
+        grid-template-rows: [heading] /*illustrations*/
+                            auto
+                            5rem
+                            [photo-1-start]
+                            2rem
+                            [sub-heading-1]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [sub-heading-2]
+                            auto
+                            1rem
+                            [paragraph-2]
+                            auto
+                            1fr
+                            [photo-2-start]
+                            10rem
+                            [photo-1-end]
+                            5rem
+                            [container-3]
+                            auto
+                            [photo-2-end]
+                            5rem
+                            ;
+    }
+
+    .illustrations .photo-1 {
+        padding-right: 61.7052023121387%;
+    }
+
+    .illustrations .photo-2 {
+        padding-left: 61.7052023121387%;
+    }
+
+    .illustrations .container-3 {
+        max-width: 49.0909090909091%;
+        margin-top: 5rem;
+    }
+}
+
 
 
 .hi-fidelity {
@@ -511,9 +761,37 @@ grid-template-rows: [sub-heading-2]
 }
 
 
-.hi-fidelity .container-1 {
-    padding: 0px 25.3968253968254%;
+
+
+
+@media screen and (max-width:600px){
+      .hi-fidelity .container-1 {
+          padding: 0px 27.2%;
+      }
+      .link-mobile {
+        margin-left: 36.8%;
+      }
 }
+
+@media screen and (min-width:601px) {
+      .mobile-mock {
+        padding-left: 8.5131894484412%;
+        padding-right: 75.220623501199%;
+
+
+      }
+      .desktop-mock {
+        padding-left: 34.1726618705036%;
+        padding-right: 4.7453703703704%;
+      }
+      .link-mobile {
+        margin-left: 14.628%;
+      }
+      .link-desktop {
+        margin-left: 48.8%;
+      }
+}
+
 
 .testing-2 {
     grid-template-rows: [heading]
@@ -539,6 +817,15 @@ grid-template-rows: [sub-heading-2]
                         1rem
                         [paragraph-3]
                         auto;
+}
+
+@media screen and (min-width:601px) {
+      .testing-2 .container-1 {
+        border: double gray;
+      }
+      .testing-2 .container-2 {
+        border: double gray;
+      }
 }
 
 
@@ -580,22 +867,25 @@ grid-template-rows: [sub-heading-2]
                         5rem
                         [container-1]
                         auto
-                        5rem
-                        [container-2]
-                        auto
                         3rem
                         [container-3]
                         auto
-                        7rem
-                        ;
+                        7rem;
 }
 
-
-
-
-.other-work .container-1, .other-work .container-2 {
-    padding: 0 13%;
+.other-work .container-1 {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  padding: 0 8%;
 }
+
+ .other-work .container-1 figure{
+   width: 223px;
+   padding-bottom: 5rem;
+ }
+
+
 
 .other-work i {
     background: url("../icons/goup.svg") no-repeat;
@@ -608,4 +898,11 @@ grid-template-rows: [sub-heading-2]
     height: 5rem;
     justify-self: end;
     margin-right: calc(36.8% - 5.9rem);
+  }
+
+  @media screen and (max-width:600px){
+
+  }
+  @media screen and (min-width:601px){
+
   }

@@ -29,41 +29,94 @@
                         7rem; /*3rem + 4rem contact*/
 }
 
-.cir-bio {
-  width: 10.9rem;
-  height: 10.9rem;
-  justify-self: end;
-  margin-right: calc(36.8% - 5.45rem);
+@media screen and (max-width: 600px){
+        .cir-bio {
+          width: 10.9rem;
+          height: 10.9rem;
+          justify-self: end;
+          margin-right: calc(36.8% - 5.45rem);
+
+        }
+
+        .cir-photo {
+          width: 18.6rem;
+          height: 18.6rem;
+          justify-self: end;
+          margin-right: calc(36.8% - 9.4rem);
+        }
+
+        .cir-photo img {
+          width: 17rem;
+          height: 17rem;
+        }
+
+        .small-circle {
+          width: 4.4rem;
+          height: 4.4rem;
+          justify-self: start;
+          margin-left: calc(8% - 1px - 2.2rem);
+        }
+
+        .cir-wework {
+          width: 16.2rem;
+          height: 16.2rem;
+          justify-self: end;
+          margin-right: calc(36.8% - 8.1rem);
+        }
+
+        .cir-wework img {
+          width: 14.5rem;
+          height: 14.5rem;
+        }
+}
+
+@media screen and (min-width: 601px){
+        .cir-bio {
+          width: 10.9rem;
+          height: 10.9rem;
+          margin-left: calc(14.6284411319865% - 5.45rem);
+
+        }
+
+        .cir-photo {
+          width: 18.6rem;
+          height: 18.6rem;
+          justify-self: end;
+          margin-right: calc(14.6284411319865% - 9.3rem);
+        }
+
+        .cir-photo img {
+          width: 17rem;
+          height: 17rem;
+
+        }
+
+        .small-circle {
+          width: 4.4rem;
+          height: 4.4rem;
+          margin-left: calc(14.6284411319865% - 2.2rem);
+        }
+
+        .cir-wework {
+          width: 16.2rem;
+          height: 16.2rem;
+          justify-self: end;
+          margin-right: calc(14.6284411319865% - 8.1rem);
+        }
+
+        .cir-wework img {
+          width: 14.5rem;
+          height: 14.5rem;
+        }
 
 }
 
-.cir-photo {
-  width: 18.6rem;
-  height: 18.6rem;
-  justify-self: end;
-  margin-right: calc(36.8% - 9.4rem);
-}
 
-.profile {
-  width: 17rem;
-  height: 17rem;
-}
 
-.cir-cir {
-  width: 4.4rem;
-  height: 4.4rem;
-  justify-self: start;
-  margin-left: calc(8% - 1px - 2.2rem);
-}
 
-.cir-wework {
-  width: 16.2rem;
-  height: 16.2rem;
-  justify-self: end;
-  margin-right: calc(36.8% - 8.1rem);
-}
+/* @media screen and (max-width:600px){
 
-.wework {
-  width: 14.5rem;
-  height: 14.5rem;
 }
+@media screen and (min-width:601px){
+
+} */
