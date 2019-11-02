@@ -10,15 +10,21 @@
                         auto
                         1rem
                         [container-1]
-                        84vw;
+                        auto;
 
                         margin-bottom: calc(-5rem - 21.066666666vw);
 }
 
+@media screen and (max-width: 575.98px) {
+    .home-hero .container-1 {
+        height: 84vw;
+    }    
+}
 
-.home-project-board {
-    grid-auto-rows: auto;
-    grid-row-gap: 75px;
+@media screen and (min-width: 576px) {
+    .home-hero .container-1 {
+        height: 84vw;
+    }    
 }
 
 .work-circle {
@@ -27,6 +33,34 @@
     justify-self: end;
     margin-bottom: calc(-5rem - 3vw);
     margin-right: calc(36.8% - 5.9rem);
+}
+
+.lily {
+    position: absolute;
+    left: 2.222222222%;
+    right: 27.619047619%;
+    top: 18.73015873%;
+    bottom: 10.793650793%;
+
+    background: url(../images/hero1x.png) no-repeat;
+    background-size: contain;
+}
+
+.ellipse {
+    position: absolute;
+    left: 33.968253968%;
+    top: 5.396825396%;
+    right: 4.444444444%;
+    bottom: 33.968253968%;
+
+    background: #C0E2CA;
+    opacity: 0.5;
+    border-radius: 50%;
+}
+
+.home-project-board {
+    grid-auto-rows: auto;
+    grid-row-gap: 75px;
 }
 
 .home-project {
@@ -109,25 +143,3 @@
 
 /* Hero Absolute-Pos Objects*/
 
-.lily {
-    position: absolute;
-    left: 2.222222222%;
-    right: 27.619047619%;
-    top: 18.73015873%;
-    bottom: 10.793650793%;
-
-    background: url(../images/hero1x.png) no-repeat;
-    background-size: contain;
-}
-
-.ellipse {
-    position: absolute;
-    left: 33.968253968%;
-    top: 5.396825396%;
-    right: 4.444444444%;
-    bottom: 33.968253968%;
-
-    background: #C0E2CA;
-    opacity: 0.5;
-    border-radius: 50%;
-}
