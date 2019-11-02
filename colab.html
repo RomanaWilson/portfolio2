@@ -16,7 +16,11 @@
     <div class="vert-line linep1"></div>
     <div class="vert-line linep2"></div>
 
+<<<<<<< HEAD
     <header class="top-header almost-opaque gray-border ">
+=======
+    <header class="top-header almost-opaque gray-border mobile-only">
+>>>>>>> 5490a40930a5026d3b44719db15cd83fbd75445e
       <nav class="top-nav">
           <img src="icons/logoblack.svg" alt="logo" class="logo">
           <a class="wide-logo" href="index.html"><img src="icons/romiwilson.svg" alt="logo" href="index.html"></a>
@@ -29,42 +33,82 @@
       <!-- hero -->
       <section class="index grid sub-grid colab-hero">
         <div class="hero-back full-width background"></div>
-        <h1 class="main-mobile white-type justify-center standard-width heading">co lab</h1>
+        <h1 class="main-mobile white-type justify-center standard-width heading ">co lab</h1>
         <p class="body-1 white-type standard-width paragraph-1">Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
-        <img class="standard-width photo-1" src="images/colablaptop.svg" alt="colab laptop">
-        <section class="summary-box opaque thin-grey-border standard-width container-1">
+        <img class="standard-width photo-1 mobile-only" src="images/colablaptop.svg" alt="colab laptop">
+
+        <section class="summary-box thin-grey-border standard-width container-1 mobile-only">
+<!--1-->
           <div>
-            <h3 class="small-title">ROLE</h3>
-            <p class="thin-caption">Research, UX Design, Prototyping, UI Design</p>
+            <h3 class="small-title mobile-only">ROLE</h3>
+            <p class="thin-caption mobile-only">Research, UX Design, Prototyping, UI Design</p>
+
+            <h3 class="small-title mobile-hidden">ROLE</h3>
+            <ul class="thin-caption mobile-hidden">
+              <li>Research</li>
+              <li>Design</li>
+              <li>Prototyping</li>
+              <li>UI Design</li>
+
+            </ul>
           </div>
+
+<!--2-->
           <div>
-            <h3 class="small-title">TOOLS</h3>
-            <p class="thin-caption">Figma, Adobe CC, Colorable, Survey Swap</p>
+            <h3 class="small-title mobile-only">TOOLS</h3>
+            <p class="thin-caption mobile-only">Figma, Adobe CC, Colorable, Survey Swap</p>
+
+            <h3 class="small-title mobile-hidden">PROTOTYPE</h3>
+            <ul class="thin-caption mobile-hidden">
+              <li>desktop →</li>
+              <li>mobile →</li>
+
+            </ul>
           </div>
+
+<!--3-->
           <div>
-            <h3 class="small-title">DELIVERABLES</h3>
-            <p class="thin-caption">User Surveys, Competitive Analysis, User Stories, User Flows, Content Strategy, User Personas, Wireframes, Prototypes, Usability Testing, High Fidelity Mock-Ups</p>
+            <h3 class="small-title mobile-only">DELIVERABLES</h3>
+            <p class="thin-caption mobile-only">User Surveys, Competitive Analysis, User Stories, User Flows, Content Strategy, User Personas, Wireframes, Prototypes, Usability Testing, High Fidelity Mock-Ups</p>
+
+            <h3 class="small-title mobile-hidden">TOOLS</h3>
+            <ul class="thin-caption mobile-hidden">
+              <li>Figma</li>
+              <li>Adobe CC</li>
+              <li>Colorable</li>
+              <li>Survey Swap</li>
+            </ul>
+
           </div>
 
         </section>
-        <a class="serif-small animated-button button-indent full-width button-1">prototype →</a>
+        <a class="serif-small animated-button button-indent full-width button-1 mobile-only">prototype →</a>
       </section>
 <!-- overview -->
       <section class=" index grid sub-grid colab-overview">
-        <h2 class="serif-mobile full-width heading">overview</h2>
-        <div class="serif-small circle section-num opaque full-width heading">1</div> <!--only visual elemnt at mobile-->
+        <h2 class="serif-mobile heading heading-width">overview</h2>
+        <div class="serif-small circle section-num opaque full-width heading mobile-only">1</div> <!--only visual elemnt at mobile-->
         <p class="body-2 standard-width paragraph-1">the user is being  overwhelmed by multiple tools and is losing productivity to distraction. the principle of co lab is to facilitate effective collaboration, organization and communication to remove this distraction.</p>
-        <figure class="full-width container-1">
+        <figure class="full-width container-1 mobile-only">
           <img src="images/mac1@2x.png" alt="computer">
           <figcaption class="picture-caption caption-center">organization</figcaption>
         </figure>
-        <figure class="full-width container-2">
+        <figure class="full-width container-2 mobile-only">
           <img src="images/mac2@2x.png" alt="computer">
           <figcaption class="picture-caption caption-center">collaboration</figcaption>
         </figure>
-        <figure class="full-width container-3">
+        <figure class="full-width container-3 mobile-only">
           <img src="images/mac3@2x.png" alt="computer">
           <figcaption class="picture-caption caption-center">communication</figcaption>
+        </figure>
+
+        <figure class="standard-width container-1 mobile-hidden">
+          <img src="images/computers3x.png" alt="computers">
+          <ul class="picture-caption">
+            <li>organication</li>
+            <li>collaboration</li>
+            <li>communication</li>
+          </ul>
         </figure>
 
         <!--mobile hidden-->
@@ -78,15 +122,15 @@
 
 <!-- research -->
       <section class="grid sub-grid colab-research">
-        <h2 class="serif-mobile full-width heading">research</h2>
-        <div class="serif-small circle section-num opaque full-width heading">2</div> <!--- only visual elemnt at mobile --->
+        <h2 class="serif-mobile heading-width heading">research</h2>
+        <div class="serif-small circle section-num opaque full-width heading mobile-only">2</div> <!--- only visual elemnt at mobile --->
 
         <!-- survey -->
         <section class="grid sub-grid survey">
           <h3 class="thin-title standard-width sub-heading-1">key survey results</h3>
           <!--mobile hidden-->
-          <!-- <p class="body-2 ">I have surveyed 20 people through online platform survey swap. </p> -->
-          <img class="standard-width photo-1"src="images/graph1.svg" alt="survey graph">
+          <p class="body-2 standard-width paragraph-1 mobile-hidden">I have surveyed 20 people through online platform survey swap. </p>
+          <img class=" index graph thin-grey-border dent-left photo-1"src="images/graph1.svg" alt="survey graph">
           <aside class="summary-box opaque thin-grey-border standard-width container-2">
             <h4 class="small-title">usage</h4>
             <p class="thin-caption">76,2%  respondents use cloud app for work and 71,4%  respondents use a storage app mostly on desktop.</p>
@@ -155,8 +199,8 @@
 
 <!-- information architecture -->
       <section class="grid sub-grid info-architecture">
-        <h2 class="serif-mobile full-width heading">information<br>architecture</h2>
-        <div class="serif-small circle section-num opaque full-width heading">3</div> <!--only visual elemnt at mobile-->
+        <h2 class="serif-mobile heading-width heading">information architecture</h2>
+        <div class="serif-small circle section-num opaque full-width heading mobile-only">3</div> <!--only visual elemnt at mobile-->
         <p class="body-2 standard-width paragraph-1 ">I reviewed all aspects of my research and built high priority user stories and user flows.</p>
 
         <!-- user stories -->
@@ -186,8 +230,8 @@
 
   <!-- prototype -->
       <section class=" index grid sub-grid prototype">
-        <h2 class="serif-mobile full-width heading">prototype</h2>
-        <div class="serif-small circle section-num opaque full-width heading">4</div> <!--only visual elemnt at mobile-->
+        <h2 class="serif-mobile heading-width heading">prototype</h2>
+        <div class="serif-small circle section-num opaque full-width heading mobile-only">4</div> <!--only visual elemnt at mobile-->
         <!--mobile hidden-->
         <!-- <p class="body-2">having all the necesary information I sketched screens for the web onboarding interface and the primary aplication including the three main screens. files. co lab and talk.</p> -->
 
@@ -207,8 +251,8 @@
 
   <!-- testing-1 -->
       <section class=" index grid sub-grid testing-1">
-        <h2 class="serif-mobile full-width heading">testing</h2>
-        <div class="serif-small circle section-num opaque full-width heading">5</div> <!--only visual elemnt at mobile-->
+        <h2 class="serif-mobile heading-width heading">testing</h2>
+        <div class="serif-small circle section-num opaque full-width heading mobile-only">5</div> <!--only visual elemnt at mobile-->
         <p class="body-2 standard-width paragraph-1">before building any time consuming hi-fidelity mockups I test my wireframes and make necessary adjustments</p>
         <img class="thin-grey-border standard-width container-1"src="images/wireframe3x.png" alt="wireframe 1">
         <h4 class="small-title standard-width sub-heading-1">discovery</h4>
@@ -221,7 +265,7 @@
 
   <!-- visual design -->
       <section class="grid sub-grid visual-design">
-        <h2 class="serif-mobile full-width heading">visual design</h2>
+        <h2 class="serif-mobile heading-width heading">visual design</h2>
         <div class="serif-small circle section-num opaque full-width heading">6</div> <!--only visual elemnt at mobile-->
         <p class="body-2 standard-width paragraph-1">Co lab wants to bring a simplicity and fun and also differentiate itself from the competition. what is the emotion we want to share with the user? we want to be fun and welcoming and that is why we have chosen warm tones, playful typography and comic illustrations.</p>
 
@@ -264,8 +308,8 @@
 
   <!--hi-fidelity-->
       <section class="grid sub-grid hi-fidelity">
-        <h2 class="serif-mobile full-width heading">hi-fidelity</h2>
-        <div class="serif-small circle section-num opaque full-width heading">7</div> <!--only visual elemnt at mobile-->
+        <h2 class="serif-mobile heading-width heading">hi-fidelity</h2>
+        <div class="serif-small circle section-num opaque full-width heading mobile-only">7</div> <!--only visual elemnt at mobile-->
         <p class="body-2 standard-width paragraph-1">hi fidelity mock-ups were composed to bring together the research, strategy and visual design.  the key colab concepts were fully flushed out to create a delightful experience for the user.</p>
         <img class=" index standard-width container-1"src="images/home1@3x.png" alt="phone">
         <a class="serif-small animated-button full-width button-1">prototype →</a>
@@ -276,8 +320,8 @@
 
   <!--testing-2-->
       <section class="grid sub-grid testing-2">
-        <h2 class="serif-mobile full-width heading">testing</h2>
-        <div class="serif-small circle section-num opaque full-width heading">8</div> <!--only visual elemnt at mobile-->
+        <h2 class="serif-mobile heading-width heading">testing</h2>
+        <div class="serif-small circle section-num opaque full-width heading mobile-only">8</div> <!--only visual elemnt at mobile-->
         <p class="body-2 standard-width paragraph-1">user testing was a great learning experience to make sure the product fits the user needs. I user tested with small group of professionals between the ages of 23 and 45 years.</p>
         <img class="thin-grey-border opaque standard-width container-1"src="images/testing2x.png" alt="testing screen 1">
         <h4 class="small-title standard-width sub-heading-1">discovery</h4>
@@ -290,16 +334,21 @@
   <!--conclusion-->
       <section class="grid sub-grid conclusion">
         <div class="background-start full-width"></div>
-        <h2 class="serif-mobile full-width heading">conclusion</h2>
-        <div class="serif-small circle-purple section-num index full-width heading">9</div> <!--only visual elemnt at mobile-->
+        <h2 class="serif-mobile heading-width heading">conclusion</h2>
+        <div class="serif-small circle-purple section-num index full-width heading mobile-only">9</div> <!--only visual elemnt at mobile-->
         <p class="body-2 standard-width paragraph-1">in this project I worked with three different critical productivity tools and designed an interface that allows for the uninterrupted workflow between each of these tools. this allows uploading files into pre-designed organizational file structures, real time infile collaborating with other users, and facilitating discussions as well as planning without leaving an individual app.</p>
       </section>
 
 
   <!--self-reflection-->
       <section class="grid sub-grid self-reflection">
+<<<<<<< HEAD
         <h2 class="serif-mobile full-width heading">self-reflection</h2>
         <!-- <div class="serif-small circle section-num index full-width heading">1</div> <!-only visual elemnt at mobile-->
+=======
+        <h2 class="serif-mobile heading-width heading">self-reflection</h2>
+        <!-- <div class="serif-small circle section-num index full-width heading">10</div> <!only visual elemnt at mobile-->
+>>>>>>> 5490a40930a5026d3b44719db15cd83fbd75445e
         <p class="body-2 standard-width paragraph-1">with the 20/20 of hindsight I would have allocated a lot more resources to initial research.  while observing the user behavior in user testing it was apparent that I worked with a lot of assumptions that I created early on.  it is always easier to design with the right thought in mind than to adjust a design created with a false paradigm.
             <br>
             I would also test different demographic groups since some of the users were adjusted to certain technology.
@@ -326,7 +375,7 @@
 <!-- haha -->
     </main>
     <!--mobile footer-->
-    <footer id="bottommenu" class="grid sub-grid footer-mobile almost-opaque">
+    <footer id="bottommenu" class="grid sub-grid footer-mobile almost-opaque mobile-only">
       <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
           <img src="images/rectangle.svg" alt="rectangle">
           <h2 class="menu-style">contact</h2>

@@ -20,40 +20,140 @@ img {
     margin-left: 1.1rem;
 }
 
-main > section > h2 {
-  padding-left: 1rem;
-}
 
 /*  SUB-GRID VERTICAL LAYOUTS */
 
-.colab-hero {
-    grid-template-rows: [background-start]
-                        6rem
-                        [heading]
-                        auto
-                        3rem
-                        [paragraph-1]
-                        calc(120vw - 24.4rem - 22.6666666666667vw)
-                        10rem
-                        [photo-1-start]
-                        22.6666666666667vw
-                        [background-end]
-                        auto
-                        [photo-1-end]
-                        10rem
-                        [container-1]
-                        auto
-                        5rem
-                        [button-1]
-                        auto;
+/* Hero - Mobile */
+
+@media screen and (max-width:600px) {
+
+    .colab-hero {
+        grid-template-rows: [background-start]
+                            6rem
+                            [heading]
+                            auto
+                            3rem
+                            [paragraph-1]
+                            minmax(14.2rem, calc(120vw - 24.4rem - 22.6666666666667vw))
+                            10rem
+                            [photo-1-start]
+                            22.6666666666667vw
+                            [background-end]
+                            auto
+                            [photo-1-end]
+                            10rem
+                            [container-1]
+                            auto
+                            5rem
+                            [button-1]
+                            auto;
+    }
+
+    .colab-hero .background {
+        background: url(../images/shape3.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .colab-hero .paragraph-1 {
+        align-self: center;
+    }
+
+    main > section > h2 {
+      padding-left: 1rem;
+    }
+
+    .colab-overview {
+        grid-template-rows: [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [container-1]
+                            auto
+                            5rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-3]
+                            auto;
+    }
+    .colab-overview .container-1 img {
+      width: 87.4666666666667%;
+      padding-left: 5.333333333%;
+    }
+
+    .colab-overview .container-2 img {
+        width: 92.8%;
+        padding-left: 2.4%;
+    }
+
+    .colab-overview .container-3 img {
+        width: 88%;
+        padding-left: 7.4666666666667%;
+    }
+
+    .survey .photo-1 {
+      border: none;
+      padding: 0;
+    }
+
 }
 
+/* Hero - Tablet and Desktop */
 
+@media screen and (min-width:601px) {
 
-.hero-back {
-    background: url(../images/shape3.svg) no-repeat;
-    background-size: cover;
+    .colab-hero {
+        grid-template-rows: 8rem
+                            [background-start]
+                            7.878rem
+                            [heading]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            15.975rem
+                            [background-end]
+                            5rem
+                            [container-1]
+                            auto
+                            5rem
+                            [button-1]
+                            auto;
+    }
+
+    .colab-hero .background {
+        background: url(../images/colabhero.svg) no-repeat;
+        background-size: contain;
+        justify-self: center;
+        width: 55rem;
+    }
+
+    .colab-hero .paragraph-1 {
+        width: 40.7rem;
+        justify-self: center;
+        margin-left: 14.2rem;
+    }
+
+    .colab-hero h1 {
+        width: 40.7rem;
+        justify-self: center;
+        margin-left: 14.2rem;
+    }
+
+    .colab-hero .summary-box {
+        border: none;
+        display: flex;
+        justify-content: space-between;
+        padding: 0;
+    }
+
+    .colab-hero .summary-box div {
+        max-width: 11.4rem;
+    }
 }
+
 
 .colab-overview {
     grid-template-rows: [heading]
@@ -72,27 +172,20 @@ main > section > h2 {
                         auto;
 }
 
-.colab-overview .container-1 img {
-    width: 87.4666666666667%;
-    padding-left: 5.3333333333333%
+
+.colab-overview .container-1 ul {
+    display: flex;
+    justify-content: space-around;
+    padding-bottom: 2rem;
 }
 
-.colab-overview .container-2 img {
-    width: 92.8%;
-    padding-left: 2.4%;
-}
-
-.colab-overview .container-3 img {
-    width: 88%;
-    padding-left: 7.4666666666667%;
-}
 
 /* Resaerch Grids */
 
 .colab-research {
     grid-template-rows: [heading]
                         auto
-                        1rem
+                        2rem
                         [survey]
                         auto
                         [competitive-anal]
@@ -112,6 +205,9 @@ main > section > h2 {
     grid-template-rows: [sub-heading-1] /*survey*/
                         auto
                         1rem
+                        [paragraph-1]
+                        auto
+                        5rem
                         [photo-1-start]
                         auto
                         [photo-1-end]
@@ -120,6 +216,14 @@ main > section > h2 {
                         auto
                         5rem;
 }
+
+.survey .photo-1 {
+  padding: 20px 30px;
+
+}
+
+
+
 
 .competitive-anal {
     grid-row: competitive-anal;
@@ -175,7 +279,7 @@ main > section > h2 {
     width: 17.8rem;
     margin-top: 2.5rem;
 }
-    
+
 .user-persona .photo-1 img {
     height: 16.3rem;
     width: 16.3rem;
@@ -186,7 +290,7 @@ main > section > h2 {
     grid-template-rows:
                         [background-start]  /*key insights*/
                         1fr
-                        [sub-heading-6] 
+                        [sub-heading-6]
                         auto
                         1rem
                         [list-3]
@@ -468,7 +572,7 @@ grid-template-rows: [sub-heading-2]
 }
 
 
- 
+
 
 .other-work {
     grid-template-rows: [heading]
@@ -505,9 +609,3 @@ grid-template-rows: [sub-heading-2]
     justify-self: end;
     margin-right: calc(36.8% - 5.9rem);
   }
-
-.white-type {
-  color: white;
-}
-
-  /* ROMI TO DO */
