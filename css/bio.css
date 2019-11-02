@@ -29,7 +29,7 @@
                         7rem; /*3rem + 4rem contact*/
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 575.98px){
         .cir-bio {
           width: 10.9rem;
           height: 10.9rem;
@@ -70,7 +70,7 @@
         }
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 576px){
         .cir-bio {
           width: 10.9rem;
           height: 10.9rem;

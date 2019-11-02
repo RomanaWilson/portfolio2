@@ -8,9 +8,9 @@ body {
     margin: 0;
 }
 
-/* Header */
+/* Header mobile*/
 
-.top-header {
+.mobile-header {
     width: 100%;
     position: fixed;
     top: 0;
@@ -50,6 +50,38 @@ body {
     padding-top: .9rem;
 }
 
+/* Header tablet and desktop */
+
+@media screen and (min-width: 576px) {
+  .vertical-menu {
+    position: fixed;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 3rem;
+    right: 1rem;
+  }
+}
+
+.vertical-menu li {
+  display: inline;
+  padding-bottom: 5rem;
+}
+
+.desktop-header {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+
+}
+
+.desktop-header img {
+  width: 2.941rem;
+  height: 5rem;
+}
+
+
+
+
 /* Main Section */
 
 main {
@@ -71,7 +103,7 @@ main {
 
 }
 
-@media screen and (max-width: 600px){
+@media screen and (max-width: 575.98px){
   .line1 {
       position: fixed;
       left: calc(8% - 1px);
@@ -82,7 +114,7 @@ main {
   }
 }
 
-@media screen and (min-width: 601px){
+@media screen and (min-width: 576px){
   .line1 {
       position: fixed;
       left: calc(14.6284411319865% - 1px);
@@ -94,7 +126,7 @@ main {
 }
 
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575.98px) {
     .line1-project{
         position: fixed;
         left: calc(36.8% - 1px);
@@ -106,7 +138,7 @@ main {
     }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 576px) {
     .line1-project {
         position: fixed;
         left: 14.6282973621103%;
@@ -128,7 +160,7 @@ main {
 
 /* Master Grid */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575.98px) {
     .master-grid {
 
         grid-template-columns: 1fr;
@@ -139,7 +171,7 @@ main {
   }
 }
 
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 576px) {
     .master-grid {
 
         grid-template-columns: 1fr;
@@ -160,7 +192,7 @@ main {
  }
 
 /* Sub-Grid - Mobile Definition */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575.98px) {
     .sub-grid {
         grid-template-columns: [margin-left-start heading-start]
         5.333333333%
@@ -179,7 +211,7 @@ main {
 }
 
 /* Sub-Grid - Tablet Definition */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 576px) {
     .sub-grid {
         grid-template-columns: [margin-left-start]
         1fr
@@ -482,28 +514,28 @@ main {
 /* Media Queries */
 
 /* Hide Mobile */
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 575.98px) {
     .mobile-hidden {
         display: none;
     }
 }
 
 /* Hide Mobile and Tablet */
-@media screen and (max-width: 1000px) {
+@media screen and (max-width: 991.98px) {
     .desktop-only {
         display: none;
     }
 }
 
 /* Hide Tablet and Desktop */
-@media screen and (min-width: 601px) {
+@media screen and (min-width: 576px) {
     .mobile-only {
         display: none;
     }
 }
 
 /* Hide Desktop */
-@media screen and (min-width: 1001px) {
+@media screen and (min-width: 992px) {
     .desktop-hidden {
         display: none;
     }
