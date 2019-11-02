@@ -374,39 +374,55 @@ img {
     width: 16.3rem;
 }
 
-.key-insights {
-    grid-row: key-insights;
-    grid-template-rows:
-                        [background-start]  /*key insights*/
-                        1fr
-                        [sub-heading-6]
-                        auto
-                        1rem
-                        [list-3]
-                        auto
-                        1fr
-                        [background-end]
-}
-
 @media screen and (max-width:600px){
-  .key-insights .background {
-      background: url(../images/shape1.svg) no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      min-height: 50vw;
-  }
+    .key-insights {
+        grid-row: key-insights;
+        grid-template-rows:
+                            [background-start]  /*key insights*/
+                            1fr
+                            [sub-heading-6]
+                            auto
+                            1rem
+                            [list-3]
+                            auto
+                            1fr
+                            [background-end]
+    }
 
-
+    .key-insights .background {
+        background: url(../images/shape1.svg) no-repeat;
+        background-size: cover;
+        overflow: hidden;
+        min-height: 50vw;
+    }
 }
-@media screen and (min-width:601px){
-  .key-insights .background {
-      background: url(../images/shape1.svg) no-repeat;
-      background-size: cover;
-      overflow: hidden;
-      min-height: 50vw;
-  }
 
+@media screen and (min-width:601px) {
+    .key-insights {
+        grid-row: key-insights;
+        grid-template-rows:
+                            [background-start]  /*key insights*/
+                            0px
+                            [sub-heading-6]
+                            auto
+                            1fr
+                            [list-3]
+                            auto
+                            1rem
+                            [background-end]
+    }
+
+    .key-insights .background {
+        background: url(../images/shape1.svg) no-repeat;
+        background-size: cover;
+        height: 24rem;
+        width: 51.503rem;
+        justify-self: center;
+    }
 }
+
+
+
 
 
 
@@ -508,9 +524,9 @@ grid-template-rows: [sub-heading-2]
                         3rem
                         [container-1]
                         auto
-                        5rem
+                        2rem
                         [container-2]
-                        auto
+                        1.995rem
                         5rem
                         [sub-heading-2]
                         auto
@@ -532,13 +548,22 @@ grid-template-rows: [sub-heading-2]
     border: double gray;
 }
 
+.prototype .container-2 {
+    height: 1.995rem;
+    width: 1.727rem;
+    justify-self: center;
+}
+
 .previous {
-  background: url("../icons/arrowleft.svg") no-repeat;
+    background: url("../icons/arrowleft.svg") no-repeat;
+    background-size: contain;
+    margin-right: calc(2.3980815347722% + 2.5905rem + 1px);
 }
 
 .next {
-  background: url("../icons/arrowright.svg") no-repeat;
-
+    background: url("../icons/arrowright.svg") no-repeat;
+    background-size: contain;
+    margin-left: calc(2.3980815347722% + 2.5905rem + 1px);
 }
 
 .testing-1 {
