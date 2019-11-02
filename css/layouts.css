@@ -66,35 +66,48 @@ main {
 
 }
 
-.line1 {
-    position: fixed;
-    left: calc(8% - 1px);
+@media screen and (max-width: 600px){
+  .line1 {
+      position: fixed;
+      left: calc(8% - 1px);
+  }
+  .line2 {
+      position: fixed;
+      right: 36.8%;
+  }
 }
 
-.line2 {
-    position: fixed;
-    right: 36.8%;
+@media screen and (min-width: 601px){
+  .line1 {
+      position: fixed;
+      left: calc(14.6284411319865% - 1px);
+  }
+  .line2 {
+      position: fixed;
+      right: 14.6284411319865%;
+  }
 }
+
 
 @media screen and (max-width: 600px) {
-    .linep1 {
+    .line1-project{
         position: fixed;
         left: calc(36.8% - 1px);
     }
 
-    .linep2 {
+    .line2-project {
         position: fixed;
         right: 8%;
     }
 }
 
 @media screen and (min-width: 601px) {
-    .linep1 {
+    .line1-project {
         position: fixed;
         left: 14.6282973621103%;
     }
 
-    .linep2 {
+    .line2-project {
         position: fixed;
         right: 51.1990407673861%;
     }
