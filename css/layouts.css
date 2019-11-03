@@ -124,7 +124,7 @@ main {
         }
 }
 /* ------ lines tablet */
-      @media screen and (min-width: 576px){
+      @media screen and (min-width: 576px) and (max-width: 991.98px){
         .line1 {
             position: fixed;
             left: calc(14.6284411319865% - 1px);
@@ -153,7 +153,7 @@ main {
 
         .line3 {
             position: fixed;
-            left: calc(74.6527777777778% - 1px);
+            right: calc(25.3472222222222% + 1px);
         }
 
         .line4 {
@@ -220,13 +220,13 @@ main {
     .sub-grid {
         grid-template-columns: [margin-left-start heading-start]
         5.333333333%
-        [margin-left-end dent-start]
+        [margin-left-end dent-start role-start]
         1fr
         [center-left aside-start]
         1fr
         [center-right]
         1fr
-        [margin-right-start dent-end aside-end]
+        [margin-right-start dent-end aside-end role-end]
         5.333333333%
         [margin-right-end heading-end];
 
@@ -241,11 +241,11 @@ main {
         1fr
         [heading-start]
         1fr
-        [margin-left-end paragraph-start]
+        [margin-left-end paragraph-start role-start]
         1fr
         [dent-start]
         1fr
-        [center-left]
+        [center-left role-end]
         1fr
         1fr
         [aside-start]
@@ -264,9 +264,40 @@ main {
     }
 }
 
+/* Sub-Grid - Desktop Definition */
+@media screen and (min-width: 992px) {
+    .sub-grid {
+        grid-template-columns: [margin-left-start]
+        1fr
+        [heading-start margin-left-end ]
+        1fr
+        [paragraph-start]
+        1fr
+
+        1fr
+        [center-left]
+        1fr
+        1fr
+        [aside-start]
+        1fr
+        1fr
+        [center-right paragraph-end]
+        1fr
+        [dent-start role-start]
+        1fr
+        [dent-end aside-end]
+        1fr
+        [heading-end margin-right-startdent-end role-end]
+        1fr
+        [margin-right-end ];
+
+        grid-column-gap: 2.3980815347722%;
+    }
+}
+
 
 /* Subgrid Horizontal Positioning */
-
+/* heading in projects */
 .heading-width {
     grid-column:  heading-start / heading-end;
 }
@@ -298,6 +329,10 @@ main {
 
 .aside-detail {
   grid-column: aside-start / aside-end;
+}
+
+.role-placement {
+  grid-column: role-start / role-end
 }
 
 /* .paragraph-layout {
@@ -473,10 +508,24 @@ main {
     display: flex;
     align-items: center;
     height: 69px;
-    width: 36.8%;
     padding-left: 1rem;
 }
 
+@media screen and (max-width: 575.98px){
+    .animated-button {
+      width: 55.2%;
+    }
+}
+@media screen and (min-width: 576px) and (max-width: 991.98px){
+    .animated-button {
+      width: 28.1774580335731%;
+  }
+}
+@media screen and (min-width: 992px){
+    .animated-button {
+      width: 18.2638888888889%;
+  }
+}
 /* Right Aligned Icon */
 
 .right-icon {
