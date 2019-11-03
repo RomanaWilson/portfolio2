@@ -184,9 +184,8 @@
   }
 
   .home-project .photo-1 {
-    width: 407.3px;
     justify-self: end;
-    padding-left: 34.1726618705036%;
+    margin-left:  26%;
   }
 
   .home-project .button-1-split {
@@ -194,11 +193,6 @@
   }
 }
 
-@media screen and (min-width: 750px){
-  .home-project .photo-1 {
-    width: 507.3px;
-  }
-}
 
 
 /* projects desktop */
@@ -208,7 +202,7 @@
                             auto
                             2rem
                             [paragraph-1-start]
-                            7rem
+                            8rem
                             [photo-1-start]
                             11rem
                             [photo-2-start]
@@ -228,25 +222,24 @@
   }
 
   .home-project .paragraph-1-split {
-    justify-self:end;
-    padding-right: 67.5694444444444%;
+
+    width: 18.6527777777778%;
   }
 
   .home-project .photo-1 {
-    width: 619.74px;
-    
-    margin-left: 27.5%;
+    margin: 0 3.0555555555556%;
   }
   .home-project .photo-2 {
-    width: 137px;
+    width: 11.4548494983278%;
+    margin-left: 8.1944444444444%;
 
-    margin-left: 16.6666666666667%;
+
   }
 
 
   .home-project .button-1-split {
     justify-self: end;
-    margin-right: 7.0833333333333%;
+    margin-right: calc(7.0833333333333% + 1px);
   }
 
 
@@ -267,16 +260,23 @@
                         [footer]
                         4.5rem;
 }
-@media screen and (max-width:600px){
+@media screen and (max-width: 575.98px){
   .home-outlook .button-1 {
       margin-left: 63.2%;
 
   }
 }
-@media screen and (min-width:601px){
+
+@media screen and (min-width: 576px) and (max-width: 991.98px){
   .home-outlook .button-1 {
       margin-left: 14.5083932853717%;
 
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .home-outlook .paragraph-1 {
+      margin-right: 16.7842031029619%;
   }
 }
 
