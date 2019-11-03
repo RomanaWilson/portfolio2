@@ -18,23 +18,52 @@
 @media screen and (max-width: 575.98px) {
     .home-hero .container-1 {
         height: 84vw;
-    }    
+        width: 84vw;
+    }
 }
 
 @media screen and (min-width: 576px) {
     .home-hero .container-1 {
+<<<<<<< HEAD
         height: ;
     }    
+=======
+        height: 40.2877697841727vw;
+        width: 40.2877697841727vw;
+        justify-self: end;
+        margin-right: 14.6282973621103%;
+    }
+>>>>>>> f262f6802727868cb37a14aaa5b00205b0e063b9
 }
 
-.work-circle {
-    height: 11.8rem;
-    width: 11.8rem;
-    justify-self: end;
-    margin-bottom: calc(-5rem - 3vw);
-    margin-right: calc(36.8% - 5.9rem);
+@media screen and (max-width: 575.98px){
+
+  .work-circle {
+      height: 11.8rem;
+      width: 11.8rem;
+      justify-self: end;
+      margin-bottom: calc(-5rem - 3vw);
+      margin-right: calc(36.8% - 5.9rem);
+  }
 }
 
+@media screen and (min-width: 576px){
+    .home-hero .paragraph-1 {
+      padding-right: 28.0575539568345%;
+    }
+    .work-circle {
+        height: 11.8rem;
+        width: 11.8rem;
+        margin-bottom: calc(-5rem - 3vw);
+        margin-left: calc(14.6284411319865% - 5.9rem);
+    }
+
+}
+
+
+
+
+/* lily box */
 .lily {
     position: absolute;
     left: 2.222222222%;
@@ -58,29 +87,98 @@
     border-radius: 50%;
 }
 
-.home-project-board {
-    grid-auto-rows: auto;
-    grid-row-gap: 75px;
+@media screen and (max-width: 575.98px){
+  .home-project-board {
+      grid-auto-rows: auto;
+      grid-row-gap: 75px;
+
+  }
 }
 
-.home-project {
-    grid-template-rows: [heading]
-                        auto
-                        2rem
-                        [paragraph-1]
-                        auto
-                        3rem
-                        [container-2]
-                        auto
-                        3rem
-                        [sub-heading-1]
-                        auto
-                        [project-roles-start]
-                        5.2rem
-                        [button]
-                        auto
-                        [project-roles-end];
+@media screen and (min-width: 576px){
+  .home-project-board {
+      grid-auto-rows: auto;
+      grid-row-gap: 150px;
 
+  }
+}
+
+/* projects mobile */
+@media screen and (max-width: 575.98px){
+      .home-project {
+          grid-template-rows: [heading]
+                              auto
+                              2rem
+                              [paragraph-1-start]
+                              auto
+                              [paragraph-1-end]
+                              3rem
+                              [photo-1-start]
+                              auto
+                              [photo-1-end]
+                              3rem
+                              [sub-heading-1]
+                              auto
+                              [paragraph-2-start]
+                              5.2rem
+                              [button-1]
+                              auto
+                              [paragraph-2-end];
+ }
+
+     .phone {
+         width: 28vw;
+         justify-self: center;
+     }
+
+     .laptop {
+         width: 80vw;
+         justify-self: center;
+         margin-bottom: 2rem;
+     }
+
+     .desktop {
+         width: 80vw;
+         justify-self: center;
+     }
+}
+
+/* projects tablet */
+@media screen and (min-width: 576px){
+    .home-project {
+        grid-template-rows: [heading]
+                            auto
+                            [button-1-start]
+                            2rem
+                            [paragraph-1-start]
+                            5.2rem
+                            [button-1-end]
+                            auto
+                            [paragraph-1-end]
+                            3rem
+                            [photo-1-start]
+                            auto
+                            3rem
+                            [sub-heading-1]
+                            auto
+                            [paragraph-2-start]
+                            auto
+                            [paragraph-2-end photo-1-end];
+  }
+
+  .home-project .paragraph-1-split {
+    justify-self:end;
+    padding-right: 46.5707434052758%;
+  }
+
+  .home-project .photo-1 {
+    width: 407.3px;
+    padding-left: 34.1726618705036%;
+  }
+
+  .home-project .button-1-split {
+    margin-left: 57.1942446043165%;
+  }
 }
 
 .home-outlook {
@@ -102,12 +200,6 @@
 
 }
 
-/* Special Positioning */
-
-.project-roles {
-    grid-row-start: project-roles-start;
-}
-
 .see-work-button-outer {
     justify-self: end;
     margin-right: calc(36.8% - 45px);
@@ -125,21 +217,5 @@
 
 }
 
-.phone {
-    width: 28vw;
-    justify-self: center;
-}
-
-.laptop {
-    width: 80vw;
-    justify-self: center;
-    margin-bottom: 2rem;
-}
-
-.desktop {
-    width: 80vw;
-    justify-self: center;
-}
 
 /* Hero Absolute-Pos Objects*/
-

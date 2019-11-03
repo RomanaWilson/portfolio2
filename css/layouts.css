@@ -125,6 +125,11 @@ main {
   }
 }
 
+  .line3 {
+      position: fixed;
+      left: calc(57.1942446043165% - 1px);
+  }
+
 
 @media screen and (max-width: 575.98px) {
     .line1-project{
@@ -361,6 +366,14 @@ main {
     grid-row: paragraph-4;
 }
 
+.paragraph-1-split {
+    grid-row: paragraph-1-start / paragraph-1-end;
+}
+
+.paragraph-2-split {
+    grid-row: paragraph-2-start / paragraph-2-end;
+}
+
 .container-1 {
     grid-row: container-1;
 }
@@ -392,6 +405,11 @@ main {
 .button-2 {
     grid-row: button-2;
 }
+
+.button-1-split {
+    grid-row: button-1-start / button-1-end;
+}
+
 
 .photo-1 {
     grid-row: photo-1-start / photo-1-end;
