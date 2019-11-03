@@ -33,8 +33,14 @@ img {
 
 }
 
+@media screen and (min-width:922px){
+    .heading-width { 
+        margin-left: 5.6944444444444%;
+    } 
+}
 
 
+ 
 /*  SUB-GRID VERTICAL LAYOUTS */
 
 /* Hero - Mobile */
@@ -121,9 +127,11 @@ img {
 
     .colab-hero .summary-box {
         border: none;
+        justify-self: center;
         display: flex;
         justify-content: space-between;
         padding: 0;
+        width: 55rem;
     }
 
     .colab-hero .summary-box div {
@@ -350,12 +358,20 @@ img {
                           7.5rem;
   }
 
-      .user-persona .sub-heading-2{
+    .user-persona .sub-heading-2{
+    text-align: left;
+    }
+
+    .user-persona .paragraph-1 {
         text-align: left;
-      }
-      .user-persona .paragraph-1 {
-          text-align: left;
-      }
+    }
+
+    .user-persona .paragraph-2 {
+        width: 23.2613908872902%;
+        justify-self: end;
+        text-align: left;
+    }
+
 
 
 }

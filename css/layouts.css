@@ -240,6 +240,35 @@ main {
     }
 }
 
+/* Sub-Grid - Desktop Definition */
+@media screen and (min-width: 992px) {
+    .sub-grid {
+        grid-template-columns: [margin-left-start heading-start]
+        1fr
+        [margin-left-end paragraph-start]
+        1fr
+        [dent-start]
+        1fr
+        1fr
+        [center-left]
+        1fr
+        [paragraph-end]
+        1fr
+        1fr
+        1fr
+        [center-right dent-end]
+        1fr
+        [aside-start]
+        1fr
+        1fr
+        [heading-end aside-end margin-right-start]
+        1fr
+        [margin-right-end];
+
+        grid-column-gap: 2.3980815347722%;
+    }
+}
+
 
 /* Subgrid Horizontal Positioning */
 
