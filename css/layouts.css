@@ -68,7 +68,7 @@ body {
     writing-mode: vertical-rl;
     text-orientation: mixed;
     top: 3rem;
-    right: calc(7.0833333333333% - 32px);
+    right: calc(7.0833333333333% - 1px);
   }
 }
 
