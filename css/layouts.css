@@ -201,13 +201,12 @@ main {
     .sub-grid {
         grid-template-columns: [margin-left-start heading-start]
         5.333333333%
-        [margin-left-end dent-start]
+        [margin-left-end dent-start center-left paragraph-start]
         1fr
-        [center-left aside-start]
+        [aside-start]
         1fr
-        [center-right]
         1fr
-        [margin-right-start dent-end aside-end]
+        [margin-right-start dent-end aside-end center-right paragraph-end]
         5.333333333%
         [margin-right-end heading-end];
 
@@ -222,20 +221,18 @@ main {
         1fr
         [heading-start]
         1fr
-        [margin-left-end paragraph-start]
+        [margin-left-end center-left paragraph-start]
         1fr
         [dent-start]
         1fr
-        [center-left]
         1fr
         1fr
         [aside-start]
         1fr
         1fr
-        [center-right paragraph-end]
         1fr
         1fr
-        [margin-right-start dent-end aside-end]
+        [margin-right-start center-right dent-end aside-end paragraph-end]
         1fr
         [heading-end]
         1fr
@@ -254,16 +251,16 @@ main {
         1fr
         [dent-start]
         1fr
-        1fr
         [center-left]
+        1fr
         1fr
         [paragraph-end]
         1fr
         1fr
         1fr
-        [center-right dent-end]
+        [dent-end]
         1fr
-        [aside-start]
+        [center-right aside-start]
         1fr
         1fr
         [heading-end aside-end margin-right-start]
@@ -310,9 +307,13 @@ main {
   grid-column: aside-start / aside-end;
 }
 
-/* .paragraph-layout {
+.centered {
+    grid-column: center-left / center-right;
+}
+
+.paragraph-width {
     grid-column: paragraph-start / paragraph-end
-} */
+} 
 
 /* .quotation {
 

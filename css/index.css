@@ -24,16 +24,11 @@
 
 @media screen and (min-width: 576px) {
     .home-hero .container-1 {
-<<<<<<< HEAD
-        height: ;
-    }    
-=======
         height: 40.2877697841727vw;
         width: 40.2877697841727vw;
         justify-self: end;
         margin-right: 14.6282973621103%;
     }
->>>>>>> f262f6802727868cb37a14aaa5b00205b0e063b9
 }
 
 @media screen and (max-width: 575.98px){
