@@ -220,41 +220,38 @@ main {
     .sub-grid {
         grid-template-columns: [margin-left-start heading-start]
         5.333333333%
-        [margin-left-end dent-start role-start]
+        [margin-left-end dent-start center-left role-start paragraph-start]
         1fr
-        [center-left aside-start]
+        [aside-start]
         1fr
-        [center-right]
         1fr
-        [margin-right-start dent-end aside-end role-end]
+        [margin-right-start dent-end aside-end center-right paragraph-end role-end]
         5.333333333%
         [margin-right-end heading-end];
-
         grid-column-gap: 2.666666666%;
     }
 }
 
 /* Sub-Grid - Tablet Definition */
-@media screen and (min-width: 576px) {
+@media screen and (min-width: 576px) and (max-width: 991.98px){
     .sub-grid {
         grid-template-columns: [margin-left-start]
         1fr
         [heading-start]
         1fr
-        [margin-left-end paragraph-start role-start]
+        [margin-left-end center-left paragraph-start role-start]
         1fr
         [dent-start]
         1fr
-        [center-left role-end]
+        [role-end]
         1fr
         1fr
         [aside-start]
         1fr
         1fr
-        [center-right paragraph-end]
         1fr
         1fr
-        [margin-right-start dent-end aside-end]
+        [margin-right-start center-right dent-end aside-end paragraph-end]
         1fr
         [heading-end]
         1fr
@@ -267,33 +264,34 @@ main {
 /* Sub-Grid - Desktop Definition */
 @media screen and (min-width: 992px) {
     .sub-grid {
-        grid-template-columns: [margin-left-start]
-        1fr
-        [heading-start margin-left-end ]
-        1fr
-        [paragraph-start]
-        1fr
 
+        grid-template-columns: [margin-left-start heading-start]
+        1fr
+        [margin-left-end paragraph-start]
+        1fr
+        [dent-start]
         1fr
         [center-left]
         1fr
         1fr
-        [aside-start]
+
+        [paragraph-end]
         1fr
         1fr
-        [center-right paragraph-end]
         1fr
-        [dent-start role-start]
+        [dent-end]
         1fr
-        [dent-end aside-end]
+        [center-right aside-start role-start]
         1fr
-        [heading-end margin-right-startdent-end role-end]
         1fr
-        [margin-right-end ];
+        [heading-end aside-end margin-right-start role-end]
+        1fr
+        [margin-right-end];
 
         grid-column-gap: 2.3980815347722%;
     }
 }
+
 
 
 /* Subgrid Horizontal Positioning */
@@ -331,13 +329,20 @@ main {
   grid-column: aside-start / aside-end;
 }
 
+
 .role-placement {
   grid-column: role-start / role-end
 }
 
-/* .paragraph-layout {
+
+.centered {
+    grid-column: center-left / center-right;
+}
+
+.paragraph-width {
+
     grid-column: paragraph-start / paragraph-end
-} */
+}
 
 /* .quotation {
 
