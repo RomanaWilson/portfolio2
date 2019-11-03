@@ -168,11 +168,18 @@
 
   .home-project .photo-1 {
     width: 407.3px;
+    justify-self: end;
     padding-left: 34.1726618705036%;
   }
 
   .home-project .button-1-split {
     margin-left: 57.1942446043165%;
+  }
+}
+
+@media screen and (min-width: 750px){
+  .home-project .photo-1 {
+    width: 507.3px;
   }
 }
 
@@ -189,11 +196,20 @@
                         [footer]
                         4.5rem;
 }
+@media screen and (max-width:600px){
+  .home-outlook .button-1 {
+      margin-left: 63.2%;
 
-.home-outlook .button-1 {
-    margin-left: 63.2%;
-
+  }
 }
+@media screen and (min-width:601px){
+  .home-outlook .button-1 {
+      margin-left: 14.5083932853717%;
+
+  }
+}
+
+
 
 .see-work-button-outer {
     justify-self: end;
