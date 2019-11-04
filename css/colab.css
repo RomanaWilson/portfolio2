@@ -689,7 +689,7 @@ img {
 
 /* User Stories - Mobile and Tablet */
 
-@media screen and (max-width: 991.98) {
+@media screen and (max-width: 991.98px) {
 
     .user-stories {
         grid-row: user-stories;
@@ -720,7 +720,7 @@ img {
 
 /* User Stories - Destop Only */
 
-@media screen and (min-width: 991.98px) {
+@media screen and (min-width: 992px) {
     .user-stories {
         grid-row: user-stories;
         grid-template-rows: [sub-heading-1]

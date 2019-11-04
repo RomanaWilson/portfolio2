@@ -278,8 +278,6 @@ main {
     }
 }
 
-
-
 /* Subgrid Horizontal Positioning */
 /* heading in projects */
 .heading-width {
@@ -456,6 +454,9 @@ main {
 .background-start {
     grid-row: background-start;
 }
+
+/* Sub-Section */
+
 
 /* Containers */
 
