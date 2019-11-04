@@ -1056,7 +1056,11 @@ img {
     }
 }
 
-
+@media screen and (min-width: 576px) {
+  .illustrations .photo-1 {
+      padding-right: 61.7052023121387%;
+  }
+}
 
 .hi-fidelity {
     grid-template-rows: [heading]
@@ -1163,6 +1167,9 @@ img {
 }
 
 
+.conclusion .paragraph-1 {
+  padding-right: 2rem;
+}
 
 
 .self-reflection {
@@ -1173,7 +1180,9 @@ img {
                         auto;
 }
 
-
+.self-reflection .paragraph-1 {
+  padding-right: 2rem;
+}
 
 
 .other-work {
