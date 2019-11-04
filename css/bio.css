@@ -2,8 +2,14 @@
 
 /* Bio Page */
 
+main {
+    padding-top: 0;
+
+}
+
 .bio {
-    grid-template-rows: [heading]
+    grid-template-rows: 
+                        [heading]
                         auto
                         2rem
                         [sub-heading-1]
@@ -91,7 +97,7 @@
   .bio p {
     width: 49.3055555555556%;
   }
-  
+
   .cir-bio {
     margin-left: calc(74.6527777777778% - 5.45rem);
   }
@@ -108,4 +114,3 @@
     margin-right: calc(76.0416666666667% - 8.1rem);
   }
 }
-

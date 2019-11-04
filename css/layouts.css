@@ -188,6 +188,7 @@ main {
 
         grid-auto-rows: auto;
         grid-row-gap: 15rem;
+        padding-top: 10rem;
 
   }
 }
@@ -206,12 +207,12 @@ main {
     .sub-grid {
         grid-template-columns: [margin-left-start heading-start]
         5.333333333%
-        [margin-left-end dent-start center-left role-start paragraph-start left-start right-left-flip-start]
+        [margin-left-end dent-start center-left role-start paragraph-start left-start right-left-flip-start framed-image-start]
         1fr
         [aside-start persona-photo-start left-end]
         1fr
         1fr
-        [margin-right-start dent-end aside-end center-right paragraph-end role-end persona-photo-end right-left-flip-end]
+        [margin-right-start dent-end aside-end center-right paragraph-end role-end persona-photo-end right-left-flip-end framed-image-end]
         5.333333333%
         [margin-right-end heading-end];
         grid-column-gap: 2.666666666%;
@@ -225,7 +226,7 @@ main {
         1fr
         [heading-start]
         1fr
-        [margin-left-end center-left paragraph-start role-start left-start]
+        [margin-left-end center-left paragraph-start role-start left-start framed-image-start]
         1fr
         [dent-start]
         1fr
@@ -234,10 +235,10 @@ main {
         1fr
         [left-end aside-start right-left-flip-start]
         1fr
-        1fr 
         1fr
         1fr
-        [margin-right-start center-right dent-end aside-end paragraph-end]
+        1fr
+        [margin-right-start center-right dent-end aside-end paragraph-end framed-image-end]
         1fr
         [heading-end right-left-flip-end]
         1fr
@@ -255,7 +256,7 @@ main {
         1fr
         [margin-left-end paragraph-start]
         1fr
-        [dent-start]
+        [dent-start framed-image-start]
         1fr
         [center-left left-start right-left-flip-start]
         1fr
@@ -265,7 +266,7 @@ main {
         [left-end right-left-flip-end]
         1fr
         1fr
-        [dent-end]
+        [dent-end framed-image-end]
         1fr
         [center-right aside-start role-start]
         1fr
@@ -337,6 +338,10 @@ main {
 
 .right-left-flip {
     grid-column: right-left-flip-start / right-left-flip-end;
+}
+
+.framed-image {
+  grid-column: framed-image-start / framed-image-end;
 }
 /* .quotation {
 
@@ -503,7 +508,7 @@ main {
 
 .summary-box h3, .summary-box h4 {
     margin-bottom: 1rem;
-}   
+}
 
 /* Shapes */
 
