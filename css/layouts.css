@@ -188,6 +188,7 @@ main {
 
         grid-auto-rows: auto;
         grid-row-gap: 15rem;
+        padding-top: 10rem;
 
   }
 }
@@ -234,7 +235,7 @@ main {
         1fr
         [left-end aside-start right-left-flip-start]
         1fr
-        1fr 
+        1fr
         1fr
         1fr
         [margin-right-start center-right dent-end aside-end paragraph-end]
@@ -502,7 +503,7 @@ main {
 
 .summary-box h3, .summary-box h4 {
     margin-bottom: 1rem;
-}   
+}
 
 /* Shapes */
 
