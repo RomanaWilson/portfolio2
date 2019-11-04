@@ -35,9 +35,9 @@ img {
 /* Heading Offset */
 
 @media screen and (min-width:922px){
-    .heading-width { 
+    .heading-width {
         margin-left: 5.6944444444444%;
-    } 
+    }
 }
 
 /* Buttons */
@@ -71,7 +71,7 @@ img {
 /* Lines Mobile */
 
 @media screen and (max-width: 575.98px) {
-    
+
     .line1  {
         position: fixed;
         left: 36.8%;
@@ -97,7 +97,7 @@ img {
         right: 51.1990407673861%;
     }
 }
- 
+
 /* Destop lines set in layouts.css */
 
 /*  SUB-GRID VERTICAL LAYOUTS */
@@ -214,7 +214,7 @@ img {
                             [container-1]
                             auto;
     }
-    
+
     .colab-hero h1 {
         width: 34.5rem;
         margin-left: -6.1rem;
@@ -310,7 +310,7 @@ img {
 
 .colab-research {
     grid-template-rows: [heading]
-                        auto    
+                        auto
                         [survey]
                         auto
                         [competitive-anal]
@@ -322,7 +322,7 @@ img {
 }
 
 @media screen and (max-width: 575.98px) {
-    
+
     .colab-research {
         row-gap: 5rem;
     }
@@ -387,6 +387,9 @@ img {
     .survey .container-2 {
         margin-left: 8.5%;
     }
+    .survey .photo-1 {
+      padding: 20px 30px;
+    }
 }
 
 /* Survey - Desktop Only */
@@ -412,7 +415,9 @@ img {
         padding-left: 0;
         padding-right: 0;
         border: none;
-
+    }
+    .survey .photo-1 {
+      padding: 20px 30px;
     }
 }
 
@@ -442,7 +447,7 @@ img {
                             auto
                             [paragraph-2-end]
     }
-    
+
     .competitive-anal .container-1 {
         display: flex;
         justify-content: space-between;
@@ -490,7 +495,7 @@ img {
                           [paragraph-2]
                           auto
                           3rem
-                          [container-1-start] 
+                          [container-1-start]
                           auto
                           [container-1-end]
   }
@@ -510,8 +515,8 @@ img {
         justify-self: center;
         margin-left: 16%;
         margin-top: 2.5rem;
-}   
-    
+}
+
     .user-persona .photo-1 img {
         height: 16.3rem;
         width: 16.3rem;
@@ -536,7 +541,7 @@ img {
                           auto
                           [photo-1-end]
                           5rem
-                          [container-1-start] 
+                          [container-1-start]
                           auto
                           [container-1-end]
   }
@@ -548,22 +553,22 @@ img {
     .user-persona .paragraph-1 {
         text-align: left;
     }
-  
+
     .user-persona .photo-1 {
         height: 17.8rem;
         width: 17.8rem;
         justify-self: center;
         margin-left: -02.9976019184652%;
-    }   
-    
+    }
+
     .user-persona .photo-1 img {
         height: 16.3rem;
         width: 16.3rem;
     }
-    
+
     .user-persona .paragraph-2 {
         padding-left: 40.9883720930233%;
-    }   
+    }
 
 }
 
@@ -574,9 +579,9 @@ img {
         grid-row: user-persona;
         grid-template-rows: [sub-heading-1 photo-1-start] /*user persona*/
                             auto
-                            [container-1-start] 
+                            [container-1-start]
                             3rem
-                            [sub-heading-2]    
+                            [sub-heading-2]
                             auto
                             1rem
                             [paragraph-1]
@@ -595,8 +600,8 @@ img {
         width: 21.7rem;
         justify-self: center;
         margin-left: 0;
-    }   
-    
+    }
+
     .user-persona .photo-1 img {
         height: 19.785rem;
         width: 19.785rem;
@@ -604,7 +609,7 @@ img {
 
     .user-persona .paragraph-2 {
         padding-left: 0%;
-    }   
+    }
 }
 
 /* Key Insights - Mobile */
@@ -769,14 +774,19 @@ img {
 
 @media screen and (min-width: 576px) {
     .user-flows .container-2 {
-      padding: 30px;
+      padding: 20px;
       background-color: white;
+      margin: 0 16.875%;
     }
     .user-flows .container-3 {
-      padding: 30px;
+      padding: 20px;
       background-color: white;
+      margin: 0 16.875%;
     }
 }
+
+
+
 
 .prototype {
     grid-template-rows:[heading]
@@ -912,6 +922,14 @@ img {
 
 }
 
+@media screen and (min-width: 992px) {
+      .typography .container-1 {
+        padding-right: 2rem;
+      }
+
+}
+
+
 
 
 
@@ -943,6 +961,12 @@ img {
     }
     .color-palette .container-1 {
       margin-bottom: 3rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .color-palette .container-1 {
+      padding-right: 2rem;
     }
 }
 
