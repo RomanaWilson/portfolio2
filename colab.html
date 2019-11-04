@@ -2,6 +2,9 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
     <title>colab</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/styles.css">
@@ -13,8 +16,10 @@
   </head>
   <body>
 
-    <div class="vert-line line1-project"></div>
-    <div class="vert-line line2-project"></div>
+      <div class="vert-line line1"></div>
+      <div class="vert-line line2"></div>
+      <div class="vert-line line3 desktop-only"></div>
+      <div class="vert-line line4 desktop-only"></div>
 
 <!--mobile header-->
     <header class="mobile-header almost-opaque gray-border mobile-only">
@@ -137,21 +142,21 @@
           <!--mobile hidden-->
           <p class="body-2 paragraph-width paragraph-1 mobile-hidden paragraph-layout">I have surveyed 20 people through online platform survey swap. </p>
           <img class=" index graph thin-grey-border dent-left photo-1"src="images/graph1.svg" alt="survey graph">
-          <aside class="summary-box dent-left opaque thin-grey-border standard-width container-2">
+          <aside class="summary-box dent-to-aside opaque thin-grey-border container-2">
             <h4 class="small-title">usage</h4>
             <p class="thin-caption">76,2%  respondents use cloud app for work and 71,4%  respondents use a storage app mostly on desktop.</p>
             <h4 class="small-title">demographics</h4>
             <p class="thin-caption">users were predominantly english speaking, male and female, tech savvy professionals between the ages of 23 and 45 years. they were current cloud storage users who spend 20-30 hours a week on the internet.</p>
           </aside>
         </section>
-
+ 
         <!-- competitive analysis -->
         <section class="grid sub-grid competitive-anal">
-          <h3 class="thin-title standard-width sub-heading-2">competitive analysis</h3>
-          <p class="body-2 standard-width paragraph-1 paragraph-layout">After performing a basic swot analysis I have identified opportunites on the market. the key opportunity is to humanize collaboration and help users with their folder organization.</p>
+          <h3 class="thin-title paragraph-width sub-heading-2">competitive analysis</h3>
+          <p class="body-2 paragraph-width paragraph-1 paragraph-layout">After performing a basic swot analysis I have identified opportunites on the market. the key opportunity is to humanize collaboration and help users with their folder organization.</p>
 
         <!--mobile hidden-->
-          <section class="index heading-width mobile-hidden container-1">
+          <section class="index standard-width mobile-hidden container-1">
 
               <figure class="mobile-hidden">
                 <img src="images/dropmark.jpg" alt=dropmark>
@@ -167,12 +172,12 @@
               </figure>
           </section>
 
-          <!-- <aside class="">
+          <aside class="summary-box aside-detail paragraph-2-split desktop-only">
             <h4 class="small-title">threats & weaknesses</h4>
             <p class="body-2">growing competition. unorganized file system. security is becoming obstacle. limited space.</p>
             <h4 class="small-title">opportunities</h4>
             <p class="body-2">humanize collaboration. save time in communication. tools for collaboration. help to organize.</p>
-          </aside> -->
+          </aside>
 
 
 
@@ -183,27 +188,30 @@
           <h3 class="thin-title standard-width sub-heading-1">user persona</h3>
           <h4 class="picture-caption left sub-heading-2">john k.</h4>
           <p class="gray thin-caption left paragraph-1">Senior<br>graphic<br>designer</p>
-          <div class = "circle thin-grey-border opaque photo-1 right-wide">
+          <div class = "circle thin-grey-border opaque full-width photo-1">
             <img src="images/persona.png" alt="persona photo">
           </div>
-          <blockquote class=" body-2 standard-width paragraph-2">"if I could improve one thing it would be to  humanize virtual communication with my team and clients"</blockquote>
-          <h4 class="small-title aside-detail sub-heading-3">frustrations</h4>
-          <ul class="thin-caption aside-detail list-1">
-            <li>• Failure in communication causes too many delays.</li>
-            <li>• Too many tools and platforms for communication.</li>
-          </ul>
-          <h4 class="small-title aside-detail sub-heading-4">goals</h4>
-          <ul class="thin-caption aside-detail list-2">
-            <li>• Clarity in communication.</li>
-            <li>• Unify communication tools.</li>
-          </ul>
+          <blockquote class=" body-2 right-left-flip paragraph-2">"if I could improve one thing it would be to  humanize virtual communication with my team and clients"</blockquote>
+          <aside class="summary-box aside-detail container-1-split">
+            <h4 class="small-title aside-detail sub-heading-3">frustrations</h4>
+            <ul class="thin-caption aside-detail list-1">
+              <li>• Failure in communication causes too many delays.</li>
+              <li>• Too many tools and platforms for communication.</li>
+            </ul>
+            <h4 class="small-title aside-detail sub-heading-4">goals</h4>
+            <ul class="thin-caption aside-detail list-2">
+              <li>• Clarity in communication.</li>
+              <li>• Unify communication tools.</li>
+            </ul>
+          </aside> 
+
         </section>
         <!-- key insights -->
         <section class="grid sub-grid key-insights">
           <div class="full-width background "></div>
-          <h3 class="small-title aside-detail sub-heading-6 mobile-only">key insights</h3>
+          <h3 class="small-title standard-width sub-heading-6 mobile-only">key insights</h3>
           <h3 class="thin-title standard-width sub-heading-6 mobile-hidden">key insights</h3>
-          <ul class="thin-caption aside-detail list-3">
+          <ul class="thin-caption right-left-flip list-3">
             <li> • Help to organize files</li>
             <li> • Humanize collaboration</li>
             <li> • Build uninterrupted workflow </li>
@@ -216,19 +224,23 @@
       <section class="grid sub-grid info-architecture">
         <h2 class="serif-mobile heading-width heading">information architecture</h2>
         <div class="serif-small circle section-num opaque full-width heading mobile-only">3</div> <!--only visual elemnt at mobile-->
-        <p class="body-2 standard-width paragraph-1 paragraph-layout">I reviewed all aspects of my research and built high priority user stories and user flows.</p>
+        <p class="body-2 paragraph-width paragraph-1 paragraph-layout">I reviewed all aspects of my research and built high priority user stories and user flows.</p>
 
         <!-- user stories -->
         <section class=" grid sub-grid user-stories">
-          <h3 class="thin-title standard-width sub-heading-1">user stories</h3>
-          <p class="thin-caption aside-detail paragraph-2">As a user I want to...</p>
-          <ul class="thin-caption summary-box thin-grey-border dent-left container-1">
-            <li>... plan my folder organization</li>
-            <li>... communicate with others</li>
-            <li>... collaborate with others</li>
-            <li>... to share with other</li>
-            <li>... to locate my files</li>
-          </ul>
+          <h3 class="thin-title paragraph-width sub-heading-1">user stories</h3>
+          <p class="summary-box thin-caption right-left-flip paragraph-2">As a user I want to...</p>
+          <div class="thin-caption summary-box thin-grey-border right-left-flip container-1-split">
+            <ul>
+              <li>... plan my folder organization</li>
+              <li>... communicate with others</li>
+              <li>... collaborate with others</li>
+              <li>... to share with other</li>
+              <li>... to locate my files</li>
+            </ul>
+          </div>
+            
+
           <a class="serif-small animated-button full-width button-1">all stories →</a>
         </section>
 
