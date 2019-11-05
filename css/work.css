@@ -5,8 +5,7 @@
 
 
 
-
-@media screen and (max-width:600px){
+@media screen and (max-width:575.98px){
   .work {
       grid-template-rows: [heading]
                           auto
@@ -32,7 +31,7 @@
   }
 
 }
-@media screen and (min-width:601px){
+@media screen and (min-width:576px){
   .work {
       grid-template-rows: [heading]
                           auto
@@ -55,6 +54,57 @@
   .right {
     padding-left: 34.1726618705036%;
     padding-right: 17.8657074340528%;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+  .work {
+      grid-template-rows: [heading]
+                          auto
+                          0rem
+                          [container-1]
+                          auto
+                          7rem; /*3rem + 4 contact*/
+  }
+
+
+  .work .container-1{
+    height: 130vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: space-between;
+    margin: 0 9.4097222222222%;
+  }
+
+  .work .container-1 figure {
+    padding-bottom: 7rem;
+    width: 46.7486818980668%;
+  }
+  .work figure:nth-child(1) {
+    margin-top: 7.5rem;
+  }
+
+  .work figure:nth-child(2) {
+    width: 35.1493848857645%;
+    align-self: center;
+  }
+
+  .work figure:nth-child(4) {
+    width: 13.2688927943761%;
+    align-self: center;
+  }
+
+  .left {
+    padding-left: 0%;
+    padding-right: 0%;
+
+  }
+
+  .right {
+    padding-left: 0%;
+    padding-right: 0%;
   }
 
 }

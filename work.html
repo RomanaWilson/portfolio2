@@ -1,7 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151575407-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151575407-1');
+    </script>
+
     <meta charset="utf-8">
     <title>work</title>
     <link rel="stylesheet" href="css/reset.css">
@@ -19,32 +28,33 @@
 
     <div class="vert-line line1"></div>
     <div class="vert-line line2"></div>
+    <div class="vert-line line3 mobile-hidden"></div>
+    <div class="vert-line line4 desktop-only"></div>
 
-<!--mobile header-->
-    <header class="mobile-header almost-opaque gray-border mobile-only">
-      <nav class="top-nav">
-        <a href="index.html" class="logo"><img src="icons/logoblack.svg" alt="logo" ></a>
-        <a class="wide-logo" href="index.html"><img src="icons/romiwilson.svg" alt="logo" href="index.html"></a>
-        <a class="menu-style text-link" href="work.html">work</a>
-      </nav>
-    </header>
+    <!--mobile header-->
+        <header class="mobile-header almost-opaque gray-border mobile-only">
+          <nav class="top-nav">
+            <a href="index.html" class="logo"><img src="icons/logoblack.svg" alt="logo" ></a>
+            <a class="wide-logo" href="index.html"><img src="icons/romiwilson.svg" alt="logo" href="index.html"></a>
+            <a class="menu-style text-link" href="work.html">work</a>
+          </nav>
+        </header>
 
-<!--desktop and tablet header-->
-    <header class="desktop-header mobile-hidden">
-      <a href="index.html" class="logo"><img src="icons/logo.svg" alt="logo" ></a>
-    </header>
+    <!--desktop and tablet header-->
+        <header class="desktop-header mobile-hidden">
+          <a href="index.html" class="logo index"><img src="icons/logo.svg" alt="logo" ></a>
+        </header>
 
-<!--global menu-->
-    <aside class="vertical-menu mobile-hidden">
-        <nav>
-          <ul class="menu-style">
-            <li><a href="bio.html">bio</a></li>
-            <li><a href="work.html">work</a></li>
-            <li><a href="contact.html">contact</a></li>
-          </ul>
-        </nav>
-    </aside>
-
+    <!--global menu-->
+        <aside class="vertical-menu mobile-hidden">
+            <nav>
+              <ul class="menu-style">
+                <li><a href="bio.html">bio</a></li>
+                <li><a href="work.html">work</a></li>
+                <li><a href="contact.html">contact</a></li>
+              </ul>
+            </nav>
+        </aside>
 <!--latest work-->
     <main class="grid master-grid">
       <section class="index grid sub-grid work">
@@ -59,15 +69,22 @@
 
           <figure class="right">
             <a href="flo.html">
-              <img src="images/desktop.svg" alt="picture of screen">
+              <img src="images/flodesktop.svg" alt="picture of screen">
               <figcaption class="picture-caption caption-center">FLO</figcaption>
             </a>
           </figure>
 
           <figure class="left">
             <a href="peas.html">
-              <img  src="images/peaslaptop3.svg" alt="picture of screen">
+              <img  src="images/peaslaptop.svg" alt="picture of screen">
               <figcaption class="picture-caption caption-center">PEAS IN HEART</figcaption>
+            </a>
+          </figure>
+
+          <figure class="left desktop-only">
+            <a href="peas.html">
+              <img  src="images/phone.svg" alt="picture of screen">
+              <figcaption class="picture-caption caption-center">SOME APP</figcaption>
             </a>
           </figure>
         </div>
@@ -76,16 +93,19 @@
     </main>
 
     <!--mobile footer-->
-    <footer id="bottommenu" class="grid sub-grid footer-mobile almost-opaque mobile-only">
+    <section id="bottommenu" class="grid sub-grid drawer-mobile almost-opaque mobile-only">
       <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
           <img src="images/rectangle.svg" alt="rectangle">
           <h2 class="menu-style">contact</h2>
       </div>
       <a class=" body-2 standard-width container-1" href="https://www.linkedin.com/in/romi-wilson-ux-design/"><i class="linkedin"></i>connect</a>
       <a class="body-2 standard-width container-2" href="mailto:romi.m.wilson@gmail.com"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
-      <a class="serif-small standard-width container-3" href="images/Romi_Wilson_resume.pdf" download><i class="resume"></i>resume</a>
+      <a class="serif-small standard-width container-3" href="images/PDF/Romi_Wilson_resume.pdf" download><i class="resume"></i>resume</a>
+    </section>
+    <!--desktop footer-->
+    <footer class="thin-caption mobile-hidden">
+      <p >designed by romi. coded by romi&beef</p>
     </footer>
-
 
   </body>
 

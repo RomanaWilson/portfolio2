@@ -60,7 +60,7 @@
       margin-top: -70px;
   }
   .home-hero .paragraph-1 {
-    padding-right: 50.6944444444444%;
+    padding-right: 60.6944444444444%;
   }
   .work-circle {
       height: 11.8rem;
@@ -221,9 +221,13 @@
                             [button-1-end photo2-end]
   }
 
+  .home-project .heading {
+    margin-left: -.5%;
+  }
   .home-project .paragraph-1-split {
-
     width: 18.6527777777778%;
+    margin-left: -.5%;
+    padding-right: 10px;
   }
 
   .home-project .photo-1 {
@@ -242,6 +246,20 @@
     margin-right: calc(7.0833333333333% + 1px);
   }
 
+  .home-project .sub-heading-1 {
+    margin-left: -10%;
+  }
+
+  .home-project .paragraph-2-split {
+    margin-left: -10%;
+  }
+
+  .tablet {
+    min-width: 24.5016722408027%;
+    
+    margin-top: 11rem;
+
+  }
 
 }
 
@@ -279,8 +297,7 @@
       margin-right: 16.7842031029619%;
   }
   .home-outlook .button-1 {
-    justify-self: end;
-    margin-right: calc(7.0833333333333% + 1px);
+    margin-left: calc(74.6527777777778% - 1px);
   }
 }
 

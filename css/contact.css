@@ -1,20 +1,20 @@
-html {
-    width: 100%;
-    min-width: 320px;
+
+
+main {
+    padding-top: 0;
+
 }
 
-body {
-    width: 100%;
-    margin: 0;
-}
+
 
 .contact {
-    grid-template-rows: [heading]
+    grid-template-rows:
+                        [heading]
                         auto
-                        2rem
+                        4rem
                         [sub-heading-1]
                         auto
-                        7.5rem
+                        2rem
                         [paragraph-1]
                         auto
                         5rem
@@ -88,4 +88,13 @@ body {
   height: 3.5rem;
   background: url("../icons/download.svg") no-repeat;
   background-position: center;
+}
+
+@media screen and (min-width: 992px) {
+    .contact .paragraph-1 {
+      width: 49.247491638796%;
+    }
+    .contact .container-1 {
+      margin-right: calc(25.3472222222222% - 4.7rem);
+    }
 }
