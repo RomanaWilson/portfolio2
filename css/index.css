@@ -278,6 +278,10 @@
   .home-outlook .paragraph-1 {
       margin-right: 16.7842031029619%;
   }
+  .home-outlook .button-1 {
+    justify-self: end;
+    margin-right: calc(7.0833333333333% + 1px);
+  }
 }
 
 
