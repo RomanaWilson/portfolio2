@@ -2,11 +2,6 @@
 
 /* Bio Page */
 
-main {
-    padding-top: 0;
-
-}
-
 .bio {
     grid-template-rows: 
                         [heading]
