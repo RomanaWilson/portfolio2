@@ -221,9 +221,13 @@
                             [button-1-end photo2-end]
   }
 
+  .home-project .heading {
+    margin-left: -.5%;
+  }
   .home-project .paragraph-1-split {
-
     width: 18.6527777777778%;
+    margin-left: -.5%;
+    padding-right: 10px;
   }
 
   .home-project .photo-1 {
@@ -240,6 +244,14 @@
   .home-project .button-1-split {
     justify-self: end;
     margin-right: calc(7.0833333333333% + 1px);
+  }
+
+  .home-project .sub-heading-1 {
+    margin-left: -10%;
+  }
+
+  .home-project .paragraph-2-split {
+    margin-left: -10%;
   }
 
 
