@@ -800,12 +800,12 @@ img {
 
 .prototype .container-1 {
     max-width: 100%;
-    border: double gray;
+
 }
 
 .prototype .container-3 {
     max-width: 100%;
-    border: double gray;
+
 }
 
 .prototype .container-2 {
@@ -1268,7 +1268,15 @@ img {
                         auto
                         1rem
                         [paragraph-3]
+                        auto
+                        5rem
+                        [container-3]
                         auto;
+}
+
+.testing-2 .container-3 {
+    max-width: 100%;
+    z-index: 900;
 }
 
 @media screen and (min-width: 992px) {
@@ -1293,7 +1301,10 @@ img {
                             [paragraph-3]
                             auto
                             auto
-                            [container-2-end];
+                            [container-2-end]
+                            10rem
+                            [container-3]
+                            auto;;
     }
 }
 

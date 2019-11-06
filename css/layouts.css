@@ -306,6 +306,7 @@ main {
   grid-column: aside-start / aside-end;
 }
 
+
 @media screen and (max-width: 991.98px) {
     .dent-to-aside {
         grid-column: dent-start / dent-end;
@@ -321,7 +322,6 @@ main {
 .role-placement {
   grid-column: role-start / role-end
 }
-
 
 .centered {
     grid-column: center-left / center-right;
@@ -475,7 +475,20 @@ main {
     position: relative;
 }
 
-/* Summary Box */
+/* --------Summary Box-----------*/
+
+.summary-box p:nth-last-child(1) {
+    margin-bottom: 2rem;
+}
+
+.summary-box ul:nth-last-child(1) {
+    margin-bottom: 2rem;
+}
+
+.summary-box h3, .summary-box h4 {
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 991.98px) {
     .summary-box {
         padding: 2rem 3.4rem 0 3.4rem;
@@ -504,17 +517,8 @@ main {
     }
 }
 
-.summary-box p:nth-last-child(1) {
-    margin-bottom: 2rem;
-}
+/* --------Summary Padding-----------*/
 
-.summary-box ul:nth-last-child(1) {
-    margin-bottom: 2rem;
-}
-
-.summary-box h3, .summary-box h4 {
-    margin-bottom: 1rem;
-}
 
 /* Shapes */
 
@@ -571,6 +575,15 @@ main {
   }
 }
 
+/* -------- detail vertical spacing ---------- */
+
+.aside-detail h3, .aside-detail h4  {
+  padding-bottom: 1rem;
+}
+
+.aside-detail p, .aside-detail ul {
+  margin-bottom: 10rem;
+}
 /* Right Aligned Icon */
 
 .right-icon {
@@ -579,7 +592,10 @@ main {
     justify-self: end;
     margin-right: -10px;
 }
-
+/* -------- role vertical spacing ---------- */
+.role-placement h4 {
+  padding-bottom: 1rem;
+}
 /* ---- GLOBAL FOOTER ---- */
 
 .drawer-mobile {
