@@ -129,12 +129,15 @@ img {
     }
 
     .colab-hero .background {
-        background: url(../images/shape3.svg) no-repeat;
+        background: url(../images/colab/shape3.svg) no-repeat;
         background-size: cover;
     }
 
     .colab-hero .paragraph-1 {
         align-self: center;
+    }
+    .colab-hero .summary-box {
+      background-color: white;
     }
 
     main > section > h2 {
@@ -166,7 +169,7 @@ img {
     }
 
     .colab-hero .background {
-        background: url(../images/colabhero.svg) no-repeat;
+        background: url(../images/colab/colabhero.svg) no-repeat;
         background-size: contain;
         justify-self: center;
         width: 55rem;
@@ -190,10 +193,12 @@ img {
         display: flex;
         justify-content: space-between;
         width: 55rem;
+
     }
 
     .colab-hero .summary-box div {
         max-width: 11.4rem;
+
     }
 }
 
@@ -629,7 +634,7 @@ img {
     }
 
     .key-insights .background {
-        background: url(../images/shape1.svg) no-repeat;
+        background: url(../images/colab/shape1.svg) no-repeat;
         background-size: cover;
         overflow: hidden;
         min-height: 50vw;
@@ -652,7 +657,7 @@ img {
     }
 
     .key-insights .background {
-        background: url(../images/shape1.svg) no-repeat;
+        background: url(../images/colab/shape1.svg) no-repeat;
         background-size: cover;
         height: 24rem;
         width: 51.503rem;
@@ -1317,7 +1322,7 @@ img {
 
 
 .conclusion .background-start {
-    background: url("../images/shape6.svg") no-repeat;
+    background: url("../images/colab/shape6.svg") no-repeat;
     background-size: contain;
     align-self: start;
     min-height: 177.0666666666667vw;
@@ -1330,12 +1335,12 @@ img {
 
 @media screen and (min-width: 576px) {
   .conclusion .background-start {
-      background: url("../images/shape2.svg") no-repeat;
+      background: url("../images/colab/shape2.svg") no-repeat;
       /* background-size: contain;
       align-self: start;
       min-height: 177.0666666666667vw;
   } */
-
+ }
 }
 
 .self-reflection {
@@ -1367,18 +1372,32 @@ img {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-around;
+  align-items: baseline;
   padding: 0 8%;
 }
 
  .other-work .container-1 figure{
    width: 223px;
    padding-bottom: 5rem;
+   align-items: center;
+ }
+
+ .other-work .container-1 img{
+   height: 200px;
+
  }
 
 
 
 .other-work i {
     background: url("../icons/goup.svg") no-repeat;
+}
+
+@media screen and (min-width: 870px) {
+  .other-work .container-1 {
+    margin: 0 10%;
+
+  }
 }
 
 /* Special Positioning */
