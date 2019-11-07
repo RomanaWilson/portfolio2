@@ -1,9 +1,10 @@
 
 
 main {
-    padding-top: 0;
+    padding-top: 10rem;
 
 }
+
 
 
 
@@ -91,9 +92,7 @@ main {
 }
 
 @media screen and (min-width: 992px) {
-    .contact .paragraph-1 {
-      width: 49.247491638796%;
-    }
+
     .contact .container-1 {
       margin-right: calc(25.3472222222222% - 4.7rem);
     }

@@ -270,7 +270,8 @@ main {
         1fr
         [margin-right-end heading-end];
 
-        grid-column-gap: 2.3980815347722%;
+        grid-column-gap: 1.3888888888889%;
+        /* 2.3980815347722% */
     }
 }
 
@@ -305,6 +306,7 @@ main {
   grid-column: aside-start / aside-end;
 }
 
+
 @media screen and (max-width: 991.98px) {
     .dent-to-aside {
         grid-column: dent-start / dent-end;
@@ -320,7 +322,6 @@ main {
 .role-placement {
   grid-column: role-start / role-end
 }
-
 
 .centered {
     grid-column: center-left / center-right;
@@ -410,6 +411,7 @@ main {
     grid-row: container-3;
 }
 
+
 .container-1-split {
     grid-row: container-1-start / container-1-end;
 }
@@ -417,6 +419,11 @@ main {
 .container-2-split {
     grid-row: container-2-start / container-2-end;
 }
+
+.container-4-split {
+    grid-row: container-4-start / container-4-end;
+}
+
 
 .list-1 {
     grid-row: list-1;
@@ -468,7 +475,20 @@ main {
     position: relative;
 }
 
-/* Summary Box */
+/* --------Summary Box-----------*/
+
+.summary-box p:nth-last-child(1) {
+    margin-bottom: 2rem;
+}
+
+.summary-box ul:nth-last-child(1) {
+    margin-bottom: 2rem;
+}
+
+.summary-box h3, .summary-box h4 {
+    margin-bottom: 1rem;
+}
+
 @media screen and (max-width: 991.98px) {
     .summary-box {
         padding: 2rem 3.4rem 0 3.4rem;
@@ -497,17 +517,8 @@ main {
     }
 }
 
-.summary-box p:nth-last-child(1) {
-    margin-bottom: 2rem;
-}
+/* --------Summary Padding-----------*/
 
-.summary-box ul:nth-last-child(1) {
-    margin-bottom: 2rem;
-}
-
-.summary-box h3, .summary-box h4 {
-    margin-bottom: 1rem;
-}
 
 /* Shapes */
 
@@ -546,21 +557,33 @@ main {
 @media screen and (max-width: 575.98px){
     .animated-button {
       width: 55.2%;
+      margin-left: 63.2%;
     }
 }
 
 @media screen and (min-width: 576px) and (max-width: 991.98px){
     .animated-button {
       width: 28.1774580335731%;
+      margin-left: 14.5083932853717%;
   }
 }
 
 @media screen and (min-width: 992px){
     .animated-button {
       width: 18.2638888888889%;
+      margin-left: calc(74.6527777777778% - 1px);
   }
 }
 
+/* -------- detail vertical spacing ---------- */
+
+.aside-detail h3, .aside-detail h4  {
+  padding-bottom: 1rem;
+}
+
+.aside-detail p, .aside-detail ul {
+  margin-bottom: 10rem;
+}
 /* Right Aligned Icon */
 
 .right-icon {
@@ -569,7 +592,10 @@ main {
     justify-self: end;
     margin-right: -10px;
 }
-
+/* -------- role vertical spacing ---------- */
+.role-placement h4 {
+  padding-bottom: 1rem;
+}
 /* ---- GLOBAL FOOTER ---- */
 
 .drawer-mobile {
@@ -645,7 +671,7 @@ footer {
    align-items: center;
    border-top: 1px solid rgb(125,125,125,.6);
    height: 45px;
-   z-index: 900;
+   z-index: 901;
 }
 
 
