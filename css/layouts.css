@@ -16,6 +16,7 @@ body {
     top: 0;
     height: 4rem;
     border-bottom: 1px solid rgb(125, 125, 125, .6);
+    z-index: 901;
 }
 
 .top-nav {
