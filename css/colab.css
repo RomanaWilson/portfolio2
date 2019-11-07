@@ -1058,27 +1058,28 @@ img {
                             auto
                             5rem
                             [photo-1-start]
-                            auto
-                            [photo-1-end]
-                            5rem
+                            2rem
                             [sub-heading-1]
                             auto
                             1rem
                             [paragraph-1]
                             auto
                             5rem
-                            [photo-2-start]
-                            auto
-                            [photo-2-end]
-                            5rem
                             [sub-heading-2]
                             auto
                             1rem
                             [paragraph-2]
                             auto
+                            1fr
+                            [photo-2-start]
+                            10rem
+                            [photo-1-end]
                             5rem
                             [container-3]
-                            auto;
+                            auto
+                            [photo-2-end]
+                            5rem
+                            ;
     }
 
     .illustrations .photo-1 {
@@ -1138,35 +1139,32 @@ img {
 }
 
 @media screen and (min-width: 922px) {
+
     .illustrations {
         grid-row: llustrations;
         grid-template-rows: [heading] /*illustrations*/
                             auto
                             5rem
                             [photo-1-start]
-                            2rem
+                            10rem
                             [sub-heading-1]
                             auto
                             1rem
                             [paragraph-1]
                             auto
+                            [photo-1-end]
                             5rem
-                            [sub-heading-2]
+                            [photo-2-start sub-heading-2]
                             auto
                             1rem
                             [paragraph-2]
                             auto
-                            1fr
-                            [photo-2-start]
-                            10rem
-                            [photo-1-end]
-                            5rem
-                            [container-3]
-                            auto
                             [photo-2-end]
                             5rem
-                            ;
+                            [container-3]
+                            auto;
     }
+
 
     .illustrations .photo-1 {
         margin-right: 50.6944444444444%;
