@@ -1,32 +1,100 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151575407-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151575407-1');
+    </script>
+
     <meta charset="utf-8">
     <title>contact</title>
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/layouts.css">
+    <link rel="stylesheet" href="css/contact.css">
+
+    <!--fonts-->
+    <link rel="stylesheet" href="https://use.typekit.net/dpp5etq.css">
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
-    <main>
+
+      <div class="vert-line line1"></div>
+      <div class="vert-line line2"></div>
+      <div class="vert-line line3 desktop-only"></div>
+      <div class="vert-line line4 desktop-only"></div>
+
+  <!--mobile header-->
+
+
+<!--mobile header-->
+    <header class="mobile-header almost-opaque gray-border mobile-only">
+      <nav class="top-nav">
+        <a href="index.html" class="logo"><img src="icons/logoblack.svg" alt="logo" ></a>
+        <a class="wide-logo" href="index.html"><img src="icons/romiwilson.svg" alt="logo" href="index.html"></a>
+        <a class="menu-style text-link" href="work.html">work</a>
+      </nav>
+    </header>
+
+<!--desktop and tablet header-->
+    <header class="desktop-header mobile-hidden">
+      <a href="index.html" class="logo"><img src="icons/logo.svg" alt="logo" ></a>
+    </header>
+
+<!--global menu-->
+    <aside class="vertical-menu mobile-hidden">
+        <nav>
+          <ul class="menu-style">
+            <li><a href="bio.html">bio</a></li>
+            <li><a href="work.html">work</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+    </aside>
+
+    <main class="grid master-grid">
+
       <!-- OUTLOOK -->
-            <!-- <section>
-              <h2>I am looking for ...</h2>
-              <p>I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
-              <img src="images/profile.png" alt="profile photography">
-            </section> -->
+      <section class="grid sub-grid contact">
+        <h1 class="main-mobile standard-width heading">romi wilson</h1>
+        <h2 class="geometric-title standard-width sub-heading-1">I am looking for ...</h2>
+        <p class="body-1 centered paragraph-1">I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
+
       <!-- CONTACT -->
-            <!-- <section>
-              <h2>contact</h2>
-              <figure>
-                <img src="icons/envelope.svg" alt="envelope">
-                <figcaption>romi.m.wilson@gmail.com</figcaption>
-              </figure>
-              <figure>
-                <img src="icons/download.svg" alt="PDF">
-                <figcaption>resume</figcaption>
-              </figure>
-              <figure>
-              <i>linkedin</i>
-              </figure>
-            </section> -->
+        <h2 class="geometric-title standard-width sub-heading-2">contact</h2>
+
+        <a class="opaque full-width container-1" href="https://www.linkedin.com/in/romi-wilson-ux-design/"><i class=""></i></a>
+        <a class="body-1 standard-width container-2" href="mailto:romi.m.wilson@gmail.com"><i class=""></i>romi.m.wilson@gmail.com</a>
+
+        <a class="serif-small standard-width container-3" href="images/PDF/Romi_Wilson_resume.pdf" download><i class=""></i>resume</a>
+
+      </section>
     </main>
+
+    <!--mobile footer-->
+    <section id="bottommenu" class="grid sub-grid drawer-mobile almost-opaque mobile-only">
+      <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
+          <img src="images/rectangle.svg" alt="rectangle">
+          <h2 class="menu-style">contact</h2>
+      </div>
+      <a class=" body-2 standard-width container-1" href="https://www.linkedin.com/in/romi-wilson-ux-design/"><i class="linkedin"></i>connect</a>
+      <a class="body-2 standard-width container-2" href="mailto:romi.m.wilson@gmail.com"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
+      <a class="serif-small standard-width container-3" href="images/PDF/Romi_Wilson_resume.pdf" download><i class="resume"></i>resume</a>
+    </section>
+    <!--desktop footer-->
+    <footer class="thin-caption mobile-hidden">
+      <p >©2019 romi wilson</p>
+    </footer>
+
+
   </body>
+
+
 </html>
+
+<!-- CONTACT -->

@@ -1,5 +1,8 @@
 html {
     width: 100%;
+    min-width: 320px;
+    position: relative;
+    min-height: 100vh;
 }
 
 body {
@@ -7,14 +10,15 @@ body {
     margin: 0;
 }
 
-/* Header */
+/* Header mobile*/
 
-.top-header {
+.mobile-header {
     width: 100%;
     position: fixed;
     top: 0;
     height: 4rem;
     border-bottom: 1px solid rgb(125, 125, 125, .6);
+    z-index: 901;
 }
 
 .top-nav {
@@ -25,24 +29,81 @@ body {
 }
 
 .logo {
-    max-width: 1.5rem;
-    padding-top: 10px;
+
+    padding-top: .7rem;
 }
 
+.logo img {
+    height: 2.55rem;
+    width: 1.5rem;
+}
+
+
 .wide-logo {
+    padding-top: .9rem;
+    padding-left: 3.1rem;
+}
+
+.wide-logo img {
     width: 9.8rem;
-    padding-top: 10px;
+    height: 1.7rem;
 }
 
 .text-link {
-    padding-top: 8px;
+    padding-top: .9rem;
 }
+
+/* Header tablet and desktop */
+
+@media screen and (min-width: 576px) {
+  .vertical-menu {
+    position: fixed;
+    writing-mode: vertical-rl;
+    text-orientation: mixed;
+    top: 3rem;
+    right: 1rem;
+  }
+}
+
+@media screen and (min-width: 992px) {
+  .vertical-menu {
+    right: calc(7.0833333333333% - 32px);
+  }
+}
+
+.vertical-menu li {
+  display: inline;
+  padding-bottom: 5rem;
+}
+
+.desktop-header {
+  position: fixed;
+  top: 2rem;
+  left: 2rem;
+
+}
+
+.desktop-header img {
+  width: 2.941rem;
+  height: 5rem;
+}
+
+
+
 
 /* Main Section */
 
 main {
     padding-top: 6rem;
 }
+
+@media screen and (min-width: 576px){
+    main {
+        padding-top: 10rem;
+    }
+}
+
+
 
 /* Mobile Footer */
 
@@ -56,26 +117,56 @@ main {
 .vert-line {
     border-left: 1px solid rgb(125, 125, 125, .3);
     height: 100%;
-}
 
-.line1 {
-    position: fixed;
-    left: calc(8% - 1px);
 }
+/* ------ lines mobile */
 
-.line2 {
-    position: fixed;
-    right: 36.8%;
+      @media screen and (max-width: 575.98px){
+        .line1 {
+            position: fixed;
+            left: calc(8% - 1px);
+        }
+        .line2 {
+            position: fixed;
+            right: 36.8%;
+        }
 }
+/* ------ lines tablet */
+      @media screen and (min-width: 576px) and (max-width: 991.98px){
+        .line1 {
+            position: fixed;
+            left: calc(14.6284411319865% - 1px);
+        }
+        .line2 {
+            position: fixed;
+            right: 14.6284411319865%;
+        }
 
-.linep1 {
-    position: fixed;
-    left: calc(36.8% - 1px);
+        .line3 {
+            position: fixed;
+            left: calc(57.1942446043165% - 1px);
+        }
 }
+/* ------ lines desktop */
+      @media screen and (min-width: 992px) {
+        .line1 {
+            position: fixed;
+            left: calc(7.0833333333333% - 1px);
+        }
+        .line2 {
+            position: fixed;
+            right: 7.0833333333333%;
+        }
 
-.linep2 {
-    position: fixed;
-    right: 8%;
+        .line3 {
+            position: fixed;
+            right: calc(25.3472222222222% + 1px);
+        }
+
+        .line4 {
+            position: fixed;
+            left: 23.9583333333333%;
+        }
 }
 
 /* Grid */
@@ -91,35 +182,107 @@ main {
     grid-template-columns: 1fr;
 
     grid-auto-rows: auto;
-    grid-row-gap: 15rem;
-
+    grid-row-gap: 10rem;
 }
+
+@media screen and (min-width: 576px) {
+    .master-grid {
+        grid-row-gap: 15rem;
+    }
+}
+
+
 
 /* Sub Grid */
 
-.sub-grid {
-
-    /* Positioning in Master */
+ /* Positioning in Master */
+ .sub-grid {
     grid-column: 1 / -1;
+ }
 
-    /* Sub-Grid Definition */
-    grid-template-columns: [margin-left-start]
-    5.333333333%
-    [margin-left-end]
-    1fr
-    [center-left]
-    1fr
-    [center-right]
-    1fr
-    [margin-right-start]
-    5.333333333%
-    [margin-right-end];
+/* Sub-Grid - Mobile Definition */
+@media screen and (max-width: 575.98px) {
+    .sub-grid {
+        grid-template-columns: [margin-left-start heading-start]
+        5.333333333%
+        [margin-left-end dent-start center-left role-start paragraph-start left-start right-left-flip-start framed-image-start]
+        1fr
+        [aside-start persona-photo-start left-end]
+        1fr
+        1fr
+        [margin-right-start dent-end aside-end center-right paragraph-end role-end persona-photo-end right-left-flip-end framed-image-end]
+        5.333333333%
+        [margin-right-end heading-end];
+        grid-column-gap: 2.666666666%;
+    }
+}
 
-    grid-column-gap: 2.666666666%;
+/* Sub-Grid - Tablet Definition */
+@media screen and (min-width: 576px) and (max-width: 991.98px){
+    .sub-grid {
+        grid-template-columns: [margin-left-start]
+        1fr
+        [heading-start]
+        1fr
+        [margin-left-end center-left paragraph-start role-start left-start framed-image-start]
+        1fr
+        [dent-start]
+        1fr
+        [role-end]
+        1fr
+        1fr
+        [left-end aside-start right-left-flip-start]
+        1fr
+        1fr
+        1fr
+        1fr
+        [margin-right-start center-right dent-end aside-end paragraph-end framed-image-end]
+        1fr
+        [heading-end right-left-flip-end]
+        1fr
+        [margin-right-end ];
 
+        grid-column-gap: 2.3980815347722%;
+    }
+}
+
+/* Sub-Grid - Desktop Definition */
+@media screen and (min-width: 992px) {
+    .sub-grid {
+
+        grid-template-columns: [margin-left-start heading-start]
+        1fr
+        [margin-left-end paragraph-start]
+        1fr
+        [dent-start framed-image-start]
+        1fr
+        [center-left left-start right-left-flip-start]
+        1fr
+        1fr
+        [paragraph-end]
+        1fr
+        [left-end right-left-flip-end]
+        1fr
+        1fr
+        [dent-end framed-image-end]
+        1fr
+        [center-right aside-start role-start]
+        1fr
+        1fr
+        [aside-end margin-right-start role-end]
+        1fr
+        [margin-right-end heading-end];
+
+        grid-column-gap: 1.3888888888889%;
+        /* 2.3980815347722% */
+    }
 }
 
 /* Subgrid Horizontal Positioning */
+/* heading in projects */
+.heading-width {
+    grid-column:  heading-start / heading-end;
+}
 
 .standard-width {
     grid-column: margin-left-end / margin-right-start;
@@ -129,19 +292,67 @@ main {
     grid-column: margin-left-start / margin-right-end;
 }
 
-.right-side-centered {
-
+.left {
+    grid-column: left-start / left-end;
 }
 
 .justify-center {
     justify-self: center;
 }
 
+.dent-left {
+    grid-column: dent-start / dent-end;
+}
+
+
+.aside-detail {
+  grid-column: aside-start / aside-end;
+}
+
+
+@media screen and (max-width: 991.98px) {
+    .dent-to-aside {
+        grid-column: dent-start / dent-end;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .dent-to-aside {
+        grid-column: aside-start / aside-end;
+    }
+}
+
+.role-placement {
+  grid-column: role-start / role-end
+}
+
+.centered {
+    grid-column: center-left / center-right;
+}
+
+.paragraph-width {
+
+    grid-column: paragraph-start / paragraph-end
+}
+
+.right-left-flip {
+    grid-column: right-left-flip-start / right-left-flip-end;
+}
+
+.framed-image {
+  grid-column: framed-image-start / framed-image-end;
+}
+/* .quotation {
+
+} */
+
+
 /* Subgrid Vetical Positioning Objects*/
 
 .heading {
     grid-row: heading;
 }
+
 
 .sub-heading-1 {
     grid-row: sub-heading-1;
@@ -179,6 +390,18 @@ main {
     grid-row: paragraph-3;
 }
 
+.paragraph-4 {
+    grid-row: paragraph-4;
+}
+
+.paragraph-1-split {
+    grid-row: paragraph-1-start / paragraph-1-end;
+}
+
+.paragraph-2-split {
+    grid-row: paragraph-2-start / paragraph-2-end;
+}
+
 .container-1 {
     grid-row: container-1;
 }
@@ -190,6 +413,20 @@ main {
 .container-3 {
     grid-row: container-3;
 }
+
+
+.container-1-split {
+    grid-row: container-1-start / container-1-end;
+}
+
+.container-2-split {
+    grid-row: container-2-start / container-2-end;
+}
+
+.container-4-split {
+    grid-row: container-4-start / container-4-end;
+}
+
 
 .list-1 {
     grid-row: list-1;
@@ -211,17 +448,29 @@ main {
     grid-row: button-2;
 }
 
-.background {
-    grid-row: background-start / background-end;
+.button-1-split {
+    grid-row: button-1-start / button-1-end;
 }
+
 
 .photo-1 {
     grid-row: photo-1-start / photo-1-end;
 }
 
+.photo-2 {
+    grid-row: photo-2-start / photo-2-end;
+}
+
 .background {
     grid-row: background-start / background-end;
 }
+
+.background-start {
+    grid-row: background-start;
+}
+
+/* Sub-Section */
+
 
 /* Containers */
 
@@ -229,17 +478,50 @@ main {
     position: relative;
 }
 
-.summary-box {
-    padding: 2rem 3.4rem 0 3.4rem; 
+/* --------Summary Box-----------*/
+
+.summary-box p:nth-last-child(1) {
+    margin-bottom: 2rem;
 }
 
-.summary-box p {
+.summary-box ul:nth-last-child(1) {
     margin-bottom: 2rem;
 }
 
 .summary-box h3, .summary-box h4 {
     margin-bottom: 1rem;
 }
+
+@media screen and (max-width: 991.98px) {
+    .summary-box {
+        padding: 2rem 3.4rem 0 3.4rem;
+    }
+
+    .summary-box p {
+        margin-bottom: 2rem;
+    }
+
+    .summary-box ul {
+        margin-bottom: 2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+    .summary-box {
+        padding: 2rem 0 0 0;
+    }
+
+    .summary-box p {
+        margin-bottom: 10rem;
+    }
+
+    .summary-box ul {
+        margin-bottom: 10rem;
+    }
+}
+
+/* --------Summary Padding-----------*/
+
 
 /* Shapes */
 
@@ -252,21 +534,74 @@ main {
     background: white;
 }
 
+.circle-purple {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 1px solid rgb(125,125,125,.6);
+    background: #EFDBEA;
+
+}
+
 .circle-text {
     padding-bottom: .5rem;
 }
 
 .animated-button {
     background: url("../images/button.svg") no-repeat;
+    background-position-x: -2rem;
     display: flex;
     align-items: center;
     height: 69px;
-    width: 217px;
+    padding-left: 1rem;
 }
 
+@media screen and (max-width: 575.98px){
+    .animated-button {
+      width: 55.2%;
+      margin-left: 63.2%;
+    }
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.98px){
+    .animated-button {
+      width: 28.1774580335731%;
+      margin-left: 14.5083932853717%;
+  }
+}
+
+@media screen and (min-width: 992px){
+    .animated-button {
+      width: 18.2638888888889%;
+      margin-left: calc(74.6527777777778% - 1px);
+  }
+}
+
+/* -------- detail vertical spacing ---------- */
+
+.aside-detail h3, .aside-detail h4  {
+  padding-bottom: 1rem;
+}
+
+.aside-detail p, .aside-detail ul {
+  margin-bottom: 10rem;
+}
+/* Right Aligned Icon */
+
+.right-icon {
+    width: 20px;
+    height: 33.2px;
+    justify-self: end;
+    margin-right: -10px;
+}
+/* -------- role vertical spacing ---------- */
+.role-placement h4 {
+  padding-bottom: 1rem;
+}
 /* ---- GLOBAL FOOTER ---- */
 
-.footer-mobile {
+.drawer-mobile {
     grid-template-rows: [heading]
                         4.5rem
                         3rem
@@ -298,7 +633,7 @@ main {
     width: 100%;
 }
 
-.footer-mobile i {
+.drawer-mobile i {
     position: relative;
     display: block;
     margin-bottom: 10px;
@@ -312,16 +647,63 @@ main {
     background: url("../icons/linkedin.svg") no-repeat;
   }
 
-  .envelope {
-    width: 6.553rem;
-    height: 6.649rem;
-    margin-left: calc(50% - 3.2765rem);
-    background: url("../icons/envelope.svg") no-repeat;
-  }
+.envelope {
+width: 6.553rem;
+height: 6.649rem;
+margin-left: calc(50% - 3.2765rem);
+background: url("../icons/envelope.svg") no-repeat;
+}
 
-  .resume {
-    width: 3.8rem;
-    height: 3.5rem;
-    margin-left: calc(50% - 1.9rem);
-    background: url("../icons/download.svg") no-repeat;
-  }
+.resume {
+width: 3.8rem;
+height: 3.5rem;
+margin-left: calc(50% - 1.9rem);
+background: url("../icons/download.svg") no-repeat;
+}
+
+footer {
+
+   position: absolute;
+   bottom: 0;
+   width: 100%;
+   color: #828282;
+   background-color: rgb(255, 255, 255, .95);
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   border-top: 1px solid rgb(125,125,125,.6);
+   height: 45px;
+   z-index: 901;
+}
+
+
+
+/* Media Queries */
+
+/* Hide Mobile */
+@media screen and (max-width: 575.98px) {
+    .mobile-hidden {
+        display: none;
+    }
+}
+
+/* Hide Mobile and Tablet */
+@media screen and (max-width: 991.98px) {
+    .desktop-only {
+        display: none;
+    }
+}
+
+/* Hide Tablet and Desktop */
+@media screen and (min-width: 576px) {
+    .mobile-only {
+        display: none;
+    }
+}
+
+/* Hide Desktop */
+@media screen and (min-width: 992px) {
+    .desktop-hidden {
+        display: none;
+    }
+}

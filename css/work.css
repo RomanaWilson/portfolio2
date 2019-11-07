@@ -3,34 +3,108 @@
 
 /* Work Page */
 
-.work {
-    grid-template-rows: [heading]
-                        auto
-                        2rem
-                        [container-1]
-                        auto
-                        5rem
-                        [container-2]
-                        auto
-                        5rem
-                        [container-3]
-                        auto
-                        7rem; /*3rem + 4 contact*/
+
+
+@media screen and (max-width:575.98px){
+  .work {
+      grid-template-rows: [heading]
+                          auto
+                          3rem
+                          [container-1]
+                          auto
+                          7rem; /*3rem + 4 contact*/
+  }
+
+  .work .container-1 figure {
+    padding-bottom: 5rem;
+  }
+
+  .laptop {
+    padding-left: 14.4%;
+    padding-right: 14.4%;
+
+  }
+
+  .desktop {
+    padding-left: 8.13%;
+    padding-right: 8.13%;
+  }
+
+}
+@media screen and (min-width:576px){
+  .work {
+      grid-template-rows: [heading]
+                          auto
+                          7.5rem
+                          [container-1]
+                          auto
+                          7rem; /*3rem + 4 contact*/
+  }
+
+  .work .container-1 figure {
+    padding-bottom: 7.5rem;
+  }
+
+  .left {
+    padding-left: 8.5131894484412%;
+    padding-right: 27.5779376498801%;
+
+  }
+
+  .right {
+    padding-left: 34.1726618705036%;
+    padding-right: 17.8657074340528%;
+  }
 
 }
 
-.project-name {
-  text-align: center;
-  padding-top: 20px;
-}
+@media screen and (min-width: 992px) {
+  .work {
+      grid-template-rows: [heading]
+                          auto
+                          0rem
+                          [container-1]
+                          auto
+                          7rem; /*3rem + 4 contact*/
+  }
 
-.laptop {
-  padding-left: 6.4%;
-  padding-right: 6.4%;
 
-}
+  .work .container-1{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    align-content: space-between;
+    justify-content: space-around;
+    margin: 0 7.0833333333333%;
+  }
 
-.desktop {
-  padding-left: 2.13%;
-  padding-right: 2.13%;
+  .work .container-1 figure {
+    padding-bottom: 7rem;
+    width: 46.7486818980668%;
+  }
+  .work figure:nth-child(1) {
+    margin-top: 7.5rem;
+  }
+
+  .work figure:nth-child(2) {
+    width: 35.1493848857645%;
+    align-self: center;
+  }
+
+  .work figure:nth-child(4) {
+    width: 13.2688927943761%;
+    align-self: center;
+  }
+
+  .left {
+    padding-left: 0%;
+    padding-right: 0%;
+
+  }
+
+  .right {
+    padding-left: 0%;
+    padding-right: 0%;
+  }
+
 }

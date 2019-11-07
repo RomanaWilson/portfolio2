@@ -1,3 +1,7 @@
+*, *:before, *:after {
+  box-sizing: border-box;
+}
+
 html {
   font-size: 10px;
 }
@@ -119,6 +123,10 @@ strong {
   list-style: none;
 }
 
+.gray {
+  color: #828282;
+}
+
 .serif-small {
   font-family: didoni-urw, serif;
   font-weight: 400;
@@ -138,6 +146,13 @@ strong {
   list-style: none;
 }
 
+ /* center the gray caption undex pictures */
+
+.caption-center {
+  text-align: center;
+  padding-top: 2rem;
+}
+
 /* Backgrounds */
 
 .opaque {
@@ -151,15 +166,21 @@ strong {
 
 .almost-opaque {
   background-color: rgb(255, 255, 255, .95);
-  z-index: 901;
+  z-index: 900;
 }
 
 .cosmic-latte {
   background: rgb(192, 226, 202, .5);
 }
 
-/* Borders */
-
+/* Border */
 .thin-grey-border {
   border: 1px solid rgb(125,125,125,.6);
+
+}
+
+/* Type Colors */
+
+.white-type {
+  color: white;
 }

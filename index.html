@@ -1,7 +1,16 @@
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151575407-1"></script>
+    <script>
+      window.dataLayer = window.dataLayer || [];
+      function gtag(){dataLayer.push(arguments);}
+      gtag('js', new Date());
+
+      gtag('config', 'UA-151575407-1');
+    </script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -25,24 +34,32 @@
     <!--Lines-->
     <div class="vert-line line1"></div>
     <div class="vert-line line2"></div>
-
-    <header class="top-header almost-opaque gray-border ">
+    <div class="vert-line line3 mobile-hidden"></div>
+    <div class="vert-line line4 desktop-only"></div>
+<!--mobile header-->
+    <header class="mobile-header almost-opaque gray-border mobile-only">
       <nav class="top-nav">
-          <img src="icons/logoblack.svg" alt="logo" class="logo">
-          <a href="#"><img src="icons/romiwilson.svg" alt="logo" class="wide-logo"></a>
-          <a class="menu-style text-link" href="#">work</a>
+        <a href="index.html" class="logo"><img src="icons/logoblack.svg" alt="logo" ></a>
+        <a class="wide-logo" href="index.html"><img src="icons/romiwilson.svg" alt="logo" href="index.html"></a>
+        <a class="menu-style text-link" href="work.html">work</a>
       </nav>
     </header>
-  <!--mobile hidden-->
-  <!-- <aside class="">
-      <nav>
-        <ul>
-          <li><a href = "#">bio</a></li>
-          <li><a href = "#">work</a></li>
-          <li><a href = "#">contact</a></li>
-        </ul>
-      </nav>
-    </aside> -->
+
+<!--desktop and tablet header-->
+    <header class="desktop-header mobile-hidden">
+      <a href="index.html" class="logo index"><img src="icons/logo.svg" alt="logo" ></a>
+    </header>
+
+<!--global menu-->
+    <aside class="vertical-menu mobile-hidden">
+        <nav>
+          <ul class="menu-style">
+            <li><a href="bio.html">bio</a></li>
+            <li><a href="work.html">work</a></li>
+            <li><a href="contact.html">contact</a></li>
+          </ul>
+        </nav>
+    </aside>
 
     <main class="grid master-grid">
 
@@ -59,101 +76,149 @@
 <!-- LATEST WORK-->
       <section class="grid sub-grid home-project-board">
         <div class="full-width work-circle circle opaque">
-            <h2 class="serif-mobile">work</h2>
+            <a href="work.html"><h2 class="serif-mobile">work</h2></a>
         </div>
 <!-- PROJECT CO LAB-->
         <section class="grid sub-grid home-project">
           <h3 class="geometric-title standard-width heading">CO LAB</h3>
-          <p class="body-2 standard-width paragraph-1">Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
+          <p class="body-2 standard-width paragraph-1-split">Co lab is a cloud storage application designed to humanize collaboration and communication and help to build organization within projects. </p>
             <!-- <img class="standard-width container-1 rel-container cellphone" src="images/colabphone.svg" alt="image of phone"> -->
-            <img class="standard-width container-2 rel-container laptop" src="images/colablaptop.svg" alt="image of computer">
+            <img class="centered photo-1 rel-container laptop" src="images/colabhome2.png" alt="image of computer">
+            <img class="standard-width photo-2 rel-container laptop desktop-only" src="images/colabhome.png" alt="image of computer">
           </div>
-          <h4 class="small-title standard-width sub-heading-1">ROLE</h4>
-          <ul class="thin-caption standard-width project-roles">
-            <li>research</li>
-            <li>UX design</li>
-            <li>Prototyping</li>
-            <li>UI design</li>
-          </ul>
-          <div class="see-work-button-outer full-width button-1 opaque">
-              <a class="serif-small see-work-button-inner">see work</a>
+          <div class="role-placement container-1-split">
+            <h4 class="small-title">ROLE</h4>
+            <ul class="thin-caption">
+              <li>Research</li>
+              <li>UX design</li>
+              <li>Prototyping</li>
+              <li>UI design</li>
+            </ul>
           </div>
+          <div class="see-work-button-outer full-width button-1 opaque mobile-only">
+              <a class="serif-small see-work-button-inner" href="colab.html">see<br>work</a>
+          </div>
+
+            <a id="button_toggle" class="serif-small animated-button full-width button-1-split mobile-hidden" href="colab.html">see work →</a>
+
         </section>
 
 <!-- PROJECT PEAS-->
         <section class="grid sub-grid home-project">
           <h3 class="geometric-title standard-width heading">PEAS IN HEART</h3>
-          <p class="body-2 standard-width paragraph-1">Peas in Heart is a design studio capturing Czech culture in illustration and helping firms and institutions produce hi-quality presents.</p>
-          <img class="standard-width container-2 rel-container laptop" src="images/peaslaptop.svg" alt="image of computer">
-          <!-- <img class="standard-width container-2 rel-container phone" src="images/phone.svg" alt="image of phone"> -->
-          <h4 class="small-title standard-width sub-heading-1">ROLE</h4>
-          <ul class="thin-caption standard-width project-roles">
-            <li>research</li>
-            <li>UX design</li>
-            <li>Prototyping</li>
-            <li>UI design</li>
-          </ul>
-          <div class="see-work-button-outer full-width button-1 opaque">
-              <a class="serif-small see-work-button-inner">see work</a>
+          <p class="body-2 standard-width paragraph-1-split">Peas in Heart is a design studio capturing Czech culture in illustration and helping firms and institutions produce hi-quality presents. </p>
+            <!-- <img class="standard-width container-1 rel-container cellphone" src="images/colabphone.svg" alt="image of phone"> -->
+            <img class="centered photo-1 rel-container laptop" src="images/peashome2.png" alt="image of computer">
+            <img class="standard-width photo-2 rel-container laptop desktop-only" src="images/peashome.png" alt="image of computer">
           </div>
+          <div class="role-placement container-1-split">
+            <h4 class="small-title">ROLE</h4>
+            <ul class="thin-caption">
+              <li>Research</li>
+              <li>UX design</li>
+              <li>Prototyping</li>
+              <li>Strategy</li>
+            </ul>
+          </div>
+          <div class="see-work-button-outer full-width button-1 opaque mobile-only">
+              <a class="serif-small see-work-button-inner" href="peas.html">see<br>work</a>
+          </div>
+
+            <a id="button_toggle" class="serif-small animated-button full-width button-1-split mobile-hidden" href="#">see work →</a>
+
         </section>
 
   <!-- PROJECT FLO-->
         <section class="grid sub-grid home-project">
-            <h3 class="geometric-title standard-width heading">FLÕ</h3>
-            <p class="body-2 standard-width paragraph-1">FLÕ  is a OPS desktop application designed to create effective work flow for loans and mortgages. Case study comming soon.</p>
-            <!-- <img src="images/tablet.svg" alt="image of phone"> -->
-            <img class="standard-width container-2 rel-container desktop" src="images/desktop.svg" alt="image of computer">
-            <h4 class="small-title standard-width sub-heading-1">ROLE</h4>
-            <ul class="thin-caption standard-width project-roles">
-              <li>research</li>
+          <h3 class="geometric-title standard-width heading">FLÕ</h3>
+          <p class="body-2 standard-width paragraph-1-split">FLÕ is a OPS desktop application designed to create effective work flow for loans and mortgages. Case study is coming soon. </p>
+            <!-- <img class="standard-width container-1 rel-container cellphone" src="images/colabphone.svg" alt="image of phone"> -->
+            <img class="centered photo-1 rel-container laptop" src="images/colab/flodesktop.svg" alt="image of computer">
+            <img class="tablet standard-width photo-2 rel-container laptop desktop-only" src="images/tablet.svg" alt="image of tablet">
+          </div>
+          <div class="role-placement container-1-split">
+            <h4 class="small-title">ROLE</h4>
+            <ul class="thin-caption">
+              <li>Research</li>
               <li>UX design</li>
               <li>Prototyping</li>
               <li>UI design</li>
             </ul>
-            <div class="see-work-button-outer full-width button-1 opaque">
-                <a class="serif-small see-work-button-inner">see work</a>
-            </div>
-          </section>
-      </section>
+          </div>
+          <div class="see-work-button-outer full-width button-1 opaque mobile-only">
+              <a class="serif-small see-work-button-inner" href="#">see<br>work</a>
+          </div>
+
+            <a id="button_toggle" class="serif-small animated-button full-width button-1-split mobile-hidden" href="flo.html">see work →</a>
+
+        </section>
 
 <!-- OUTLOOK -->
-      <section class="grid sub-grid home-outlook">
+      <section id="button_section" class="grid sub-grid home-outlook">
         <h2 class="serif-mobile standard-width heading">I am looking for ...</h2>
-        <p class="body-2 standard-width paragraph-1">I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
-        <a class="serif-small animated-button standard-width button-1">meet romi →</a>
+        <p class="body-2 centered paragraph-1">I am a hyper creative designer. I grasp any concept and deliver not only pretty screens but also functioning design and a delightful experience for the user. I am looking for a small team or a remote position. I  will relocate for an awesome opportunity!</p>
+        <a id="button_toggle" class="serif-small animated-button full-width button-1" href="bio.html">meet romi →</a>
+      </section>
+      <section class="desktop-only">
+        <!-- CONTACT -->
+          <!-- <h2 class="serif-mobile standard-width sub-heading-1">contact</h2>
+
+          <a class="opaque full-width container-1" href="https://www.linkedin.com/in/romi-wilson-ux-design/"><i class=""></i></a>
+          <a class="body-1 standard-width container-2" href="mailto:romi.m.wilson@gmail.com"><i class=""></i>romi.m.wilson@gmail.com</a>
+
+          <a class="serif-small standard-width container-3" href="images/PDF/Romi_Wilson_resume.pdf" download><i class=""></i>resume</a> -->
+
       </section>
     </main>
+
     <!--mobile footer-->
-    <footer id="bottommenu" class="grid sub-grid footer-mobile almost-opaque">
+    <section id="bottommenu" class="grid sub-grid drawer-mobile almost-opaque mobile-only">
       <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
           <img src="images/rectangle.svg" alt="rectangle">
           <h2 class="menu-style">contact</h2>
       </div>
-      <a class=" body-2 standard-width container-1"><i class="linkedin"></i>connect</a>
-      <a class="body-2 standard-width container-2"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
-      <a class="serif-small standard-width container-3"><i class="resume"></i>resume</a>
+      <a class=" body-2 standard-width container-1" href="https://www.linkedin.com/in/romi-wilson-ux-design/"><i class="linkedin"></i>connect</a>
+      <a class="body-2 standard-width container-2" href="mailto:romi.m.wilson@gmail.com"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
+      <a class="serif-small standard-width container-3" href="images/PDF/Romi_Wilson_resume.pdf" download><i class="resume"></i>resume</a>
+    </section>
+    <!--desktop footer-->
+    <footer class="index thin-caption mobile-hidden">
+      <p >©2019 romi wilson</p>
     </footer>
 
-  </body>
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script type="text/javascript">
 
-  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-  <script type="text/javascript">
-
-    bottommenu_content_height = "34rem";
-
-    $(function() {
-
-      // bottom menu animation
-      $('#bottommenu_toggle').click(
-        function(){
-          if ($('#bottommenu').get(0).style.marginBottom == bottommenu_content_height) {
-            $('#bottommenu').stop().animate({'marginBottom':'0px'}, 300);
-          } else {
-            $('#bottommenu').stop().animate({'marginBottom':bottommenu_content_height}, 500);
+      bottommenu_content_height = "34rem";
+      $(function() {
+        // bottom menu animation
+        $('#bottommenu_toggle').click(
+          function(){
+            if ($('#bottommenu').get(0).style.marginBottom == bottommenu_content_height) {
+              $('#bottommenu').stop().animate({'marginBottom':'0px'}, 300);
+            } else {
+              $('#bottommenu').stop().animate({'marginBottom':bottommenu_content_height}, 500);
+            }
           }
-        }
-      );
-    });
-  </script>
+        );
+      });
+
+      // button_width = "30rem";
+      //
+      // $(function() {
+      //
+      //   // button animation
+      //   $(window).mouseover(
+      //     function(){
+      //       if ($('#button_toggle').get(0).style.backgroundPositionX == button_width) {
+      //         $('#button_toggle').stop().animate({'backgroundPositionX':'-2rem'}, 1500);
+      //       } else {
+      //         $('#button_toggle').stop().animate({'backgroundPositionX':button_width}, 1500);
+      //       }
+      //     }
+      //   );
+      // });
+
+    </script>
+  </body>
 </html>

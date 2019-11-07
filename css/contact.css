@@ -1,0 +1,99 @@
+
+
+main {
+    padding-top: 10rem;
+
+}
+
+
+
+
+.contact {
+    grid-template-rows:
+                        [heading]
+                        auto
+                        4rem
+                        [sub-heading-1]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        5rem
+                        [sub-heading-2]
+                        auto
+                        0rem
+                        [container-1]
+                        auto
+                        4rem
+                        [container-2]
+                        auto
+                        10rem
+                        [container-3]
+                        auto
+                        7rem; /*3rem + 4rem contact*/
+
+}
+
+.contact .container-1 {
+  justify-self: end;
+  width: 9.4rem;
+  height: 9.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgb(125,125,125,.6);
+  margin-right: calc(14.6284411319865% - 4.7rem);
+}
+
+.contact .container-1 i {
+  width: 3.2rem;
+  height: 3.257rem;
+  background: url("../icons/linkedin.svg") no-repeat;
+  background-position: center;
+}
+
+.contact .container-2 {
+  width: 46.553rem;
+  height: 6.649rem;
+  display: flex;
+  align-items: center;
+
+}
+
+.contact .container-2 i {
+  float: left;
+  width: 6.553rem;
+  height: 6.649rem;
+  background: url("../icons/envelope.svg") no-repeat;
+  background-size: contain;
+  margin: 0 20px 0 0;
+
+}
+
+.contact .container-3 {
+  width: 14.4rem;
+  height: 14.4rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  align-items: center;
+  border-radius: 50%;
+  border: 1px solid rgb(125,125,125,.6);
+  margin-left: 45.6834532374101%;
+}
+
+.contact .container-3 i {
+  width: 3.799rem;
+  height: 3.5rem;
+  background: url("../icons/download.svg") no-repeat;
+  background-position: center;
+}
+
+@media screen and (min-width: 992px) {
+
+    .contact .container-1 {
+      margin-right: calc(25.3472222222222% - 4.7rem);
+    }
+}

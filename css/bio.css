@@ -3,7 +3,8 @@
 /* Bio Page */
 
 .bio {
-    grid-template-rows: [heading]
+    grid-template-rows:
+                        [heading]
                         auto
                         2rem
                         [sub-heading-1]
@@ -15,8 +16,9 @@
                         [paragraph-1]
                         auto
                         5rem
-                        [container-1]
+                        [container-1-start]
                         auto
+                        [container-1-end]
                         5rem
                         [sub-heading-3]
                         auto
@@ -24,7 +26,7 @@
                         [paragraph-2]
                         auto
                         5rem
-                        [container-2]
+                        [container-2 container-3]
                         auto
                         7rem; /*3rem + 4rem contact*/
 }
@@ -32,8 +34,7 @@
 .cir-bio {
   width: 10.9rem;
   height: 10.9rem;
-  justify-self: end;
-  margin-right: calc(36.8% - 5.45rem);
+  margin-left: calc(63.2% - 5.45rem);
 
 }
 
@@ -44,12 +45,12 @@
   margin-right: calc(36.8% - 9.4rem);
 }
 
-.profile {
+.cir-photo img {
   width: 17rem;
   height: 17rem;
 }
 
-.cir-cir {
+.small-circle {
   width: 4.4rem;
   height: 4.4rem;
   justify-self: start;
@@ -63,7 +64,98 @@
   margin-right: calc(36.8% - 8.1rem);
 }
 
-.wework {
+.cir-wework img {
   width: 14.5rem;
   height: 14.5rem;
+}
+
+
+@media screen and (min-width: 576px){
+  .cir-bio {
+    margin-left: calc(14.6284411319865% - 5.45rem);
+  }
+
+  .cir-photo {
+    margin-right: calc(14.6284411319865% - 9.3rem);
+  }
+
+  .small-circle {
+    margin-left: calc(14.6284411319865% - 2.2rem);
+  }
+
+  .cir-wework {
+    margin-right: calc(14.6284411319865% - 8.1rem);
+  }
+}
+
+
+@media screen and (min-width: 992px){
+
+  main {
+    padding-top: 1.4rem;
+  }
+
+  .bio {
+      grid-template-rows: [container-2]
+                          auto
+                          [heading]
+                          auto
+                          3rem
+                          [sub-heading-1]
+                          auto
+                          6rem
+                          [sub-heading-2 container-1-start]
+                          auto
+                          2rem
+                          [paragraph-1]
+                          auto
+                          [container-1-end]
+                          auto
+                          [container-4-start]
+                          5rem
+                          [sub-heading-3]
+                          auto
+                          2rem
+                          [paragraph-2 container-3]
+                          auto
+                          [container-4-end]
+                          auto
+                          7rem; /*3rem + 4rem contact*/
+  }
+
+  .bio p {
+    width: 49.3055555555556%;
+  }
+
+  .cir-bio {
+    margin-left: calc(23.6805555555556% - 5.45rem);
+  }
+
+  .cir-photo {
+    margin-right: calc(25.3472222222222% - 9.3rem);
+  }
+
+  .small-circle {
+    height: 8.6rem;
+    width: 8.6rem;
+    margin-left: calc(74.6527777777778% - 4.3rem);
+  }
+
+  .cir-wework img {
+    width: 12.5rem;
+    height: 12.5rem;
+  }
+
+  .cir-wework {
+    width: 14.2rem;
+    height: 14.2rem;
+    margin-right: calc(7.3611111111111% - 7.1rem);
+  }
+  .cosmic-circle {
+    height: 15rem;
+    width: 15rem;
+    background-color: rgb(192, 226, 202, .5);
+    border: none;
+    z-index: -1;
+  }
 }
