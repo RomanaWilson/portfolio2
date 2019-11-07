@@ -161,12 +161,12 @@ strong {
 }
 
 .index {
-  z-index: 901;
+  z-index: 900;
 }
 
 .almost-opaque {
   background-color: rgb(255, 255, 255, .95);
-  z-index: 901;
+  z-index: 900;
 }
 
 .cosmic-latte {
