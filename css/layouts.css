@@ -1,6 +1,8 @@
 html {
     width: 100%;
     min-width: 320px;
+    position: relative;
+    min-height: 100vh;
 }
 
 body {
@@ -661,8 +663,7 @@ background: url("../images/download.svg") no-repeat;
 
 footer {
 
-   position: fixed;
-   left: 0;
+   position: absolute;
    bottom: 0;
    width: 100%;
    color: #828282;

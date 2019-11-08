@@ -70,12 +70,12 @@
 
 
   .work .container-1{
-    height: 140vh;
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     flex-wrap: wrap;
     align-content: space-between;
-    margin: 0 9.4097222222222%;
+    justify-content: space-around;
+    margin: 0 7.0833333333333%;
   }
 
   .work .container-1 figure {

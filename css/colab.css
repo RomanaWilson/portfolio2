@@ -800,18 +800,53 @@ img {
 
 .prototype .container-1 {
     max-width: 100%;
+    background-color: white;
 
 }
+
+.prototype .container-1 img{
+    padding: 0 1px;
+
+}
+
 
 .prototype .container-3 {
     max-width: 100%;
 
 }
 
-.prototype .container-2 {
-    height: 1.995rem;
-    width: 1.727rem;
-    justify-self: center;
+@media screen and (mAX-width: 575.89px){
+
+}
+
+@media screen and (min-width: 576px){
+  .prototype .container-2 {
+      height: 1.995rem;
+      width: 1.727rem;
+      justify-self: center;
+  }
+}
+
+
+.slider {
+  /* line them up horizontally */
+  display: flex;
+
+  /* allow for scrolling */
+  overflow-x: auto;
+
+  /* make it smooth on iOS */
+  -webkit-overflow-scrolling: touch;
+
+  scroll-snap-points-x: repeat(300px);
+  scroll-snap-type: mandatory;
+}
+.slider > div {
+  /* make sure the width is honored */
+  flex-shrink: 0;
+  max-width: 100%;
+  /* width: 300px;
+  height: 300px; */
 }
 
 @media screen and (min-width: 992px){
