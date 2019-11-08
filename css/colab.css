@@ -856,13 +856,21 @@ img {
 }
 
 .previous {
+<<<<<<< HEAD
     background: url("../images/ico/arrowleft.svg") no-repeat;
+=======
+    background: url("../images/arrowleft.svg") no-repeat;
+>>>>>>> 3b4c5774543bf6e5b06eb8da2fb483581b6fc317
     background-size: contain;
     margin-right: calc(2.3980815347722% + 2.5905rem + 1px);
 }
 
 .next {
+<<<<<<< HEAD
     background: url("../images/ico/arrowright.svg") no-repeat;
+=======
+    background: url("../images/arrowright.svg") no-repeat;
+>>>>>>> 3b4c5774543bf6e5b06eb8da2fb483581b6fc317
     background-size: contain;
     margin-left: calc(2.3980815347722% + 2.5905rem + 1px);
 }
@@ -1436,7 +1444,11 @@ img {
 
 
 .other-work i {
+<<<<<<< HEAD
     background: url("../images/ico/goup.svg") no-repeat;
+=======
+    background: url("../images/goup.svg") no-repeat;
+>>>>>>> 3b4c5774543bf6e5b06eb8da2fb483581b6fc317
 }
 
 @media screen and (min-width: 870px) {
