@@ -642,21 +642,21 @@ main {
     width: 3.2rem;
     height: 3.2rem;
     margin-left: calc(50% - 1.6rem);
-    background: url("../icons/linkedin.svg") no-repeat;
+    background: url("../images/linkedin.svg") no-repeat;
   }
 
 .envelope {
 width: 6.553rem;
 height: 6.649rem;
 margin-left: calc(50% - 3.2765rem);
-background: url("../icons/envelope.svg") no-repeat;
+background: url("../images/envelope.svg") no-repeat;
 }
 
 .resume {
 width: 3.8rem;
 height: 3.5rem;
 margin-left: calc(50% - 1.9rem);
-background: url("../icons/download.svg") no-repeat;
+background: url("../images/download.svg") no-repeat;
 }
 
 footer {

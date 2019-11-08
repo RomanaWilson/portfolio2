@@ -821,13 +821,13 @@ img {
 }
 
 .previous {
-    background: url("../icons/arrowleft.svg") no-repeat;
+    background: url("../images/arrowleft.svg") no-repeat;
     background-size: contain;
     margin-right: calc(2.3980815347722% + 2.5905rem + 1px);
 }
 
 .next {
-    background: url("../icons/arrowright.svg") no-repeat;
+    background: url("../images/arrowright.svg") no-repeat;
     background-size: contain;
     margin-left: calc(2.3980815347722% + 2.5905rem + 1px);
 }
@@ -1401,7 +1401,7 @@ img {
 
 
 .other-work i {
-    background: url("../icons/goup.svg") no-repeat;
+    background: url("../images/goup.svg") no-repeat;
 }
 
 @media screen and (min-width: 870px) {
