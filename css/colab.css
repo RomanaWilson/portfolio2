@@ -776,7 +776,7 @@ img {
 /* Prototype */
 
 .prototype {
-    grid-template-rows:[heading]
+    grid-template-rows: [heading]
                         auto
                         2rem
                         [sub-heading-1]
@@ -796,7 +796,7 @@ img {
                         4rem
                         [button-1]
                         auto;
-    }
+}
 
 .prototype .container-1 {
     max-width: 100%;
@@ -805,7 +805,7 @@ img {
 }
 
 .prototype .container-1 img{
-    padding: 0 1px;
+    padding: 1px;
 
 }
 
@@ -815,7 +815,7 @@ img {
 
 }
 
-@media screen and (mAX-width: 575.89px){
+@media screen and (max-width: 575.89px){
 
 }
 
@@ -827,26 +827,21 @@ img {
   }
 }
 
-
 .slider {
-  /* line them up horizontally */
-  display: flex;
+    position: relative;
+    height: 51vw;
+    overflow: hidden;
 
-  /* allow for scrolling */
-  overflow-x: auto;
-
-  /* make it smooth on iOS */
-  -webkit-overflow-scrolling: touch;
-
-  scroll-snap-points-x: repeat(300px);
-  scroll-snap-type: mandatory;
 }
-.slider > div {
-  /* make sure the width is honored */
-  flex-shrink: 0;
-  max-width: 100%;
-  /* width: 300px;
-  height: 300px; */
+
+.slider li {
+    width: 100%;
+    position: absolute;
+    right: 100%;
+  }
+
+.slider li.current {
+    right: 0;
 }
 
 @media screen and (min-width: 992px){
@@ -866,6 +861,9 @@ img {
     background-size: contain;
     margin-left: calc(2.3980815347722% + 2.5905rem + 1px);
 }
+
+
+/* Testing */
 
 .testing-1 {
     grid-template-rows: [heading]
