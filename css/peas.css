@@ -1,0 +1,206 @@
+main {
+    padding-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-num {
+    height: 5rem;
+    width: 5rem;
+    justify-self: end;
+    margin-right: calc(8% - 2.5rem);
+}
+
+.right-wide {
+    margin-left: 1.1rem;
+}
+
+/* Aside Margins */
+
+@media screen and (max-width: 575.98px){
+      .aside-detail {
+          margin-left: 1.1rem;
+      }
+
+}
+@media screen and (min-width: 576px){
+      .aside-detail {
+          margin: 0;
+      }
+
+}
+
+/* Heading Offset */
+
+@media screen and (min-width:922px){
+    .heading-width {
+        margin-left: 5.6944444444444%;
+    }
+}
+
+/* Buttons */
+
+@media screen and (max-width: 575.98px) {
+
+    .button-1 {
+        margin-left: 36.8%;
+      }
+}
+
+@media screen and (min-width: 576px){
+
+    .button-1 {
+        width: 51.1990407673861%;
+        margin-left: 48.8%;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    .button-1 {
+        width: 18.2638888888889%;
+        margin-left: calc(74.6527777777778% - 1px);
+    }
+}
+
+
+/* Lines for Project */
+
+/* Lines Mobile */
+
+@media screen and (max-width: 575.98px) {
+
+    .line1  {
+        position: fixed;
+        left: 36.8%;
+    }
+
+    .line2 {
+        position: fixed;
+        right: 8%;
+    }
+}
+
+/* Lines Tablet */
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+
+    .line1 {
+        position: fixed;
+        left: 14.6282973621103%;
+    }
+
+    .line2 {
+        position: fixed;
+        right: 51.1990407673861%;
+    }
+}
+
+/* Destop lines set in layouts.css */
+
+/*  SUB-GRID VERTICAL LAYOUTS */
+
+/* Hero - Mobile */
+
+@media screen and (max-width: 575.98px) {
+
+    .colab-hero {
+        grid-template-rows: [background-start]
+                            6rem
+                            [heading]
+                            auto
+                            3rem
+                            [paragraph-1]
+                            minmax(14.2rem, calc(120vw - 24.4rem - 22.6666666666667vw))
+                            10rem
+                            [photo-1-start]
+                            22.6666666666667vw
+                            [background-end]
+                            auto
+                            [photo-1-end]
+                            10rem
+                            [container-1]
+                            auto
+                            5rem
+                            [button-1]
+                            auto;
+    }
+
+    .colab-hero .background {
+        background: url(../images/peas/svg/shape3.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .colab-hero .paragraph-1 {
+        align-self: center;
+    }
+    .colab-hero .summary-box {
+      background-color: white;
+    }
+
+    main > section > h2 {
+      padding-left: 1rem;
+    }
+}
+
+
+/* Hero - Tablet and Desktop */
+
+@media screen and (min-width: 576px) {
+
+    .colab-hero {
+        grid-template-rows: [heading]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            1rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-1]
+                            auto;
+    }
+
+    .colab-hero .summary-box {
+        border: none;
+        justify-self: center;
+        display: flex;
+        justify-content: space-between;
+        width: 55rem;
+
+    }
+
+    .colab-hero .summary-box div {
+        max-width: 11.4rem;
+
+    }
+}
+
+/* Hero - Desktop Overide */
+@media screen and (min-width: 992px) {
+    .colab-hero {
+        grid-template-rows: [heading]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            1rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-1]
+                            auto;
+    }
+
+    .colab-hero .container-1 {
+      max-width: 49.2361111111111%;
+    }
+
+    .colab-hero .summary-box {
+        width: 61.644rem;
+    }
+
+}
