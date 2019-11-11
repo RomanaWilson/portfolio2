@@ -21,7 +21,7 @@ img {
 
 @media screen and (max-width: 575.98px){
       .aside-detail {
-          margin-left: 1.1rem;
+          margin-left: .5rem;
       }
 
 }
@@ -301,6 +301,7 @@ img {
         display: flex;
         justify-content: space-around;
         padding-bottom: 2rem;
+        font-size: 1.2rem;
     }
 }
 
@@ -308,6 +309,10 @@ img {
 
     .colab-overview .container-1 {
         padding: 0 10.1255230125523%;
+    }
+
+    .colab-overview .container-1 ul {
+        font-size: 1.6rem;
     }
 
 }
@@ -459,6 +464,10 @@ img {
     .competitive-anal img {
         padding: 0 1rem 2rem 1rem;
     }
+
+    .competitive-anal .container-1 figcaption {
+        font-size: 1.2rem;
+    }
 }
 
 /* Competitive Analysis - Desktop Only */
@@ -476,6 +485,10 @@ img {
 
     .competitive-anal > .container-1 > figure:nth-last-child(1) > img {
         height: 13.4222222222222vw;
+    }
+
+    .competitive-anal .container-1 figcaption {
+        font-size: 1.2rem;
     }
 }
 
@@ -693,6 +706,8 @@ img {
                         [user-flows]
                         auto;
 }
+
+
 
 /* User Stories - Mobile and Tablet */
 
