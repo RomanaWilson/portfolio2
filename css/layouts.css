@@ -18,7 +18,7 @@ body {
     top: 0;
     height: 4rem;
     border-bottom: 1px solid rgb(125, 125, 125, .6);
-    z-index: 901;
+    z-index: 902;
 }
 
 .top-nav {
@@ -61,6 +61,7 @@ body {
     text-orientation: mixed;
     top: 3rem;
     right: 1rem;
+    z-index: 903;
   }
 }
 
@@ -79,6 +80,7 @@ body {
   position: fixed;
   top: 2rem;
   left: 2rem;
+  z-index: 902px;
 }
 
 .desktop-header img {
@@ -102,12 +104,6 @@ main {
 }
 
 
-
-/* Mobile Footer */
-
-    /* TODO */
-
-
 /* !! ---------- MAIN LAYOUT ---------- !! */
 
 /* Lines */
@@ -115,8 +111,30 @@ main {
 .vert-line {
     border-left: 1px solid rgb(125, 125, 125, .3);
     height: 100%;
-
+    animation: lines;
 }
+
+@keyframes lines {
+    from { height: 0; }
+	to { height: 100%; }
+}
+
+.line1 {
+    animation-duration: 8s;
+}
+
+.line2 {
+    animation-duration: 5s;
+}
+
+.line3 {
+    animation-duration: 7s;
+}
+
+.line4 {
+    animation-duration: 4s;
+}
+
 /* ------ lines mobile */
 
       @media screen and (max-width: 575.98px){
@@ -548,11 +566,39 @@ main {
 
 .animated-button {
     background: url("../images/button.svg") no-repeat;
-    background-position-x: -2rem;
+    background-position-x: 0;
     display: flex;
     align-items: center;
     height: 69px;
     padding-left: 1rem;
+}
+
+@keyframes animatedBackground {
+	0% { background-position-x: 0; }
+	70% { background-position-x: 100%; }
+}
+
+@keyframes animatedRelay1 {
+    0%  { background-position-x: 0; 
+          animation-timing-function: ease-in; 
+        }
+    25% { background-position-x: 100%; }
+    65% { background-position-x: 100%; }
+    100% {background-position-x: -2rem; }
+}
+
+@keyframes animatedRelay2 {
+    0%  { background-position-x: 0; }
+    25% { background-position-x: 0; 
+        animation-timing-function: ease-out;
+        }
+    45% { background-position-x: 100%; }
+    60% { background-position-x: 100%; }
+    70% {background-position-x: -2rem;}
+}
+
+.animated {
+    background-position-x: -2rem;
 }
 
 @media screen and (max-width: 575.98px){
@@ -671,7 +717,7 @@ footer {
    align-items: center;
    border-top: 1px solid rgb(125,125,125,.6);
    height: 45px;
-   z-index: 901;
+   z-index: 902;
 }
 
 

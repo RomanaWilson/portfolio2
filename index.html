@@ -192,38 +192,7 @@
     </footer>
 
     <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script type="text/javascript">
+    <script type="text/javascript" src="scripts.js"></script>
 
-      bottommenu_content_height = "34rem";
-      $(function() {
-        // bottom menu animation
-        $('#bottommenu_toggle').click(
-          function(){
-            if ($('#bottommenu').get(0).style.marginBottom == bottommenu_content_height) {
-              $('#bottommenu').stop().animate({'marginBottom':'0px'}, 300);
-            } else {
-              $('#bottommenu').stop().animate({'marginBottom':bottommenu_content_height}, 500);
-            }
-          }
-        );
-      });
-
-      // button_width = "30rem";
-      //
-      // $(function() {
-      //
-      //   // button animation
-      //   $(window).mouseover(
-      //     function(){
-      //       if ($('#button_toggle').get(0).style.backgroundPositionX == button_width) {
-      //         $('#button_toggle').stop().animate({'backgroundPositionX':'-2rem'}, 1500);
-      //       } else {
-      //         $('#button_toggle').stop().animate({'backgroundPositionX':button_width}, 1500);
-      //       }
-      //     }
-      //   );
-      // });
-
-    </script>
   </body>
 </html>
