@@ -1,0 +1,829 @@
+main {
+    padding-top: 0;
+}
+
+img {
+    max-width: 100%;
+}
+
+.section-num {
+    height: 5rem;
+    width: 5rem;
+    justify-self: end;
+    margin-right: calc(8% - 2.5rem);
+}
+
+.right-wide {
+    margin-left: 1.1rem;
+}
+
+/* Aside Margins */
+
+/* @media screen and (max-width: 575.98px){
+      .aside-detail {
+          margin-left: 1.1rem;
+      }
+
+} */
+/* @media screen and (min-width: 576px){
+      .aside-detail {
+          margin: 0;
+      }
+
+} */
+
+/* Heading Offset */
+
+@media screen and (min-width:922px){
+    .heading-width {
+        margin-left: 5.6944444444444%;
+    }
+}
+
+/* Buttons */
+
+@media screen and (max-width: 575.98px) {
+
+    .button-1 {
+        margin-left: 36.8%;
+      }
+}
+
+@media screen and (min-width: 576px){
+
+    .button-1 {
+        width: 51.1990407673861%;
+        margin-left: 48.8%;
+    }
+}
+
+@media screen and (min-width: 992px){
+
+    .button-1 {
+        width: 18.2638888888889%;
+        margin-left: calc(74.6527777777778% - 1px);
+    }
+}
+
+
+/* Lines for Project */
+
+/* Lines Mobile */
+
+@media screen and (max-width: 575.98px) {
+
+    .line1  {
+        position: fixed;
+        left: 36.8%;
+    }
+
+    .line2 {
+        position: fixed;
+        right: 8%;
+    }
+}
+
+/* Lines Tablet */
+
+@media screen and (min-width: 576px) and (max-width: 991.98px) {
+
+    .line1 {
+        position: fixed;
+        left: 14.6282973621103%;
+    }
+
+    .line2 {
+        position: fixed;
+        right: 51.1990407673861%;
+    }
+}
+
+/* Destop lines set in layouts.css */
+
+/*  SUB-GRID VERTICAL LAYOUTS */
+
+/* Hero - Mobile */
+
+@media screen and (max-width: 575.98px) {
+
+    .peas-hero {
+        grid-template-rows: [background-start]
+                            6rem
+                            [heading]
+                            auto
+                            3rem
+                            [paragraph-1]
+                            minmax(14.2rem, calc(120vw - 24.4rem - 22.6666666666667vw))
+                            10rem
+                            [photo-1-start]
+                            22.6666666666667vw
+                            [background-end]
+                            auto
+                            [photo-1-end]
+                            10rem
+                            [container-1]
+                            auto
+                            5rem
+                            [button-1]
+                            auto;
+    }
+
+    .peas-hero .background {
+        background: url(../images/peas/svg/shape3.svg) no-repeat;
+        background-size: cover;
+    }
+
+    .peas-hero .paragraph-1 {
+        align-self: center;
+    }
+    .peas-hero .summary-box {
+      background-color: white;
+    }
+
+    main > section > h1 {
+      padding-left: 2rem;
+    }
+
+    main > section > h2 {
+      padding-left: 1rem;
+    }
+}
+
+
+/* Hero - Tablet and Desktop */
+
+@media screen and (min-width: 576px) {
+
+    .peas-hero {
+        grid-template-rows: 10rem
+                            [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            4rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-1]
+                            auto;
+    }
+
+    .peas-hero .summary-box {
+        border: none;
+        justify-self: center;
+        display: flex;
+        justify-content: space-between;
+        width: 55rem;
+
+    }
+
+    .peas-hero .summary-box div {
+        max-width: 11.4rem;
+
+    }
+
+    .peas-hero .container-2 {
+      margin: 0 7rem;
+    }
+}
+
+/* Hero - Desktop Overide */
+@media screen and (min-width: 992px) {
+    .peas-hero {
+        grid-template-rows: 10rem
+                            [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            4rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-1]
+                            auto;
+    }
+
+    .peas-hero .container-1 {
+      max-width: 49.2361111111111%;
+    }
+
+    .peas-hero .summary-box {
+        width: 61.644rem;
+    }
+
+}
+
+
+
+/* Overview - mobile */
+
+@media screen and (max-width: 575.98px) {
+    .peas-overview {
+        grid-template-rows: [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [container-1]
+                            auto
+                            5rem
+                            [container-2]
+                            auto
+                            5rem
+                            [container-3]
+                            auto;
+    }
+
+    .peas-overview .container-1 img {
+        width: 87.4666666666667%;
+        padding-left: 5.333333333%;
+    }
+
+    .peas-overview .container-2 img {
+        width: 92.8%;
+        padding: 0 5%;
+    }
+
+    .peas-overview .container-3 img {
+        width: 88%;
+        padding: 0 15%;
+    }
+
+    .peas-overview .container-1 figure{
+      padding: 5rem 3rem;
+    }
+}
+
+/* Overview - Tablet + */
+@media screen and (min-width: 576px) {
+    .peas-overview {
+        grid-template-rows: [heading]
+                            auto
+                            2rem
+                            [paragraph-1]
+                            auto
+                            5rem
+                            [container-1]
+                            auto;
+    }
+
+    /* .peas-overview .container-1 img {
+        width: 100%;
+    } */
+    .peas-overview .container-1 img{
+      padding: 0 3rem;
+    }
+    .peas-overview .container-1{
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline;
+        padding-bottom: 0 7% 7% 2rem;
+        font-size: 1.2rem;
+    }
+}
+
+@media screen and (min-width: 992px) {
+
+    .peas-overview .container-1 {
+        padding: 0 10.1255230125523%;
+    }
+
+    .peas-overview .container-1 ul {
+        font-size: 1.6rem;
+    }
+
+}
+
+
+
+/* Resaerch Grids */
+
+
+/* research mobile */
+
+.peas-research {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [sub-heading-1]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        5rem
+                        [photo-1-start]
+                        auto
+                        [photo-1-end]
+                        5rem
+                        auto
+                        [paragraph-2]
+                        auto;
+}
+
+
+/* research tablet*/
+@media screen and (min-width: 576px) {
+  .peas-research {
+      grid-template-rows: [heading]
+                          auto
+                          2rem
+                          [sub-heading-1]
+                          auto
+                          2rem
+                          [paragraph-1]
+                          auto
+                          5rem
+                          [photo-1-start]
+                          auto
+                          [photo-1-end]
+                          5rem
+                          [container-1-start]
+                          auto
+                          [container-1-end]
+                          7.5rem
+                          [paragraph-2]
+                          auto
+                          5rem
+                          [photo-2-start]
+                          auto
+                          [photo-2-end];
+  }
+
+
+}
+
+@media screen and (min-width: 576px) and (max-width: 991.89px) {
+  .peas-research .container-1-split {
+      padding: 2rem 3.4rem;
+  }
+}
+
+/* research desktop */
+
+@media screen and (min-width: 992px) {
+  .peas-research {
+      grid-template-rows: [heading]
+                          auto
+                          2rem
+                          [sub-heading-1]
+                          auto
+                          2rem
+                          [paragraph-1 container-1-start]
+                          auto
+                          5rem
+                          [photo-1-start]
+                          auto
+                          [container-1-end]
+                          auto
+                          [photo-1-end]
+                          5rem
+                          auto
+                          7.5rem
+                          [paragraph-2]
+                          auto
+                          5rem
+                          [photo-2-start]
+                          auto
+                          [photo-2-end];
+ }
+ .peas-research .container-1-split {
+   border: none;
+ }
+}
+
+/* 4 personas */
+
+.peas-four-personas {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [paragraph-1]
+                        auto
+                        3rem
+                        [persona-1]
+                        auto
+                        7.5rem
+                        [persona-2]
+                        auto
+                        7.5rem
+                        [persona-3]
+                        auto
+                        7.5rem
+                        [persona-4]
+                        auto;
+}
+/* persona */
+
+.persona-1 {
+  grid-row: persona-1;
+}
+
+.persona-2 {
+  grid-row: persona-2;
+}
+
+.persona-3 {
+  grid-row: persona-3;
+}
+
+.persona-4 {
+  grid-row: persona-4;
+}
+
+.peas-persona {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [sub-heading-1]
+                        auto
+                        1rem
+                        [paragraph-1]
+                        auto
+                        3rem
+                        [photo-1-start]
+                        auto
+                        [photo-1-end]
+                        5rem
+                        [paragraph-2]
+                        auto
+                        4rem
+                        [container-2-start]
+                        auto
+                        [container-2-end]
+                        auto
+                        5rem
+                        [sub-heading-2]
+                        auto
+                        3rem
+                        [paragraph-3]
+                        auto
+                        1rem
+                        [paragraph-4]
+                        auto
+                        5rem
+                        [sub-heading-3]
+                        auto
+                        2rem
+                        [paragraph-5]
+                        auto
+                        5rem
+                        [container-3]
+                        ;
+  }
+.peas-persona .heading {
+  background: #F1EEE9;
+  padding: 1rem 0 1rem 5.333333333%;
+}
+.peas-persona .sub-heading-1, .peas-persona .paragraph-1, .peas-persona .paragraph-5 {
+  color: #828282;
+}
+
+@media screen and (max-width: 576px){
+  .peas-persona .sub-heading-1, .peas-persona .paragraph-1 {
+    text-align: right;
+  }
+
+  .peas-persona .container-3 {
+    padding: 0 6rem;
+  }
+  .peas-persona .paragraph-2 {
+    border: none;
+  }
+}
+
+
+/* persona tablet only */
+@media screen and (min-width: 576px){
+  .peas-persona {
+      grid-template-rows: [heading]
+                          auto
+                          2rem
+                          [sub-heading-1]
+                          auto
+                          1rem
+                          [paragraph-1]
+                          auto
+                          5rem
+                          [photo-1-start]
+                          auto
+                          [photo-1-end]
+                          5rem
+                          [paragraph-2]
+                          auto
+                          5rem
+                          [container-2-start]
+                          auto
+                          [container-2-end]
+                          3rem
+                          [sub-heading-2]
+                          auto
+                          3rem
+                          [paragraph-3]
+                          auto
+                          1rem
+                          [paragraph-4]
+                          auto
+                          5rem
+                          [sub-heading-3]
+                          auto
+                          3rem
+                          [paragraph-5]
+                          auto
+                          1rem
+                          [container-3]
+                          ;
+    }
+    .peas-persona .heading {
+      padding: 1rem 0 1rem 16.9064748201439%;
+    }
+    .peas-persona .paragraph-2, .peas-persona .container-3 {
+        padding: 2rem 3.4rem;
+    }
+    .peas-persona .paragraph-2 {
+        background-color: white;
+        z-index: 900;
+    }
+    .peas-persona .container-3 {
+      width: 83%;
+      margin: 0 auto;
+    }
+}
+
+/* persona desktop */
+@media screen and (min-width: 992px) {
+
+    .peas-persona {
+        grid-template-rows: [heading]
+                            auto
+                            2rem
+                            [sub-heading-1]
+                            auto
+                            1rem
+                            [paragraph-1]
+                            auto
+                            7.5rem
+                            [photo-1-start]
+                            auto
+                            [photo-1-end]
+                            10rem
+                            [paragraph-2 container-2-start]
+                            auto
+                            10rem
+                            [sub-heading-2]
+                            auto
+                            3rem
+                            [paragraph-3]
+                            auto
+                            2rem
+                            [paragraph-4 ]
+                            auto
+                            10rem
+                            [sub-heading-3 container-2-end]
+                            auto
+                            3rem
+                            [paragraph-5]
+                            auto
+                            2rem
+                            [container-3]
+                            ;
+
+    }
+    .peas-persona .heading {
+      padding: 1rem 0 1rem 9.5833333333333%;
+    }
+
+    .peas-persona .paragraph-2, .peas-persona .container-3, .peas-persona .paragraph-4 {
+        padding: 2rem 3.4rem;
+    }
+
+    .peas-persona .paragraph-2, .peas-persona .paragraph-4 {
+      width: 80.3840877914952%;
+    }
+
+    .peas-persona .container-3 {
+      width: 73%;
+      margin: 0 auto;
+    }
+
+
+    .peas-persona .photo-1 {
+      padding: 0 26.7361111111111% 0 11.25%;
+    }
+
+  }
+
+
+/* site map */
+
+.peas-sitemap {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [container-1]
+                        auto;
+}
+
+    .peas-sitemap .container-1{
+      padding: 1.5rem;
+      width: 95%;
+      margin: 0 auto;
+    }
+@media screen and (min-width: 576px){
+  .peas-sitemap .container-1 {
+    padding: 2rem 3.4rem;
+    width: 73%;
+    margin: 0 auto;
+  }
+}
+
+.peas-prototype {
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [sub-heading-1]
+                        auto
+                        5rem
+                        [container-1]
+                        auto
+                        1rem
+                        [container-2]
+                        auto;
+}
+
+.peas-prototype .container-1 {
+  margin: 0 6%;
+}
+
+@media screen and (max-width: 575.89px) {
+  .slider {
+    /* line them up horizontally */
+    display: flex;
+
+    /* allow for scrolling */
+    overflow-x: auto;
+
+    /* make it smooth on iOS */
+    -webkit-overflow-scrolling: touch;
+
+    scroll-snap-points-x: repeat(300px);
+    scroll-snap-type: mandatory;
+  }
+  .slider > div {
+    /* make sure the width is honored */
+    flex-shrink: 0;
+    max-width: 100%;
+    /* width: 300px;
+    height: 300px; */
+  }
+  .peas-prototype .container-1 img {
+    border: none;
+    padding: 0 0.1rem;
+    background-color: gray;
+  }
+
+}
+
+
+@media screen and (min-width: 576px) {
+   .peas-prototype .container-1 {
+     display: flex;
+     justify-content: space-around;
+
+   }
+
+   .peas-prototype .container-1 {
+      border: none;
+   }
+
+    .peas-prototype .container-1 img {
+       width: 90%;
+    }
+}
+
+.peas-visual-design{
+    grid-template-rows: [heading]
+                        auto
+                        2rem
+                        [peas-typography]
+                        auto
+                        [peas-color-palette]
+                        auto;
+}
+
+/* typography  */
+
+.peas-typography {
+    grid-row: peas-typography;
+    grid-template-rows: [heading]
+                        auto
+                        3rem
+                        [photo-1-start]
+                        auto
+                        [photo-1-end]
+                        3rem
+                        [container-1-start]
+                        auto
+                        [container-1-end]
+                        5rem
+                        [photo-2-start]
+                        auto
+                        [photo-2-end]
+                        3rem
+                        [container-2-start]
+                        auto
+                        [container-2-end]
+                        5rem
+                        ;
+}
+
+@media screen and (min-width: 576px) {
+
+  .peas-typography {
+      grid-row: peas-typography;
+      grid-template-rows: [heading]
+                          auto
+                          3rem
+                          [photo-1-start container-1-start]
+                          auto
+                          [photo-1-end container-1-end]
+                          5rem
+                          [photo-2-start]
+                          auto
+                          [photo-2-end]
+                          3rem
+                          [container-2-start]
+                          auto
+                          [container-2-end]
+                          5rem
+                          ;
+  }
+
+  .peas-typography .photo-1 {
+    width: 44.5%;
+  }
+}
+
+@media screen and (min-width: 992px) {
+
+  .peas-typography {
+      grid-row: peas-typography;
+      grid-template-rows: [heading]
+                          auto
+                          3rem
+                          [photo-1-start container-1-start]
+                          auto
+                          [photo-1-end container-1-end]
+                          5rem
+                          [photo-2-start container-2-start]
+                          auto
+                          [photo-2-end container-2-end]
+                          5rem
+                          ;
+  }
+
+  .peas-typography .photo-1, .peas-typography .photo-2 {
+    width: 77.5%;
+  }
+}
+
+/* color palette */
+.peas-color-palette {
+    grid-row: peas-color-palette;
+  }
+
+@media screen and (max-width: 575.89px){
+
+    .peas-color-palette {
+        grid-template-rows: [heading]
+                            auto
+                            3rem
+                            [photo-1-start]
+                            auto
+                            [photo-1-end]
+                            3rem
+                            [container-1-start]
+                            auto
+                            [container-1-end]
+                            5rem
+                            ;
+ }
+}
+
+
+
+@media screen and (min-width: 576px) {
+  .peas-color-palette {
+      grid-template-rows: [heading]
+                          auto
+                          3rem
+                          [photo-1-start container-1-start]
+                          auto
+                          [photo-1-end container-1-end]
+                          5rem
+                          ;
+ }
+ 
+}

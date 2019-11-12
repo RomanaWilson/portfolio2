@@ -29,7 +29,6 @@ body {
 }
 
 .logo {
-
     padding-top: .7rem;
 }
 
@@ -82,7 +81,6 @@ body {
   position: fixed;
   top: 2rem;
   left: 2rem;
-
 }
 
 .desktop-header img {
@@ -207,12 +205,12 @@ main {
     .sub-grid {
         grid-template-columns: [margin-left-start heading-start]
         5.333333333%
-        [margin-left-end dent-start center-left role-start paragraph-start left-start right-left-flip-start framed-image-start]
+        [margin-left-end dent-start center-left role-start paragraph-start left-start right-left-flip-start framed-image-start left-right-flip-start]
         1fr
         [aside-start persona-photo-start left-end]
         1fr
         1fr
-        [margin-right-start dent-end aside-end center-right paragraph-end role-end persona-photo-end right-left-flip-end framed-image-end]
+        [margin-right-start dent-end aside-end center-right paragraph-end role-end persona-photo-end right-left-flip-end framed-image-end left-right-flip-end]
         5.333333333%
         [margin-right-end heading-end];
         grid-column-gap: 2.666666666%;
@@ -233,14 +231,14 @@ main {
         [role-end]
         1fr
         1fr
-        [left-end aside-start right-left-flip-start]
+        [left-end aside-start right-left-flip-start left-right-flip-start]
         1fr
         1fr
         1fr
         1fr
         [margin-right-start center-right dent-end aside-end paragraph-end framed-image-end]
         1fr
-        [heading-end right-left-flip-end]
+        [heading-end right-left-flip-end left-right-flip-end]
         1fr
         [margin-right-end ];
 
@@ -258,13 +256,14 @@ main {
         1fr
         [dent-start framed-image-start]
         1fr
-        [center-left left-start right-left-flip-start]
+        [center-left left-start right-left-flip-start left-right-flip-start]
         1fr
         1fr
         [paragraph-end]
         1fr
         [left-end right-left-flip-end]
         1fr
+        [left-right-flip-end]
         1fr
         [dent-end framed-image-end]
         1fr
@@ -341,6 +340,10 @@ main {
     grid-column: right-left-flip-start / right-left-flip-end;
 }
 
+.left-right-flip {
+    grid-column: left-right-flip-start / left-right-flip-end;
+}
+
 .framed-image {
   grid-column: framed-image-start / framed-image-end;
 }
@@ -394,6 +397,9 @@ main {
 
 .paragraph-4 {
     grid-row: paragraph-4;
+}
+.paragraph-5 {
+    grid-row: paragraph-5;
 }
 
 .paragraph-1-split {
@@ -482,21 +488,25 @@ main {
 
 /* --------Summary Box-----------*/
 
-.summary-box p:nth-last-child(1) {
-    margin-bottom: 2rem;
-}
-
-.summary-box ul:nth-last-child(1) {
-    margin-bottom: 2rem;
-}
+/* Default */
 
 .summary-box h3, .summary-box h4 {
     margin-bottom: 1rem;
 }
 
+    /* Stop margin on last item in Summary Box */
+    .summary-box p:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    .summary-box ul:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+/* Mobile and Tablet */
 @media screen and (max-width: 991.98px) {
     .summary-box {
-        padding: 2rem 3.4rem 0 3.4rem;
+        padding: 2rem 3.4rem;
     }
 
     .summary-box p {
@@ -508,20 +518,89 @@ main {
     }
 }
 
+/* Destop only */
 @media screen and (min-width: 992px) {
     .summary-box {
-        padding: 2rem 0 0 0;
+        padding: 2rem 0;
     }
 
     .summary-box p {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 
     .summary-box ul {
-        margin-bottom: 10rem;
+        margin-bottom: 5rem;
     }
 }
 
+
+/* ----------- summary-aside ------------ */
+
+/* Default */
+
+.summary-aside h3, .summary-aside h4 {
+    margin-bottom: 1rem;
+}
+
+    /* Stop margin on last item in Summary Box */
+    .summary-aside p:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+    .summary-aside ul:nth-last-child(1) {
+        margin-bottom: 0;
+    }
+
+/* mobile */
+@media screen and (max-width: 576px){
+
+      .summary-aside {
+          margin-left: 1rem;
+      }
+}
+/* Mobile and Tablet */
+@media screen and (max-width: 991.98px) {
+
+
+    .summary-aside p {
+        margin-bottom: 2rem;
+    }
+
+    .summary-aside ul {
+        margin-bottom: 2rem;
+    }
+}
+
+/* Destop only */
+@media screen and (min-width: 992px) {
+
+    .summary-aside p {
+        margin-bottom: 5rem;
+    }
+
+    .summary-aside ul {
+        margin-bottom: 5rem;
+    }
+}
+
+/* -------- From summary box to simmary-aside -----------*/
+
+/* mobile */
+/* @media screen and (max-width: 575.89px) {
+
+} */
+
+/* tablet */
+/* @media screen and (min-width: 576px) {
+  .box-to-aside {
+      padding: 2rem 3.4rem;
+  }
+} */
+
+/* desktop */
+/* @media screen and (min-width: 992px) {
+
+} */
 /* --------Summary Padding-----------*/
 
 
@@ -580,15 +659,8 @@ main {
   }
 }
 
-/* -------- detail vertical spacing ---------- */
 
-.aside-detail h3, .aside-detail h4  {
-  padding-bottom: 1rem;
-}
 
-.aside-detail p, .aside-detail ul {
-  margin-bottom: 10rem;
-}
 /* Right Aligned Icon */
 
 .right-icon {
