@@ -1,5 +1,6 @@
 html {
     width: 100%;
+    max-width: 1600px;
     min-width: 320px;
     position: relative;
     min-height: 100vh;
