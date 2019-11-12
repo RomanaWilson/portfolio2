@@ -1,14 +1,15 @@
 html {
     width: 100%;
-    max-width: 1600px;
-    min-width: 320px;
-    position: relative;
     min-height: 100vh;
 }
 
 body {
     width: 100%;
-    margin: 0;
+    margin: 0 auto;
+    max-width: 1600px;
+    min-width: 320px;
+    position: relative;
+
 }
 
 /* Header mobile*/
@@ -66,10 +67,16 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 992px) {  
   .vertical-menu {
     right: calc(7.0833333333333% - 32px);
   }
+}
+
+@media screen and (min-width: 1600px) {  
+    .vertical-menu {
+      right: calc(50% - 800px + 70.83px - 3.2rem); /* 7.0833333333333 */
+    }
 }
 
 .vertical-menu li {
@@ -81,7 +88,13 @@ body {
   position: fixed;
   top: 2rem;
   left: 2rem;
-  z-index: 902px;
+  z-index: 902;
+}
+
+@media screen and (min-width: 1600px) {  
+    .desktop-header {
+      left: calc(50% - 800px + 2rem); 
+    }
 }
 
 .desktop-header img {
@@ -113,6 +126,7 @@ main {
     border-left: 1px solid rgb(125, 125, 125, .3);
     height: 100%;
     animation: lines;
+    position: absolute;
 }
 
 @keyframes lines {
@@ -140,49 +154,60 @@ main {
 
       @media screen and (max-width: 575.98px){
         .line1 {
-            position: fixed;
             left: calc(8% - 1px);
         }
         .line2 {
-            position: fixed;
             right: 36.8%;
         }
 }
+
 /* ------ lines tablet */
       @media screen and (min-width: 576px) and (max-width: 991.98px){
         .line1 {
-            position: fixed;
             left: calc(14.6284411319865% - 1px);
         }
         .line2 {
-            position: fixed;
             right: 14.6284411319865%;
         }
 
         .line3 {
-            position: fixed;
             left: calc(57.1942446043165% - 1px);
         }
 }
+
 /* ------ lines desktop */
       @media screen and (min-width: 992px) {
         .line1 {
-            position: fixed;
             left: calc(7.0833333333333% - 1px);
         }
         .line2 {
-            position: fixed;
             right: 7.0833333333333%;
         }
 
         .line3 {
-            position: fixed;
             right: calc(25.3472222222222% + 1px);
         }
 
         .line4 {
-            position: fixed;
             left: 23.9583333333333%;
+        }
+
+/* ------ lines jumbo */
+    @media screen and (min-width: 1600px) {
+        .line1 {
+            left: calc(50% - 687.67px);
+        }
+
+        .line2 {
+            right: calc(50% - 686.66px);
+        }
+
+        .line3 {
+            right: calc(50% - 393.44px); /* 800px + 405.5555555555552px + 1px */
+        }
+
+        .line4 {
+            left: calc(50% - 415.66px); /* 800px + 383.3333333333328px + 1px */
         }
 }
 
