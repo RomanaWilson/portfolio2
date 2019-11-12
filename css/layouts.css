@@ -1,6 +1,5 @@
 html {
     width: 100%;
-    max-width: 1600px;
     min-width: 320px;
     position: relative;
     min-height: 100vh;
@@ -81,7 +80,7 @@ body {
   position: fixed;
   top: 2rem;
   left: 2rem;
-  z-index: 902px;
+  z-index: 902;
 }
 
 .desktop-header img {
