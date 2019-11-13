@@ -152,17 +152,17 @@ main {
 
 /* ------ lines mobile */
 
-      @media screen and (max-width: 575.98px){
+    @media screen and (max-width: 575.98px){
         .line1 {
             left: calc(8% - 1px);
         }
         .line2 {
             right: 36.8%;
         }
-}
+    }
 
 /* ------ lines tablet */
-      @media screen and (min-width: 576px) and (max-width: 991.98px){
+    @media screen and (min-width: 576px) and (max-width: 991.98px){
         .line1 {
             left: calc(14.6284411319865% - 1px);
         }
@@ -176,7 +176,7 @@ main {
 }
 
 /* ------ lines desktop */
-      @media screen and (min-width: 992px) {
+    @media screen and (min-width: 992px) {
         .line1 {
             left: calc(7.0833333333333% - 1px);
         }
@@ -191,6 +191,7 @@ main {
         .line4 {
             left: 23.9583333333333%;
         }
+    }
 
 /* ------ lines jumbo */
     @media screen and (min-width: 1600px) {
