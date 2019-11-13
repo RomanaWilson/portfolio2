@@ -1,6 +1,8 @@
 html {
     width: 100%;
     min-height: 100vh;
+    position: relative;
+
 }
 
 body {
@@ -8,8 +10,6 @@ body {
     margin: 0 auto;
     max-width: 1600px;
     min-width: 320px;
-    position: relative;
-
 }
 
 /* Header mobile*/
@@ -126,7 +126,7 @@ main {
     border-left: 1px solid rgb(125, 125, 125, .3);
     height: 100%;
     animation: lines;
-    position: absolute;
+    position: fixed;
 }
 
 @keyframes lines {
