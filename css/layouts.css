@@ -1,15 +1,20 @@
 html {
     width: 100%;
-    min-height: 100vh;
     position: relative;
 
 }
 
 body {
     width: 100%;
-    margin: 0 auto;
-    max-width: 1600px;
-    min-width: 320px;
+    position: relative;
+    min-height: 100vh;
+
+}
+
+main {
+  max-width: 1600px;
+  margin: 0 auto;
+  /* min-width: 320px; */
 }
 
 /* Header mobile*/
@@ -67,15 +72,15 @@ body {
   }
 }
 
-@media screen and (min-width: 992px) {  
+@media screen and (min-width: 992px) {
   .vertical-menu {
-    right: calc(7.0833333333333% - 32px);
+    right: calc(7.0833333333333% - 3.2rem);
   }
 }
 
-@media screen and (min-width: 1600px) {  
+@media screen and (min-width: 1600px) {
     .vertical-menu {
-      right: calc(50% - 800px + 70.83px - 3.2rem); /* 7.0833333333333 */
+      right: calc(50% - 800px + 113.33px - 3.2rem); /* 7.0833333333333 */
     }
 }
 
@@ -91,9 +96,9 @@ body {
   z-index: 902;
 }
 
-@media screen and (min-width: 1600px) {  
+@media screen and (min-width: 1600px) {
     .desktop-header {
-      left: calc(50% - 800px + 2rem); 
+      left: calc(50% - 800px + 2rem);
     }
 }
 
@@ -606,8 +611,8 @@ main {
 }
 
 @keyframes animatedRelay1 {
-    0%  { background-position-x: 0; 
-          animation-timing-function: ease-in; 
+    0%  { background-position-x: 0;
+          animation-timing-function: ease-in;
         }
     25% { background-position-x: 100%; }
     65% { background-position-x: 100%; }
@@ -616,7 +621,7 @@ main {
 
 @keyframes animatedRelay2 {
     0%  { background-position-x: 0; }
-    25% { background-position-x: 0; 
+    25% { background-position-x: 0;
         animation-timing-function: ease-out;
         }
     45% { background-position-x: 100%; }
