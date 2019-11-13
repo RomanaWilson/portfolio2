@@ -140,19 +140,19 @@ main {
 }
 
 .line1 {
-    animation-duration: 8s;
+    animation-duration: 13s;
 }
 
 .line2 {
-    animation-duration: 5s;
-}
-
-.line3 {
     animation-duration: 7s;
 }
 
+.line3 {
+    animation-duration: 15s;
+}
+
 .line4 {
-    animation-duration: 4s;
+    animation-duration: 6s;
 }
 
 /* ------ lines mobile */

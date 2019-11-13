@@ -12,9 +12,14 @@
                         [container-1]
                         auto;
 
-                        margin-bottom: calc(-5rem - 21.066666666vw);
+    margin-bottom: calc(-5rem - 21.066666666vw);
 }
 
+@media screen and (min-width: 1600px) {
+    .home-hero {
+        margin-bottom: calc(-5rem - 337.066666656px)
+    }
+}
 /* home mobile */
 @media screen and (max-width: 575.98px) {
     .home-hero .container-1 {
@@ -59,6 +64,8 @@
   .home-hero .container-1 {
       height: 39.9305555555556vw;
       width: 39.9305555555556vw;
+      max-height: 638.88px;
+      max-width: 638.88px;
       justify-self: end;
       margin-right: 14.6282973621103%;
       margin-top: -70px;
@@ -74,7 +81,16 @@
       margin-bottom: calc(-5rem - 3vw);
       margin-left: calc(23.9583333333333% - 5.9rem);
   }
+}
 
+@media screen and (min-width: 1600px) {
+  .home-hero .container-1 {
+    margin-top: -70px;
+  }
+
+  .work-circle {
+      margin-bottom: calc(-5rem - 533.33px); /*  */
+  }
 }
 
 
