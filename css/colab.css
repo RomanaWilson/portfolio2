@@ -733,7 +733,7 @@ img {
 
     /* overiding the global sumamy box padding, as it zeros out padding on desktop */
     .user-stories .summary-box {
-        padding: 2rem 3.4rem 0 3.4rem;
+        padding: 2rem 3.4rem 2rem 3.4rem;
     }
 }
 
@@ -1356,7 +1356,7 @@ img {
                             [container-2-end]
                             10rem
                             [container-3]
-                            auto;;
+                            auto;
     }
 }
 
@@ -1474,5 +1474,15 @@ img {
 
   }
   @media screen and (min-width: 576px){
+
+  }
+/* number color */
+  .circle-purple {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      border-radius: 50%;
+      border: 1px solid rgb(125,125,125,.6);
+      background: #EFDBEA;
 
   }

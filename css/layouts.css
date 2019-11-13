@@ -422,6 +422,10 @@ main {
     grid-row: container-3;
 }
 
+.container-4 {
+    grid-row: container-4;
+}
+
 
 .container-1-split {
     grid-row: container-1-start / container-1-end;
@@ -615,15 +619,6 @@ main {
     background: white;
 }
 
-.circle-purple {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    border: 1px solid rgb(125,125,125,.6);
-    background: #EFDBEA;
-
-}
 
 .circle-text {
     padding-bottom: .5rem;
