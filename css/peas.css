@@ -1116,21 +1116,18 @@ img {
 .other-work .container-1 {
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-around;
+  justify-content: center;
   align-items: baseline;
   padding: 0 8%;
 }
 
  .other-work .container-1 figure{
    width: 223px;
-   padding-bottom: 5rem;
+   margin: 0 5rem 5rem 5rem;
    align-items: center;
  }
 
- .other-work .container-1 img{
-   height: 200px;
 
- }
 
 
 
@@ -1153,21 +1150,3 @@ img {
     justify-self: end;
     margin-right: calc(36.8% - 5.9rem);
   }
-
-  @media screen and (max-width: 575.98px){
-
-  }
-  @media screen and (min-width: 576px){
-
-  }
-
-  /* number color */
-    .circle-green {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        border-radius: 50%;
-        border: 1px solid rgb(125,125,125,.6);
-        background: #B7D29E;
-
-    }
