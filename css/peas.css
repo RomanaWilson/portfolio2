@@ -1127,12 +1127,16 @@ img {
    align-items: center;
  }
 
+ .other-work .container-3 {
+  position: relative;
+  justify-self: end;
+  margin-right: -10px;
+}
 
-
-
-
-.other-work i {
-    background: url("../images/ico/goup.svg") no-repeat;
+@media screen and (min-width: 576px) {
+  .other-work .container-3 {
+      margin-right: calc(-20px - 1.61%);
+  }
 }
 
 @media screen and (min-width: 870px) {

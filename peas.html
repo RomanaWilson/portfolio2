@@ -16,6 +16,9 @@
       gtag('config', 'UA-151575407-1');
     </script>
 
+    <!-- Compatability Check -->
+    <script type="text/javascript" src="compatability.js"></script>
+
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -33,10 +36,14 @@
   </head>
   <body>
 
-      <div class="vert-line line1"></div>
-      <div class="vert-line line2"></div>
-      <div class="vert-line line3 desktop-only"></div>
-      <div class="vert-line line4 desktop-only"></div>
+    <!-- preload background image -->
+    <img src="images/peas/svg/shape3.svg" style="display: none;">
+
+    <!-- lines -->
+    <div class="vert-line line1"></div>
+    <div class="vert-line line2"></div>
+    <div class="vert-line line3 desktop-only"></div>
+    <div class="vert-line line4 desktop-only"></div>
 
 <!--mobile header-->
     <header class="mobile-header almost-opaque gray-border mobile-only">
