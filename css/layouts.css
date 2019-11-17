@@ -132,6 +132,7 @@ main {
     height: 100%;
     animation: lines;
     position: fixed;
+    z-index: -1;
 }
 
 @keyframes lines {
