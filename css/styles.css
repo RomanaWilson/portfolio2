@@ -25,7 +25,7 @@ strong {
 }
 
 .main-mobile {
-  font-family: didoni-urw, serif;
+  font-family: didoni-urw, Arial Black, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 4.5rem;
@@ -35,7 +35,7 @@ strong {
 }
 
 .serif-title {
-  font-family: didoni-urw, serif;
+  font-family: didoni-urw, Arial Black, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 4rem;
@@ -45,7 +45,7 @@ strong {
 }
 
 .serif-mobile {
-  font-family: didoni-urw, serif;
+  font-family: didoni-urw, Arial Black, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 3.5rem;
@@ -55,7 +55,7 @@ strong {
 }
 
 .geometric-title {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: neuzeit-grotesk, Futura, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 2.5rem;
@@ -65,7 +65,7 @@ strong {
 }
 
 .thin-title {
-  font-family: raleway, sans-serif;
+  font-family: raleway, Avant Garde,Avantgarde, sans-serif;
   font-weight: 300;
   font-style: normal;
   font-size: 2.4rem;
@@ -75,7 +75,7 @@ strong {
 }
 
 .small-title {
-  font-family: raleway, sans-serif;
+  font-family: raleway, Futura, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.8rem;
@@ -85,7 +85,7 @@ strong {
 }
 
 .picture-caption {
-  font-family: raleway, sans-serif;
+  font-family: raleway, Futura, sans-serif;
   font-weight: 700;
   font-style: normal;
   font-size: 1.6rem;
@@ -96,7 +96,7 @@ strong {
 }
 
 .body-1 {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: neuzeit-grotesk, Avant Garde, Avantgarde ,sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 2rem;
@@ -105,7 +105,7 @@ strong {
 }
 
 .body-2 {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: neuzeit-grotesk, Avant Garde, Avantgarde, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
@@ -114,7 +114,7 @@ strong {
 }
 
 .thin-caption {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: neuzeit-grotesk, Avant Garde, Avantgarde, sans-serif;
   font-weight: 100;
   font-style: normal;
   font-size: 1.6rem;
@@ -128,7 +128,7 @@ strong {
 }
 
 .serif-small {
-  font-family: didoni-urw, serif;
+  font-family: didoni-urw, Arial Black, serif;
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
@@ -137,7 +137,7 @@ strong {
   text-transform: lowercase;
 }
 .menu-style {
-  font-family: neuzeit-grotesk, sans-serif;
+  font-family: neuzeit-grotesk, Futura, sans-serif;
   font-weight: 400;
   font-style: normal;
   font-size: 2rem;
