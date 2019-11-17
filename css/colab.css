@@ -1423,9 +1423,18 @@ img {
 
 
 
-.other-work i {
-    background: url("../images/ico/goup.svg") no-repeat;
+.other-work .container-3 {
+    position: relative;
+    justify-self: end;
+    margin-right: -10px;
 }
+
+@media screen and (min-width: 576px) {
+    .other-work .container-3 {
+        margin-right: calc(-20px - 1.61%);
+    }
+}
+
 
 @media screen and (min-width: 870px) {
   .other-work .container-1 {
