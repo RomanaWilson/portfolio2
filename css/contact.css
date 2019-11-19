@@ -49,7 +49,7 @@ main {
 .contact .container-1 i {
   width: 3.2rem;
   height: 3.257rem;
-  background: url("../images/ico/linkedin.svg");
+  background: url("../images/ico/linkedin.svg") no-repeat;
   background-position: center;
 }
 
