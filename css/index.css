@@ -155,7 +155,7 @@
                               [container-1-end];
     }
 
-    .home-project .photo-1 {
+    .home-project .photo-1 img {
       width: 80vw;
       justify-self: center;
     }
@@ -188,7 +188,7 @@
     padding-right: 46.5707434052758%;
   }
 
-  .home-project .photo-1 {
+  .home-project .photo-1 img {
     justify-self: end;
     margin-left:  26%;
     width: 74.0545454545455%;
@@ -232,12 +232,12 @@
     padding-right: 10px;
   }
 
-  .home-project .photo-1 {
+  .home-project .photo-1 img {
     width: 90.4838709677419%;
     margin: 0 3.0555555555556%;
   }
 
-  .home-project .photo-2 {
+  .home-project .photo-2 img {
     width: 11.4548494983278%;
     margin-left: 8.1944444444444%;
   }

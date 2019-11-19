@@ -198,6 +198,10 @@ img {
         max-width: 11.4rem;
 
     }
+    .colab-hero .container-1 a {
+      border-bottom: 2px solid #C0E2CA;
+      line-height: 2.2rem;
+    }
 }
 
 /* Hero - Desktop Overide */
@@ -513,6 +517,7 @@ img {
                           [container-1-start]
                           auto
                           [container-1-end]
+                          3rem;
   }
 
     .user-persona .sub-heading-2{
@@ -817,6 +822,13 @@ img {
     max-width: 100%;
     background-color: white;
 
+}
+
+.previous:hover {
+  opacity: 0.5;
+}
+.next:hover {
+  opacity: 0.5;
 }
 
 .slider {

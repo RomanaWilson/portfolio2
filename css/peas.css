@@ -186,6 +186,10 @@ img {
     .peas-hero .container-2 {
       margin: 0 7rem;
     }
+    .peas-hero .container-1 a {
+      border-bottom: 2px solid #C0E2CA;
+      line-height: 2.2rem;
+    }
 }
 
 /* Hero - Desktop Overide */
