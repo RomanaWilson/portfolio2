@@ -875,7 +875,8 @@ footer {
 
   .unsuported {
       max-width: 700px;
-      padding: 0 50px;
+      padding-left: 50px;
+      padding-right: 50px; 
       padding-top: 100px;
   }
 
