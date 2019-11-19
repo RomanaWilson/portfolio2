@@ -619,6 +619,13 @@ img {
 
   }
 
+@media screen and (min-width: 1440px)  {
+  .peas-persona .heading {
+    margin: 0 calc(7.0833333333333% + 1px) 0 7.0833333333333%;
+  }
+
+}
+
 
 /* site map */
 
