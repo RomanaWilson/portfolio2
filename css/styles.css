@@ -89,7 +89,7 @@ strong {
   font-weight: 700;
   font-style: normal;
   font-size: 1.6rem;
-  line-height: 1.9rem;
+  line-height: 2rem;
   letter-spacing: .1em;
   text-transform: uppercase;
   color: #828282;
@@ -109,7 +109,7 @@ strong {
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
-  line-height: 1.92rem;
+  line-height: 2rem;
   letter-spacing: .05em;
 }
 
@@ -118,7 +118,7 @@ strong {
   font-weight: 100;
   font-style: normal;
   font-size: 1.6rem;
-  line-height: 1.92rem;
+  line-height: 2rem;
   letter-spacing: .05em;
   list-style: none;
 }
@@ -132,7 +132,7 @@ strong {
   font-weight: 400;
   font-style: normal;
   font-size: 1.6rem;
-  line-height: 1.92rem;
+  line-height: 2rem;
   letter-spacing: .1em;
   text-transform: lowercase;
 }
@@ -183,4 +183,17 @@ strong {
 
 .white-type {
   color: white;
+}
+
+/* hover */
+
+/* unvisited link */
+a:link {
+  color: black;
+}
+
+/* mouse over link */
+a:hover {
+
+    opacity: 0.5;
 }

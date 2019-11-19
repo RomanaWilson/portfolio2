@@ -10,6 +10,9 @@
       grid-template-rows: [heading]
                           auto
                           3rem
+                          [sub-heading-1]
+                          auto
+                          3rem
                           [container-1]
                           auto
                           7rem; /*3rem + 4 contact*/
@@ -34,6 +37,9 @@
 @media screen and (min-width:576px){
   .work {
       grid-template-rows: [heading]
+                          auto
+                          4rem
+                          [sub-heading-1]
                           auto
                           7.5rem
                           [container-1]
@@ -61,6 +67,9 @@
 @media screen and (min-width: 992px) {
   .work {
       grid-template-rows: [heading]
+                          auto
+                          4rem
+                          [sub-heading-1]
                           auto
                           0rem
                           [container-1]
