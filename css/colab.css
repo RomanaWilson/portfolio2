@@ -1379,6 +1379,7 @@ img {
     background-size: contain;
     align-self: start;
     min-height: 177.0666666666667vw;
+    z-index: -2;
 }
 
 
