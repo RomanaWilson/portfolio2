@@ -69,6 +69,7 @@ main {
     right: 1rem;
     z-index: 903;
     min-height: 500px;
+    
   }
 }
 
@@ -484,6 +485,10 @@ main {
     grid-row: container-2-start / container-2-end;
 }
 
+.container-3-split {
+    grid-row: container-3-start / container-3-end;
+}
+
 .container-4-split {
     grid-row: container-4-start / container-4-end;
 }
@@ -520,6 +525,14 @@ main {
 
 .photo-2 {
     grid-row: photo-2-start / photo-2-end;
+}
+
+.photo-3 {
+    grid-row: photo-3-start / photo-3-end;
+}
+
+.photo-4 {
+    grid-row: photo-4-start / photo-4-end;
 }
 
 .background {
@@ -871,11 +884,17 @@ footer {
       background: #B7D29E;
   }
 
+  .circle-beige {
+      background: #E8D4CE;
+  }
+
+
   /* Unsuported page */
 
   .unsuported {
       max-width: 700px;
-      padding: 0 50px;
+      padding-left: 50px;
+      padding-right: 50px;
       padding-top: 100px;
   }
 
