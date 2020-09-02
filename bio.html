@@ -2,114 +2,166 @@
 <html lang="en" dir="ltr">
   <head>
     <!-- favicon -->
-    <link rel="icon"
-      type="image/png"
-      href="images/favicon.png">
+    <link rel="icon" type="image/png" href="images/favicon.png" />
 
-        <!-- Global site tag (gtag.js) - Google Analytics -->
-    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151575407-1"></script>
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script
+      async
+      src="https://www.googletagmanager.com/gtag/js?id=UA-151575407-1"
+    ></script>
     <script>
       window.dataLayer = window.dataLayer || [];
-      function gtag(){dataLayer.push(arguments);}
-      gtag('js', new Date());
+      function gtag() {
+        dataLayer.push(arguments);
+      }
+      gtag("js", new Date());
 
-      gtag('config', 'UA-151575407-1');
+      gtag("config", "UA-151575407-1");
     </script>
 
     <!-- Compatability Check -->
-    <script   src="scripts/compatability.js"></script>
+    <!-- <script   src="scripts/compatability.js"></script> -->
 
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>bio</title>
-    <link rel="stylesheet" href="css/reset.css">
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="css/layouts.css">
-    <link rel="stylesheet" href="css/bio.css">
+    <link rel="stylesheet" href="css/reset.css" />
+    <link rel="stylesheet" href="css/styles.css" />
+    <link rel="stylesheet" href="css/layouts.css" />
+    <link rel="stylesheet" href="css/bio.css" />
 
     <!--fonts-->
-    <link rel="stylesheet" href="https://use.typekit.net/dpp5etq.css">
+    <link rel="stylesheet" href="https://use.typekit.net/dpp5etq.css" />
     <script src="https://kit.fontawesome.com/a076d05399.js"></script>
   </head>
   <body>
+    <div class="vert-line line1"></div>
+    <div class="vert-line line2"></div>
+    <div class="vert-line line3 mobile-hidden"></div>
+    <div class="vert-line line4 desktop-only"></div>
 
-      <div class="vert-line line1"></div>
-      <div class="vert-line line2"></div>
-      <div class="vert-line line3 mobile-hidden"></div>
-      <div class="vert-line line4 desktop-only"></div>
+    <!--mobile header-->
+    <header class="mobile-header almost-opaque gray-border mobile-only">
+      <nav class="top-nav">
+        <a href="index.html" class="logo"
+          ><img src="images/ico/logoblack.svg" alt="logo"
+        /></a>
+        <a class="wide-logo" href="index.html"
+          ><img src="images/ico/romiwilson.svg" alt="logo"
+        /></a>
+        <a class="menu-style text-link" href="work.html">work</a>
+      </nav>
+    </header>
 
-  <!--mobile header-->
-      <header class="mobile-header almost-opaque gray-border mobile-only">
-        <nav class="top-nav">
-          <a href="index.html" class="logo"><img src="images/ico/logoblack.svg" alt="logo" ></a>
-          <a class="wide-logo" href="index.html"><img src="images/ico/romiwilson.svg" alt="logo"></a>
-          <a class="menu-style text-link" href="work.html">work</a>
-        </nav>
-      </header>
+    <!--desktop and tablet header-->
+    <header class="desktop-header mobile-hidden">
+      <a href="index.html" class="logo"
+        ><img src="images/ico/logo.svg" alt="logo"
+      /></a>
+    </header>
 
-  <!--desktop and tablet header-->
-      <header class="desktop-header mobile-hidden">
-        <a href="index.html" class="logo"><img src="images/ico/logo.svg" alt="logo" ></a>
-      </header>
-
-  <!--global menu-->
-      <aside class="vertical-menu mobile-hidden">
-          <nav>
-            <ul class=" index menu-style">
-              <li><a href="bio.html">bio</a></li>
-              <li><a href="work.html">work</a></li>
-              <li><a href="contact.html">contact</a></li>
-            </ul>
-          </nav>
-      </aside>
+    <!--global menu-->
+    <aside class="vertical-menu mobile-hidden">
+      <nav>
+        <ul class="index menu-style">
+          <li><a href="bio.html">bio</a></li>
+          <li><a href="work.html">work</a></li>
+          <li><a href="contact.html">contact</a></li>
+        </ul>
+      </nav>
+    </aside>
 
     <main class="grid master-grid">
-      <article class=" grid sub-grid bio">
+      <article class="grid sub-grid bio">
         <h1 class="main-mobile standard-width heading">romi wilson</h1>
-        <h2 class="circle cir-bio opaque serif-mobile full-width sub-heading-1">bio</h2>
-        <h3 class="geometric-title standard-width sub-heading-2">The Czech Republic and my studio</h3>
-        <p class="body-2 standard-width paragraph-1">I am a creative designer who has touched a lot of mediums during my career. I studied applied arts with a focus in fashion design, photography, and concept. It was in this time of study I trained my aesthetics under the tutelage of  some of the greatest designers in the Czech Republic while attending the Academy of Art Architecture and Design in Prague. Along with my major I was always passionate about typography and loved working on digital projects. After finishing school, it was natural for me to continue my design path. After observing a gap in the market, I co-founded an illustration studio in the Czech Republic. We focus on institutions and help them to bring their unique stories to light and represent themselves with pride. We also run a small e-commerce site and sell products in about 30 stores in the country. </p>
+        <h2 class="circle cir-bio opaque serif-mobile full-width sub-heading-1">
+          bio
+        </h2>
+        <h3 class="geometric-title standard-width sub-heading-2">
+          The Czech Republic and my studio
+        </h3>
+        <p class="body-2 standard-width paragraph-1">
+          I am a creative designer who has touched a lot of mediums during my
+          career. I studied applied arts with a focus in fashion design,
+          photography, and concept. It was in this time of study I trained my
+          aesthetics under the tutelage of some of the greatest designers in the
+          Czech Republic while attending the Academy of Art Architecture and
+          Design in Prague. Along with my major I was always passionate about
+          typography and loved working on digital projects. After finishing
+          school, it was natural for me to continue my design path. After
+          observing a gap in the market, I co-founded an illustration studio in
+          the Czech Republic. We focus on institutions and help them to bring
+          their unique stories to light and represent themselves with pride. We
+          also run a small e-commerce site and sell products in about 30 stores
+          in the country.
+        </p>
         <div class="circle cir-photo opaque full-width container-1-split">
-          <img src="images/profile.png" alt="profile photography">
+          <img src="images/profile.png" alt="profile photography" />
         </div>
-        <h3 class="geometric-title standard-width sub-heading-3">In New York from fashion to UX</h3>
-        <p class="body-2 standard-width paragraph-2">After settling down in New York I started my career in fashion working for Oscar de la Renta and Ann Taylor, as well as working on the side for a fashion start up in Brooklyn. Inconspicuously my career was taking different direction. I was no longer designing clothes but pushing pixels on e-commerce websites. It was a soft transition with a great learning curve. I am improving my process and coding skills every day.
-        <br><br>
-        I have a passion for simplicity and minimalism - Not only in aesthetics but also in life. I love great views and that’s why I work from the awesome Wework building at Flushing, Brooklyn.
-        If you are local stop by and let’s have a coffee together!
+        <h3 class="geometric-title standard-width sub-heading-3">
+          In New York from fashion to UX
+        </h3>
+        <p class="body-2 standard-width paragraph-2">
+          After settling down in New York I started my career in fashion working
+          for Oscar de la Renta and Ann Taylor, as well as working on the side
+          for a fashion start up in Brooklyn. Inconspicuously my career was
+          taking different direction. I was no longer designing clothes but
+          pushing pixels on e-commerce websites. It was a soft transition with a
+          great learning curve. I am improving my process and coding skills
+          every day. <br /><br />
+          I have a passion for simplicity and minimalism - Not only in
+          aesthetics but also in life. I love great views and that’s why I work
+          from the awesome Wework building at Flushing, Brooklyn. If you are
+          local stop by and let’s have a coffee together!
         </p>
 
-          <div class="circle small-circle opaque full-width container-2">
-          </div>
-          <div class="circle cosmic-circle full-width container-4-split desktop-only">
-          </div>
+        <div class="circle small-circle opaque full-width container-2"></div>
+        <div
+          class="circle cosmic-circle full-width container-4-split desktop-only"
+        ></div>
 
-          <div class="circle cir-wework opaque full-width container-3">
-            <img src="images/wework2x.png" alt="wework photography">
-
-          </div>
-
+        <div class="circle cir-wework opaque full-width container-3">
+          <img src="images/wework2x.png" alt="wework photography" />
+        </div>
       </article>
     </main>
 
     <!--mobile footer-->
-    <section id="bottommenu" class="grid sub-grid drawer-mobile almost-opaque mobile-only">
-      <div id="bottommenu_toggle" class="contact-bar rel-container full-width heading">
-          <img src="images/rectangle.svg" alt="rectangle">
-          <h2 class="menu-style">contact</h2>
+    <section
+      id="bottommenu"
+      class="grid sub-grid drawer-mobile almost-opaque mobile-only"
+    >
+      <div
+        id="bottommenu_toggle"
+        class="contact-bar rel-container full-width heading"
+      >
+        <img src="images/rectangle.svg" alt="rectangle" />
+        <h2 class="menu-style">contact</h2>
       </div>
-      <a class=" body-2 standard-width container-1" href="https://www.linkedin.com/in/romi-wilson-ux-design/"><i class="linkedin"></i>connect</a>
-      <a class="body-2 standard-width container-2" href="mailto:romi.m.wilson@gmail.com"><i class="envelope"></i>romi.m.wilson@gmail.com</a>
-      <a class="serif-small standard-width container-3" href="images/PDF/Romi_Wilson_resume.pdf" download><i class="resume"></i>resume</a>
+      <a
+        class="body-2 standard-width container-1"
+        href="https://www.linkedin.com/in/romi-wilson-ux-design/"
+        ><i class="linkedin"></i>connect</a
+      >
+      <a
+        class="body-2 standard-width container-2"
+        href="mailto:romi.m.wilson@gmail.com"
+        ><i class="envelope"></i>romi.m.wilson@gmail.com</a
+      >
+      <a
+        class="serif-small standard-width container-3"
+        href="images/PDF/Romi_Wilson_resume.pdf"
+        download
+        ><i class="resume"></i>resume</a
+      >
     </section>
     <!--desktop footer-->
     <footer class="thin-caption mobile-hidden">
       <p>©2019 designed and coded by romi.</p>
     </footer>
 
-    <script   src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
-    <script   src="scripts/scripts.js"></script>
-
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.0/jquery.min.js"></script>
+    <script src="scripts/scripts.js"></script>
   </body>
 </html>
